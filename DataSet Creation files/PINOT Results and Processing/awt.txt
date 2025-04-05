@@ -1,0 +1,3311 @@
+--------- Original GoF Patterns ----------
+
+Multithreaded Singleton Pattern
+Toolkit is a Singleton class
+toolkit is the Singleton instance
+getDefaultToolkit creates and returns toolkit
+File location: java/awt/Toolkit.java
+Double-checked Locking not used.
+
+Multithreaded Singleton Pattern
+GraphicsEnvironment is a Singleton class
+localEnv is the Singleton instance
+getLocalGraphicsEnvironment creates and returns localEnv
+File location: java/awt/GraphicsEnvironment.java
+Double-checked Locking not used.
+
+Singleton Pattern
+ColorModel is a Singleton class
+RGBdefault is the Singleton instance
+getRGBdefault creates and returns RGBdefault
+File location: java/awt/image/ColorModel.java
+
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+getToolkitImpl is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+isShowing is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+getLocale is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+invalidate is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+getCursor is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+createImage is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+createVolatileImage is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Component is a Chain of Responsibility Handler class
+getInputContext is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Component.java
+
+Chain of Responsibility Pattern
+Container is a Chain of Responsibility Handler class
+preProcessKeyEvent is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Container.java
+
+Chain of Responsibility Pattern
+Container is a Chain of Responsibility Handler class
+postProcessKeyEvent is a handle operation
+parent of type Container propogates the request
+File Location: java/awt/Container.java
+
+Chain of Responsibility Pattern
+DropTarget is a Chain of Responsibility Handler class
+dragEnter is a handle operation
+dtListener of type DropTargetListener propogates the request
+File Location: java/awt/dnd/DropTarget.java
+
+Chain of Responsibility Pattern
+DropTarget is a Chain of Responsibility Handler class
+dragOver is a handle operation
+dtListener of type DropTargetListener propogates the request
+File Location: java/awt/dnd/DropTarget.java
+
+Chain of Responsibility Pattern
+DropTarget is a Chain of Responsibility Handler class
+dropActionChanged is a handle operation
+dtListener of type DropTargetListener propogates the request
+File Location: java/awt/dnd/DropTarget.java
+
+Chain of Responsibility Pattern
+DropTarget is a Chain of Responsibility Handler class
+dragExit is a handle operation
+dtListener of type DropTargetListener propogates the request
+File Location: java/awt/dnd/DropTarget.java
+
+Chain of Responsibility Pattern
+DropTarget is a Chain of Responsibility Handler class
+drop is a handle operation
+dtListener of type DropTargetListener propogates the request
+File Location: java/awt/dnd/DropTarget.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+setDimensions is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+setProperties is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+setColorModel is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+setHints is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+setPixels is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+setPixels is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ImageFilter is a Decorator class
+imageComplete is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ImageFilter.java
+
+Decorator Pattern
+ReplicateScaleFilter is a Decorator class
+setDimensions is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/ReplicateScaleFilter.java
+
+Chain of Responsibility Pattern
+SelectiveAWTEventListener is a Chain of Responsibility Handler class
+eventDispatched is a handle operation
+listener of type AWTEventListener propogates the request
+File Location: java/awt/Toolkit.java
+
+Chain of Responsibility Pattern
+FilteredImageSource is a Chain of Responsibility Handler class
+addConsumer is a handle operation
+src of type ImageProducer propogates the request
+File Location: java/awt/image/FilteredImageSource.java
+
+Decorator Pattern
+FilteredImageSource is a Decorator class
+startProduction is a decorate operation
+src of type ImageProducer is the Decoratee class
+File Location: java/awt/image/FilteredImageSource.java
+
+Decorator Pattern
+FlatteningPathIterator is a Decorator class
+getWindingRule is a decorate operation
+src of type PathIterator is the Decoratee class
+File Location: java/awt/geom/FlatteningPathIterator.java
+
+Decorator Pattern
+BufferedImageFilter is a Decorator class
+imageComplete is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/BufferedImageFilter.java
+
+Decorator Pattern
+CropImageFilter is a Decorator class
+setDimensions is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/CropImageFilter.java
+
+Decorator Pattern
+RGBImageFilter is a Decorator class
+setColorModel is a decorate operation
+consumer of type ImageConsumer is the Decoratee class
+File Location: java/awt/image/RGBImageFilter.java
+
+ Container DropTargetListener AWTEventListener ImageProducer
+ ImageConsumer ImageProducer PathIterator
+Bridge Pattern.
+Component is abstract.
+ComponentPeer is an interface.
+Component delegates ComponentPeer.
+File Location: java/awt/Component.java,
+               java/awt/peer/ComponentPeer.java
+
+Bridge Pattern.
+Container is abstract.
+ContainerPeer is an interface.
+Container delegates ContainerPeer.
+File Location: java/awt/Container.java,
+               java/awt/peer/ContainerPeer.java
+
+Bridge Pattern.
+Container is abstract.
+LayoutManager is an interface.
+Container delegates LayoutManager.
+File Location: java/awt/Container.java,
+               java/awt/LayoutManager.java
+
+Bridge Pattern.
+Container is abstract.
+LayoutManager2 is an interface.
+Container delegates LayoutManager2.
+File Location: java/awt/Container.java,
+               java/awt/LayoutManager2.java
+
+Bridge Pattern.
+Container is abstract.
+ComponentPeer is an interface.
+Container delegates ComponentPeer.
+File Location: java/awt/Container.java,
+               java/awt/peer/ComponentPeer.java
+
+Bridge Pattern.
+Container is abstract.
+EventTargetFilter is an interface.
+Container delegates EventTargetFilter.
+File Location: java/awt/Container.java,
+               java/awt/Container.java
+
+Bridge Pattern.
+Window is abstract.
+WindowPeer is an interface.
+Window delegates WindowPeer.
+File Location: java/awt/Window.java,
+               java/awt/peer/WindowPeer.java
+
+Bridge Pattern.
+ImageFilter is abstract.
+ImageProducer is an interface.
+ImageFilter delegates ImageProducer.
+File Location: java/awt/image/ImageFilter.java,
+               java/awt/image/ImageProducer.java
+
+Bridge Pattern.
+DragGestureRecognizer is abstract.
+DragGestureListener is an interface.
+DragGestureRecognizer delegates DragGestureListener.
+File Location: java/awt/dnd/DragGestureRecognizer.java,
+               java/awt/dnd/DragGestureListener.java
+
+Bridge Pattern.
+MenuComponent is abstract.
+MenuComponentPeer is an interface.
+MenuComponent delegates MenuComponentPeer.
+File Location: java/awt/MenuComponent.java,
+               java/awt/peer/MenuComponentPeer.java
+
+Bridge Pattern.
+MenuItem is abstract.
+MenuItemPeer is an interface.
+MenuItem delegates MenuItemPeer.
+File Location: java/awt/MenuItem.java,
+               java/awt/peer/MenuItemPeer.java
+
+Bridge Pattern.
+Dialog is abstract.
+DialogPeer is an interface.
+Dialog delegates DialogPeer.
+File Location: java/awt/Dialog.java,
+               java/awt/peer/DialogPeer.java
+
+Bridge Pattern.
+Dialog is abstract.
+ComponentPeer is an interface.
+Dialog delegates ComponentPeer.
+File Location: java/awt/Dialog.java,
+               java/awt/peer/ComponentPeer.java
+
+Bridge Pattern.
+TextComponent is abstract.
+TextComponentPeer is an interface.
+TextComponent delegates TextComponentPeer.
+File Location: java/awt/TextComponent.java,
+               java/awt/peer/TextComponentPeer.java
+
+Bridge Pattern.
+Menu is abstract.
+MenuPeer is an interface.
+Menu delegates MenuPeer.
+File Location: java/awt/Menu.java,
+               java/awt/peer/MenuPeer.java
+
+Strategy Pattern.
+DropTarget is the Context class.
+ComponentPeer is the Strategy interface.
+Concrete Strategy classes:  ContainerPeer CanvasPeer LightweightPeer ChoicePeer TextComponentPeer ScrollbarPeer CheckboxPeer ListPeer LabelPeer ButtonPeer DialogPeer FileDialogPeer ScrollPanePeer TextAreaPeer TextFieldPeer PanelPeer WindowPeer FramePeer
+Delegation through componentPeer of type ComponentPeer
+File Location: java/awt/dnd/DropTarget.java,
+               java/awt/peer/ComponentPeer.java
+
+Strategy Pattern.
+DropTarget is the Context class.
+ComponentPeer is the Strategy interface.
+Concrete Strategy classes:  ContainerPeer CanvasPeer LightweightPeer ChoicePeer TextComponentPeer ScrollbarPeer CheckboxPeer ListPeer LabelPeer ButtonPeer DialogPeer FileDialogPeer ScrollPanePeer TextAreaPeer TextFieldPeer PanelPeer WindowPeer FramePeer
+Delegation through nativePeer of type ComponentPeer
+File Location: java/awt/dnd/DropTarget.java,
+               java/awt/peer/ComponentPeer.java
+
+Strategy Pattern.
+DropTarget is the Context class.
+FlavorMap is the Strategy interface.
+Concrete Strategy classes:  SystemFlavorMap FlavorTable
+Delegation through flavorMap of type FlavorMap
+File Location: java/awt/dnd/DropTarget.java,
+               java/awt/datatransfer/FlavorMap.java
+
+Strategy Pattern.
+MediaTracker is the Context class.
+MediaEntry is the Strategy interface.
+Concrete Strategy classes:  ImageMediaEntry
+Delegation through head of type MediaEntry
+File Location: java/awt/MediaTracker.java,
+               java/awt/MediaTracker.java
+
+Strategy Pattern.
+ImageMediaEntry is the Context class.
+Image is the Strategy interface.
+Concrete Strategy classes:  VolatileImage BufferedImage
+Delegation through image of type Image
+File Location: java/awt/MediaTracker.java,
+               java/awt/Image.java
+
+Strategy Pattern.
+Button is the Context class.
+ActionListener is the Strategy interface.
+Concrete Strategy classes:  DropTargetAutoScroller AWTEventMulticaster AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through actionListener of type ActionListener
+File Location: java/awt/Button.java,
+               java/awt/event/ActionListener.java
+
+addItemListener is called by AccessibleAWTCheckbox:: is the pivot point.
+State Pattern.
+Checkbox is the Context class.
+ItemListener is the State interface.
+Concrete State classes:  AWTEventMulticaster AccessibleAWTCheckbox AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through itemListener of type ItemListener
+addItemListener changes the state variable itemListener
+addItemListener is invoked by  readObject 
+File Location: java/awt/Checkbox.java,
+               java/awt/event/ItemListener.java
+
+Strategy Pattern.
+Choice is the Context class.
+ItemListener is the Strategy interface.
+Concrete Strategy classes:  AWTEventMulticaster AccessibleAWTCheckbox AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through itemListener of type ItemListener
+File Location: java/awt/Choice.java,
+               java/awt/event/ItemListener.java
+
+addActionListener is called by AccessibleAWTList:: is the pivot point.
+State Pattern.
+List is the Context class.
+ActionListener is the State interface.
+Concrete State classes:  DropTargetAutoScroller AWTEventMulticaster AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through actionListener of type ActionListener
+addActionListener changes the state variable actionListener
+addActionListener is invoked by  readObject 
+File Location: java/awt/List.java,
+               java/awt/event/ActionListener.java
+
+addItemListener is called by AccessibleAWTList:: is the pivot point.
+State Pattern.
+List is the Context class.
+ItemListener is the State interface.
+Concrete State classes:  AWTEventMulticaster AccessibleAWTCheckbox AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through itemListener of type ItemListener
+addItemListener changes the state variable itemListener
+addItemListener is invoked by  readObject 
+File Location: java/awt/List.java,
+               java/awt/event/ItemListener.java
+
+Strategy Pattern.
+Robot is the Context class.
+RobotPeer is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through peer of type RobotPeer
+File Location: java/awt/Robot.java,
+               java/awt/peer/RobotPeer.java
+
+Strategy Pattern.
+Scrollbar is the Context class.
+AdjustmentListener is the Strategy interface.
+Concrete Strategy classes:  AWTEventMulticaster PeerFixer PeerFixer DnDEventMulticaster ToolkitEventMulticaster
+Delegation through adjustmentListener of type AdjustmentListener
+File Location: java/awt/Scrollbar.java,
+               java/awt/event/AdjustmentListener.java
+
+Strategy Pattern.
+TextField is the Context class.
+ActionListener is the Strategy interface.
+Concrete Strategy classes:  DropTargetAutoScroller AWTEventMulticaster AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through actionListener of type ActionListener
+File Location: java/awt/TextField.java,
+               java/awt/event/ActionListener.java
+
+Strategy Pattern.
+LookupOp is the Context class.
+LookupTable is the Strategy interface.
+Concrete Strategy classes:  ByteLookupTable ShortLookupTable
+Delegation through ltable of type LookupTable
+File Location: java/awt/image/LookupOp.java,
+               java/awt/image/LookupTable.java
+
+Strategy Pattern.
+CheckboxMenuItem is the Context class.
+ItemListener is the Strategy interface.
+Concrete Strategy classes:  AWTEventMulticaster AccessibleAWTCheckbox AccessibleAWTList DnDEventMulticaster ToolkitEventMulticaster
+Delegation through itemListener of type ItemListener
+File Location: java/awt/CheckboxMenuItem.java,
+               java/awt/event/ItemListener.java
+
+Strategy Pattern.
+GradientPaintContext is the Context class.
+ColorModel is the Strategy interface.
+Concrete Strategy classes:  IndexColorModel PackedColorModel ComponentColorModel DirectColorModel
+Delegation through model of type ColorModel
+File Location: java/awt/GradientPaintContext.java,
+               java/awt/image/ColorModel.java
+
+Strategy Pattern.
+GradientPaintContext is the Context class.
+ColorModel is the Strategy interface.
+Concrete Strategy classes:  IndexColorModel PackedColorModel ComponentColorModel DirectColorModel
+Delegation through cachedModel of type ColorModel
+File Location: java/awt/GradientPaintContext.java,
+               java/awt/image/ColorModel.java
+
+Strategy Pattern.
+ScrollPaneAdjustable is the Context class.
+AdjustmentListener is the Strategy interface.
+Concrete Strategy classes:  AWTEventMulticaster PeerFixer PeerFixer DnDEventMulticaster ToolkitEventMulticaster
+Delegation through adjustmentListener of type AdjustmentListener
+File Location: java/awt/ScrollPaneAdjustable.java,
+               java/awt/event/AdjustmentListener.java
+
+Strategy Pattern.
+DragSourceContext is the Context class.
+DragSourceContextPeer is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through peer of type DragSourceContextPeer
+File Location: java/awt/dnd/DragSourceContext.java,
+               java/awt/dnd/peer/DragSourceContextPeer.java
+
+Strategy Pattern.
+DragSourceContext is the Context class.
+Transferable is the Strategy interface.
+Concrete Strategy classes:  TransferableProxy DragSourceContext$1 StringSelection
+Delegation through transferable of type Transferable
+File Location: java/awt/dnd/DragSourceContext.java,
+               java/awt/datatransfer/Transferable.java
+
+Strategy Pattern.
+DragSourceContext is the Context class.
+Transferable is the Strategy interface.
+Concrete Strategy classes:  TransferableProxy DragSourceContext$1 StringSelection
+Delegation through emptyTransferable of type Transferable
+File Location: java/awt/dnd/DragSourceContext.java,
+               java/awt/datatransfer/Transferable.java
+
+Strategy Pattern.
+AdjustmentEvent is the Context class.
+Adjustable is the Strategy interface.
+Concrete Strategy classes:  Scrollbar ScrollPaneAdjustable
+Delegation through adjustable of type Adjustable
+File Location: java/awt/event/AdjustmentEvent.java,
+               java/awt/Adjustable.java
+
+Strategy Pattern.
+ImageGraphicAttribute is the Context class.
+Image is the Strategy interface.
+Concrete Strategy classes:  VolatileImage BufferedImage
+Delegation through fImage of type Image
+File Location: java/awt/font/ImageGraphicAttribute.java,
+               java/awt/Image.java
+
+Strategy Pattern.
+ShapeGraphicAttribute is the Context class.
+Shape is the Strategy interface.
+Concrete Strategy classes:  Polygon GeneralPath RectangularShape Rectangle Line2D QuadCurve2D CubicCurve2D Area Arc2D Ellipse2D RoundRectangle2D Double Double Double Double Double Double Double Float Float Float Float Float Float Float Rectangle2D
+Delegation through fShape of type Shape
+File Location: java/awt/font/ShapeGraphicAttribute.java,
+               java/awt/Shape.java
+
+Strategy Pattern.
+ShapeGraphicAttribute is the Context class.
+Rectangle2D is the Strategy interface.
+Concrete Strategy classes:  Float Double Rectangle
+Delegation through fShapeBounds of type Rectangle2D
+File Location: java/awt/font/ShapeGraphicAttribute.java,
+               java/awt/geom/Rectangle2D.java
+
+Strategy Pattern.
+CubicIterator is the Context class.
+CubicCurve2D is the Strategy interface.
+Concrete Strategy classes:  Float Double
+Delegation through cubic of type CubicCurve2D
+File Location: java/awt/geom/CubicIterator.java,
+               java/awt/geom/CubicCurve2D.java
+
+Strategy Pattern.
+LineIterator is the Context class.
+Line2D is the Strategy interface.
+Concrete Strategy classes:  Float Double
+Delegation through line of type Line2D
+File Location: java/awt/geom/LineIterator.java,
+               java/awt/geom/Line2D.java
+
+Strategy Pattern.
+QuadIterator is the Context class.
+QuadCurve2D is the Strategy interface.
+Concrete Strategy classes:  Float Double
+Delegation through quad of type QuadCurve2D
+File Location: java/awt/geom/QuadIterator.java,
+               java/awt/geom/QuadCurve2D.java
+
+Strategy Pattern.
+BufferedImageFilter is the Context class.
+BufferedImageOp is the Strategy interface.
+Concrete Strategy classes:  AffineTransformOp ColorConvertOp ConvolveOp LookupOp RescaleOp
+Delegation through bufferedImageOp of type BufferedImageOp
+File Location: java/awt/image/BufferedImageFilter.java,
+               java/awt/image/BufferedImageOp.java
+
+Strategy Pattern.
+BufferedImageFilter is the Context class.
+ColorModel is the Strategy interface.
+Concrete Strategy classes:  IndexColorModel PackedColorModel ComponentColorModel DirectColorModel
+Delegation through model of type ColorModel
+File Location: java/awt/image/BufferedImageFilter.java,
+               java/awt/image/ColorModel.java
+
+Strategy Pattern.
+MemoryImageSource is the Context class.
+ColorModel is the Strategy interface.
+Concrete Strategy classes:  IndexColorModel PackedColorModel ComponentColorModel DirectColorModel
+Delegation through model of type ColorModel
+File Location: java/awt/image/MemoryImageSource.java,
+               java/awt/image/ColorModel.java
+
+Strategy Pattern.
+PixelGrabber is the Context class.
+ImageProducer is the Strategy interface.
+Concrete Strategy classes:  FilteredImageSource MemoryImageSource RenderableImageProducer
+Delegation through producer of type ImageProducer
+File Location: java/awt/image/PixelGrabber.java,
+               java/awt/image/ImageProducer.java
+
+Strategy Pattern.
+PixelGrabber is the Context class.
+ColorModel is the Strategy interface.
+Concrete Strategy classes:  IndexColorModel PackedColorModel ComponentColorModel DirectColorModel
+Delegation through imageModel of type ColorModel
+File Location: java/awt/image/PixelGrabber.java,
+               java/awt/image/ColorModel.java
+
+Strategy Pattern.
+RenderContext is the Context class.
+Shape is the Strategy interface.
+Concrete Strategy classes:  Polygon GeneralPath RectangularShape Rectangle Line2D QuadCurve2D CubicCurve2D Area Arc2D Ellipse2D RoundRectangle2D Double Double Double Double Double Double Double Float Float Float Float Float Float Float Rectangle2D
+Delegation through aoi of type Shape
+File Location: java/awt/image/renderable/RenderContext.java,
+               java/awt/Shape.java
+
+Strategy Pattern.
+RenderableImageOp is the Context class.
+ContextualRenderedImageFactory is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through myCRIF of type ContextualRenderedImageFactory
+File Location: java/awt/image/renderable/RenderableImageOp.java,
+               java/awt/image/renderable/ContextualRenderedImageFactory.java
+
+Strategy Pattern.
+RenderableImageOp is the Context class.
+Rectangle2D is the Strategy interface.
+Concrete Strategy classes:  Float Double Rectangle
+Delegation through boundingBox of type Rectangle2D
+File Location: java/awt/image/renderable/RenderableImageOp.java,
+               java/awt/geom/Rectangle2D.java
+
+Strategy Pattern.
+RenderableImageProducer is the Context class.
+RenderableImage is the Strategy interface.
+Concrete Strategy classes:  RenderableImageOp
+Delegation through rdblImage of type RenderableImage
+File Location: java/awt/image/renderable/RenderableImageProducer.java,
+               java/awt/image/renderable/RenderableImage.java
+
+InvocationEvent::dispatch is the pivot point.
+State Pattern.
+EventQueueItem is the Context class.
+AWTEvent is the State interface.
+Concrete State classes:  ComponentEvent HierarchyEvent InvocationEvent ActionEvent InputMethodEvent ItemEvent AdjustmentEvent TextEvent EmptyEvent SequencedEvent SentEvent MouseWheelEvent MouseEvent PaintEvent InputEvent KeyEvent WindowEvent FocusEvent ContainerEvent DefaultKeyboardFocusManagerSentEvent
+Delegation through event of type AWTEvent
+postEvent changes the state variable event
+postEvent is invoked by  postEventPrivate
+File Location: java/awt/EventQueue.java,
+               java/awt/AWTEvent.java
+
+Strategy Pattern.
+Frame is the Context class.
+Image is the Strategy interface.
+Concrete Strategy classes:  VolatileImage BufferedImage
+Delegation through icon of type Image
+File Location: java/awt/Frame.java,
+               java/awt/Image.java
+
+Strategy Pattern.
+Font is the Context class.
+FontPeer is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through peer of type FontPeer
+File Location: java/awt/Font.java,
+               java/awt/peer/FontPeer.java
+
+Container::dispatchEventImpl is the pivot point.
+State Pattern.
+DefaultKeyboardFocusManager is the Context class.
+Component is the State interface.
+Concrete State classes:  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+Delegation through realOppositeComponent of type Component
+dispatchEvent changes the state variable realOppositeComponent
+dispatchEvent is invoked by  dispatchEventImpl
+File Location: java/awt/DefaultKeyboardFocusManager.java,
+               java/awt/Component.java
+
+Strategy Pattern.
+BufferedImage is the Context class.
+ColorModel is the Strategy interface.
+Concrete Strategy classes:  IndexColorModel PackedColorModel ComponentColorModel DirectColorModel
+Delegation through colorModel of type ColorModel
+File Location: java/awt/image/BufferedImage.java,
+               java/awt/image/ColorModel.java
+
+Strategy Pattern.
+Clipboard is the Context class.
+ClipboardOwner is the Strategy interface.
+Concrete Strategy classes:  StringSelection
+Delegation through owner of type ClipboardOwner
+File Location: java/awt/datatransfer/Clipboard.java,
+               java/awt/datatransfer/ClipboardOwner.java
+
+Strategy Pattern.
+Clipboard is the Context class.
+Transferable is the Strategy interface.
+Concrete Strategy classes:  TransferableProxy DragSourceContext$1 StringSelection
+Delegation through contents of type Transferable
+File Location: java/awt/datatransfer/Clipboard.java,
+               java/awt/datatransfer/Transferable.java
+
+Strategy Pattern.
+DragSource is the Context class.
+FlavorMap is the Strategy interface.
+Concrete Strategy classes:  SystemFlavorMap FlavorTable
+Delegation through flavorMap of type FlavorMap
+File Location: java/awt/dnd/DragSource.java,
+               java/awt/datatransfer/FlavorMap.java
+
+Strategy Pattern.
+DragSource is the Context class.
+DragSourceListener is the Strategy interface.
+Concrete Strategy classes:  DragSourceContext DnDEventMulticaster DragSourceAdapter
+Delegation through listener of type DragSourceListener
+File Location: java/awt/dnd/DragSource.java,
+               java/awt/dnd/DragSourceListener.java
+
+Strategy Pattern.
+DragSource is the Context class.
+DragSourceMotionListener is the Strategy interface.
+Concrete Strategy classes:  DragSourceContext DnDEventMulticaster DragSourceAdapter
+Delegation through motionListener of type DragSourceMotionListener
+File Location: java/awt/dnd/DragSource.java,
+               java/awt/dnd/DragSourceMotionListener.java
+
+Strategy Pattern.
+DropTargetContext is the Context class.
+DropTargetContextPeer is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through dropTargetContextPeer of type DropTargetContextPeer
+File Location: java/awt/dnd/DropTargetContext.java,
+               java/awt/dnd/peer/DropTargetContextPeer.java
+
+Strategy Pattern.
+DropTargetContext is the Context class.
+Transferable is the Strategy interface.
+Concrete Strategy classes:  TransferableProxy DragSourceContext$1 StringSelection
+Delegation through transferable of type Transferable
+File Location: java/awt/dnd/DropTargetContext.java,
+               java/awt/datatransfer/Transferable.java
+
+Strategy Pattern.
+FlipBufferStrategy is the Context class.
+Image is the Strategy interface.
+Concrete Strategy classes:  VolatileImage BufferedImage
+Delegation through drawBuffer of type Image
+File Location: java/awt/Component.java,
+               java/awt/Image.java
+
+Strategy Pattern.
+FlipBufferStrategy is the Context class.
+VolatileImage is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through drawVBuffer of type VolatileImage
+File Location: java/awt/Component.java,
+               java/awt/image/VolatileImage.java
+
+Strategy Pattern.
+TypeAheadMarker is the Context class.
+Component is the Strategy interface.
+Concrete Strategy classes:  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+Delegation through untilFocused of type Component
+File Location: java/awt/DefaultKeyboardFocusManager.java,
+               java/awt/Component.java
+
+Strategy Pattern.
+LightweightFocusRequest is the Context class.
+Component is the Strategy interface.
+Concrete Strategy classes:  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+Delegation through component of type Component
+File Location: java/awt/KeyboardFocusManager.java,
+               java/awt/Component.java
+
+Strategy Pattern.
+HeavyweightFocusRequest is the Context class.
+Component is the Strategy interface.
+Concrete Strategy classes:  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+Delegation through heavyweight of type Component
+File Location: java/awt/KeyboardFocusManager.java,
+               java/awt/Component.java
+
+Strategy Pattern.
+DropTargetAutoScroller is the Context class.
+Component is the Strategy interface.
+Concrete Strategy classes:  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+Delegation through component of type Component
+File Location: java/awt/dnd/DropTarget.java,
+               java/awt/Component.java
+
+Strategy Pattern.
+DropTargetAutoScroller is the Context class.
+Autoscroll is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through autoScroll of type Autoscroll
+File Location: java/awt/dnd/DropTarget.java,
+               java/awt/dnd/Autoscroll.java
+
+Strategy Pattern.
+OptInfo is the Context class.
+LineMetrics is the Strategy interface.
+Concrete Strategy classes:  FontLineMetrics
+Delegation through metrics of type LineMetrics
+File Location: java/awt/font/TextLayout.java,
+               java/awt/font/LineMetrics.java
+
+Strategy Pattern.
+OptInfo is the Context class.
+Rectangle2D is the Strategy interface.
+Concrete Strategy classes:  Float Double Rectangle
+Delegation through vb of type Rectangle2D
+File Location: java/awt/font/TextLayout.java,
+               java/awt/geom/Rectangle2D.java
+
+Strategy Pattern.
+BookPage is the Context class.
+Printable is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through mPainter of type Printable
+File Location: java/awt/print/Book.java,
+               java/awt/print/Printable.java
+
+Flyweight Pattern.
+AWTPermission is immutable.
+File location: java/awt/AWTPermission.java
+
+Flyweight Pattern.
+RenderingHints is a flyweight factory.
+KEY_ANTIALIASING is a flyweight object (declared public-static-final).
+File location: java/awt/RenderingHints.java
+
+Flyweight Pattern.
+DropTargetDropEvent is a flyweight factory.
+zero is a flyweight object.
+getLocation is the getFlyweight method.
+File location: java/awt/dnd/DropTargetDropEvent.java
+
+Flyweight Pattern.
+ImageGraphicAttribute is immutable.
+File location: java/awt/font/ImageGraphicAttribute.java
+
+Flyweight Pattern.
+BandedSampleModel is immutable.
+File location: java/awt/image/BandedSampleModel.java
+
+Flyweight Pattern.
+RenderableImage is a flyweight factory.
+HINTS_OBSERVED is a flyweight object (declared public-static-final).
+File location: java/awt/image/renderable/RenderableImage.java
+
+Flyweight Pattern.
+Component is a flyweight factory.
+LOCK is a flyweight object.
+getTreeLock is the getFlyweight method.
+File location: java/awt/Component.java
+
+Flyweight Pattern.
+BorderLayout is a flyweight factory.
+NORTH is a flyweight object (declared public-static-final).
+File location: java/awt/BorderLayout.java
+
+Flyweight Pattern.
+Color is a flyweight factory.
+white is a flyweight object (declared public-static-final).
+File location: java/awt/Color.java
+
+Flyweight Pattern.
+Image is a flyweight factory.
+UndefinedProperty is a flyweight object (declared public-static-final).
+File location: java/awt/Image.java
+
+Flyweight Pattern.
+DragSource is a flyweight factory.
+DefaultCopyDrop is a flyweight object (declared public-static-final).
+File location: java/awt/dnd/DragSource.java
+
+Flyweight Pattern.
+DataFlavor is a flyweight factory.
+ioInputStreamClass is a flyweight object.
+getDefaultRepresentationClass is the getFlyweight method.
+File location: java/awt/datatransfer/DataFlavor.java
+
+Flyweight Pattern.
+InputMethodHighlight is a flyweight factory.
+UNSELECTED_RAW_TEXT_HIGHLIGHT is a flyweight object (declared public-static-final).
+File location: java/awt/im/InputMethodHighlight.java
+
+Composite pattern.
+Menu is the composite class.
+items is the composite instance.
+MenuItem is the component class.
+File Location: java/awt/Menu.java
+File Location: java/awt/MenuItem.java
+
+Composite pattern.
+MenuBar is the composite class.
+menus is the composite instance.
+MenuComponent is the component class.
+File Location: java/awt/MenuBar.java
+File Location: java/awt/MenuComponent.java
+
+Composite pattern.
+Container is the composite class.
+component is the composite instance.
+Component is the component class.
+File Location: java/awt/Container.java
+File Location: java/awt/Component.java
+
+Template Method Found.
+Toolkit is the template class
+getSystemEventQueue is the template method
+getSystemEventQueueImpl is a primitive method
+File Location: java/awt/Toolkit.java
+
+Template Method Found.
+KeyboardFocusManager is the template class
+focusNextComponent is the template method
+focusNextComponent is a primitive method
+File Location: java/awt/KeyboardFocusManager.java
+
+Template Method Found.
+AWTKeyStroke is the template class
+getCachedStroke is the template method
+allocateNewInstance is a primitive method
+File Location: java/awt/AWTKeyStroke.java
+
+Template Method Found.
+Arc2D is the template class
+contains is the template method
+getAngleExtent is a primitive method
+File Location: java/awt/geom/Arc2D.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+RenderContext is a concrete Factory Method class.
+clone is a factory method returns  RenderContext
+ which extends Object
+File Location: java/awt/image/renderable/RenderContext.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+CharArrayIterator is a concrete Factory Method class.
+clone is a factory method returns  CharArrayIterator
+ which extends Object
+File Location: java/awt/font/CharArrayIterator.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+Area is a concrete Factory Method class.
+clone is a factory method returns  Area
+ which extends Object
+File Location: java/awt/geom/Area.java
+
+Factory Method pattern.
+Image is a Factory Method class.
+BufferedImage is a concrete Factory Method class.
+getSource is a factory method returns  OffScreenImageSource
+ which extends ImageProducer
+File Location: java/awt/image/BufferedImage.java
+
+Factory Method pattern.
+AWTEventMulticaster is a Factory Method class.
+ToolkitEventMulticaster is a concrete Factory Method class.
+remove is a factory method returns  ToolkitEventMulticaster
+ which extends EventListener
+File Location: java/awt/Toolkit.java
+
+Factory Method pattern.
+AWTEventMulticaster is a Factory Method class.
+DnDEventMulticaster is a concrete Factory Method class.
+remove is a factory method returns  DnDEventMulticaster
+ which extends EventListener
+File Location: java/awt/dnd/DnDEventMulticaster.java
+
+Factory Method pattern.
+AWTEventMulticaster is a Factory Method class.
+DnDEventMulticaster is a concrete Factory Method class.
+addInternal is a factory method returns  DnDEventMulticaster
+ which extends EventListener
+File Location: java/awt/dnd/DnDEventMulticaster.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Window is a concrete Factory Method class.
+getInputContext is a factory method returns  InputMethodContext
+ which extends InputContext
+File Location: java/awt/Window.java
+
+Factory Method pattern.
+Paint is a Factory Method class.
+Color is a concrete Factory Method class.
+createContext is a factory method returns  ColorPaintContext
+ which extends PaintContext
+File Location: java/awt/Color.java
+
+Factory Method pattern.
+Color is a Factory Method class.
+SystemColor is a concrete Factory Method class.
+createContext is a factory method returns  ColorPaintContext
+ which extends PaintContext
+File Location: java/awt/SystemColor.java
+
+Factory Method pattern.
+Composite is a Factory Method class.
+AlphaComposite is a concrete Factory Method class.
+createContext is a factory method returns  SunCompositeContext
+ which extends CompositeContext
+File Location: java/awt/AlphaComposite.java
+
+Factory Method pattern.
+Paint is a Factory Method class.
+GradientPaint is a concrete Factory Method class.
+createContext is a factory method returns  GradientPaintContext
+ which extends PaintContext
+File Location: java/awt/GradientPaint.java
+
+Factory Method pattern.
+Paint is a Factory Method class.
+TexturePaint is a concrete Factory Method class.
+createContext is a factory method returns  Int ByteFilter Byte Any
+ which extends PaintContext
+File Location: java/awt/TexturePaint.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Polygon is a concrete Factory Method class.
+getPathIterator is a factory method returns  PolygonPathIterator
+ which extends PathIterator
+File Location: java/awt/Polygon.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Polygon is a concrete Factory Method class.
+getPathIterator is a factory method returns  PolygonPathIterator
+ which extends PathIterator
+File Location: java/awt/Polygon.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+GeneralPath is a concrete Factory Method class.
+getPathIterator is a factory method returns  GeneralPathIterator
+ which extends PathIterator
+File Location: java/awt/geom/GeneralPath.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+GeneralPath is a concrete Factory Method class.
+getPathIterator is a factory method returns  FlatteningPathIterator
+ which extends PathIterator
+File Location: java/awt/geom/GeneralPath.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Area is a concrete Factory Method class.
+getPathIterator is a factory method returns  AreaIterator
+ which extends PathIterator
+File Location: java/awt/geom/Area.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Area is a concrete Factory Method class.
+getPathIterator is a factory method returns  FlatteningPathIterator
+ which extends PathIterator
+File Location: java/awt/geom/Area.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Window is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTWindow
+ which extends AccessibleContext
+File Location: java/awt/Window.java
+
+Factory Method pattern.
+Window is a Factory Method class.
+Frame is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTFrame
+ which extends AccessibleContext
+File Location: java/awt/Frame.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Panel is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTPanel
+ which extends AccessibleContext
+File Location: java/awt/Panel.java
+
+Factory Method pattern.
+MenuComponent is a Factory Method class.
+MenuItem is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTMenuItem
+ which extends AccessibleContext
+File Location: java/awt/MenuItem.java
+
+Factory Method pattern.
+MenuItem is a Factory Method class.
+CheckboxMenuItem is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTCheckboxMenuItem
+ which extends AccessibleContext
+File Location: java/awt/CheckboxMenuItem.java
+
+Factory Method pattern.
+Window is a Factory Method class.
+Dialog is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTDialog
+ which extends AccessibleContext
+File Location: java/awt/Dialog.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Canvas is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTCanvas
+ which extends AccessibleContext
+File Location: java/awt/Canvas.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Choice is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTChoice
+ which extends AccessibleContext
+File Location: java/awt/Choice.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+TextComponent is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTTextComponent
+ which extends AccessibleContext
+File Location: java/awt/TextComponent.java
+
+Factory Method pattern.
+TextComponent is a Factory Method class.
+TextArea is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTTextArea
+ which extends AccessibleContext
+File Location: java/awt/TextArea.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+ScrollPane is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTScrollPane
+ which extends AccessibleContext
+File Location: java/awt/ScrollPane.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Scrollbar is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTScrollBar
+ which extends AccessibleContext
+File Location: java/awt/Scrollbar.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Checkbox is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTCheckbox
+ which extends AccessibleContext
+File Location: java/awt/Checkbox.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+List is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTList
+ which extends AccessibleContext
+File Location: java/awt/List.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Label is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTLabel
+ which extends AccessibleContext
+File Location: java/awt/Label.java
+
+Factory Method pattern.
+TextComponent is a Factory Method class.
+TextField is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTTextField
+ which extends AccessibleContext
+File Location: java/awt/TextField.java
+
+Factory Method pattern.
+Component is a Factory Method class.
+Button is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTButton
+ which extends AccessibleContext
+File Location: java/awt/Button.java
+
+Factory Method pattern.
+MenuItem is a Factory Method class.
+Menu is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTMenu
+ which extends AccessibleContext
+File Location: java/awt/Menu.java
+
+Factory Method pattern.
+MenuComponent is a Factory Method class.
+MenuBar is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTMenuBar
+ which extends AccessibleContext
+File Location: java/awt/MenuBar.java
+
+Factory Method pattern.
+Menu is a Factory Method class.
+PopupMenu is a concrete Factory Method class.
+getAccessibleContext is a factory method returns  AccessibleAWTPopupMenu
+ which extends AccessibleContext
+File Location: java/awt/PopupMenu.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTMenuItem is a concrete Factory Method class.
+getCurrentAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/MenuItem.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTScrollBar is a concrete Factory Method class.
+getCurrentAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/Scrollbar.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTButton is a concrete Factory Method class.
+getCurrentAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/Button.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTMenuItem is a concrete Factory Method class.
+getMinimumAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/MenuItem.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTScrollBar is a concrete Factory Method class.
+getMinimumAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/Scrollbar.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTButton is a concrete Factory Method class.
+getMinimumAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/Button.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTMenuItem is a concrete Factory Method class.
+getMaximumAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/MenuItem.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTScrollBar is a concrete Factory Method class.
+getMaximumAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/Scrollbar.java
+
+Factory Method pattern.
+AccessibleValue is a Factory Method class.
+AccessibleAWTButton is a concrete Factory Method class.
+getMaximumAccessibleValue is a factory method returns  Integer
+ which extends Number
+File Location: java/awt/Button.java
+
+Factory Method pattern.
+PaintContext is a Factory Method class.
+ColorPaintContext is a concrete Factory Method class.
+getColorModel is a factory method returns  DirectColorModel
+ which extends ColorModel
+File Location: java/awt/ColorPaintContext.java
+
+Factory Method pattern.
+GraphicAttribute is a Factory Method class.
+ImageGraphicAttribute is a concrete Factory Method class.
+getBounds is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/font/ImageGraphicAttribute.java
+
+Factory Method pattern.
+GraphicAttribute is a Factory Method class.
+ShapeGraphicAttribute is a concrete Factory Method class.
+getBounds is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/font/ShapeGraphicAttribute.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+BandCombineOp is a concrete Factory Method class.
+filter is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/BandCombineOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+ConvolveOp is a concrete Factory Method class.
+filter is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/ConvolveOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+LookupOp is a concrete Factory Method class.
+filter is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/LookupOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+RescaleOp is a concrete Factory Method class.
+filter is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/RescaleOp.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+Window$1 is a concrete Factory Method class.
+run is a factory method returns  Boolean
+ which extends Object
+File Location: java/awt/Window.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+EventQueue$1 is a concrete Factory Method class.
+run is a factory method returns  EventDispatchThread
+ which extends Object
+File Location: java/awt/EventQueue.java
+
+Factory Method pattern.
+PrivilegedExceptionAction is a Factory Method class.
+Cursor$1 is a concrete Factory Method class.
+run is a factory method returns  Cursor
+ which extends Object
+File Location: java/awt/Cursor.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+Font$2 is a concrete Factory Method class.
+run is a factory method returns  FileOutputStream
+ which extends Object
+File Location: java/awt/Font.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+ICC_Profile$2 is a concrete Factory Method class.
+run is a factory method returns  FileInputStream
+ which extends Object
+File Location: java/awt/color/ICC_Profile.java
+
+Factory Method pattern.
+Label is a Factory Method class.
+OptInfo is a concrete Factory Method class.
+getLogicalBounds is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/font/TextLayout.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Double is a concrete Factory Method class.
+createIntersection is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/Rectangle2D.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Rectangle is a concrete Factory Method class.
+createIntersection is a factory method returns  Rectangle Double
+ which extends Rectangle2D
+File Location: java/awt/Rectangle.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Double is a concrete Factory Method class.
+createUnion is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/Rectangle2D.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Rectangle is a concrete Factory Method class.
+createUnion is a factory method returns  Rectangle Double
+ which extends Rectangle2D
+File Location: java/awt/Rectangle.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Polygon is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/Polygon.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+GeneralPath is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/GeneralPath.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/Rectangle2D.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getBounds2D is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/Rectangle2D.java
+
+Factory Method pattern.
+Rectangle2D is a Factory Method class.
+Rectangle is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/Rectangle.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Float is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/Line2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Double is a concrete Factory Method class.
+getBounds2D is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/Line2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Float is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Double is a concrete Factory Method class.
+getBounds2D is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Float is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Double is a concrete Factory Method class.
+getBounds2D is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+AffineTransformOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/image/AffineTransformOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+AffineTransformOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/image/AffineTransformOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+ColorConvertOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/ColorConvertOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+ColorConvertOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/ColorConvertOp.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Float is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/Ellipse2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Double is a concrete Factory Method class.
+getBounds2D is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/Ellipse2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Float is a concrete Factory Method class.
+getBounds2D is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/RoundRectangle2D.java
+
+Factory Method pattern.
+Shape is a Factory Method class.
+Double is a concrete Factory Method class.
+getBounds2D is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/RoundRectangle2D.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+BandCombineOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/BandCombineOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+ConvolveOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/ConvolveOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+ConvolveOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/ConvolveOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+LookupOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/LookupOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+LookupOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/LookupOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+RescaleOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/RescaleOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+RescaleOp is a concrete Factory Method class.
+getBounds2D is a factory method returns  Rectangle
+ which extends Rectangle2D
+File Location: java/awt/image/RescaleOp.java
+
+Factory Method pattern.
+TexturePaintContext is a Factory Method class.
+Int is a concrete Factory Method class.
+makeRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/TexturePaintContext.java
+
+Factory Method pattern.
+TexturePaintContext is a Factory Method class.
+Byte is a concrete Factory Method class.
+makeRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/TexturePaintContext.java
+
+Factory Method pattern.
+TexturePaintContext is a Factory Method class.
+ByteFilter is a concrete Factory Method class.
+makeRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/TexturePaintContext.java
+
+Factory Method pattern.
+TexturePaintContext is a Factory Method class.
+Any is a concrete Factory Method class.
+makeRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/TexturePaintContext.java
+
+Factory Method pattern.
+RenderedImage is a Factory Method class.
+BufferedImage is a concrete Factory Method class.
+getData is a factory method returns  BytePackedRaster SunWritableRaster
+ which extends Raster
+File Location: java/awt/image/BufferedImage.java
+
+Factory Method pattern.
+RenderedImage is a Factory Method class.
+BufferedImage is a concrete Factory Method class.
+getData is a factory method returns  BytePackedRaster SunWritableRaster
+ which extends Raster
+File Location: java/awt/image/BufferedImage.java
+
+Factory Method pattern.
+FlavorMap is a Factory Method class.
+SystemFlavorMap is a concrete Factory Method class.
+getNativesForFlavors is a factory method returns  HashMap
+ which extends Map
+File Location: java/awt/datatransfer/SystemFlavorMap.java
+
+Factory Method pattern.
+FlavorMap is a Factory Method class.
+SystemFlavorMap is a concrete Factory Method class.
+getFlavorsForNatives is a factory method returns  HashMap
+ which extends Map
+File Location: java/awt/datatransfer/SystemFlavorMap.java
+
+Factory Method pattern.
+FlavorTable is a Factory Method class.
+SystemFlavorMap is a concrete Factory Method class.
+getNativesForFlavor is a factory method returns  ArrayList
+ which extends List
+File Location: java/awt/datatransfer/SystemFlavorMap.java
+
+Factory Method pattern.
+Transferable is a Factory Method class.
+StringSelection is a concrete Factory Method class.
+getTransferData is a factory method returns  StringReader
+ which extends Object
+File Location: java/awt/datatransfer/StringSelection.java
+
+Factory Method pattern.
+Line2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getP1 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/Line2D.java
+
+Factory Method pattern.
+Line2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getP1 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/Line2D.java
+
+Factory Method pattern.
+QuadCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getP1 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+QuadCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getP1 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getP1 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getP1 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getCtrlP1 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getCtrlP1 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getCtrlP2 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getCtrlP2 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+Line2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getP2 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/Line2D.java
+
+Factory Method pattern.
+Line2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getP2 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/Line2D.java
+
+Factory Method pattern.
+QuadCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getP2 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+QuadCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getP2 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getP2 is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+CubicCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getP2 is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/CubicCurve2D.java
+
+Factory Method pattern.
+Arc2D is a Factory Method class.
+Float is a concrete Factory Method class.
+makeBounds is a factory method returns  Float
+ which extends Rectangle2D
+File Location: java/awt/geom/Arc2D.java
+
+Factory Method pattern.
+Arc2D is a Factory Method class.
+Double is a concrete Factory Method class.
+makeBounds is a factory method returns  Double
+ which extends Rectangle2D
+File Location: java/awt/geom/Arc2D.java
+
+Factory Method pattern.
+QuadCurve2D is a Factory Method class.
+Float is a concrete Factory Method class.
+getCtrlPt is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+QuadCurve2D is a Factory Method class.
+Double is a concrete Factory Method class.
+getCtrlPt is a factory method returns  Double
+ which extends Point2D
+File Location: java/awt/geom/QuadCurve2D.java
+
+Factory Method pattern.
+RenderedImage is a Factory Method class.
+BufferedImage is a concrete Factory Method class.
+copyData is a factory method returns  BytePackedRaster SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/BufferedImage.java
+
+Factory Method pattern.
+ColorModel is a Factory Method class.
+IndexColorModel is a concrete Factory Method class.
+createCompatibleSampleModel is a factory method returns  MultiPixelPackedSampleModel ComponentSampleModel
+ which extends SampleModel
+File Location: java/awt/image/IndexColorModel.java
+
+Factory Method pattern.
+SampleModel is a Factory Method class.
+ComponentSampleModel is a concrete Factory Method class.
+createCompatibleSampleModel is a factory method returns  ComponentSampleModel
+ which extends SampleModel
+File Location: java/awt/image/ComponentSampleModel.java
+
+Factory Method pattern.
+ComponentSampleModel is a Factory Method class.
+PixelInterleavedSampleModel is a concrete Factory Method class.
+createCompatibleSampleModel is a factory method returns  PixelInterleavedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/PixelInterleavedSampleModel.java
+
+Factory Method pattern.
+ComponentSampleModel is a Factory Method class.
+BandedSampleModel is a concrete Factory Method class.
+createCompatibleSampleModel is a factory method returns  BandedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/BandedSampleModel.java
+
+Factory Method pattern.
+SampleModel is a Factory Method class.
+SinglePixelPackedSampleModel is a concrete Factory Method class.
+createCompatibleSampleModel is a factory method returns  SinglePixelPackedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/SinglePixelPackedSampleModel.java
+
+Factory Method pattern.
+SampleModel is a Factory Method class.
+MultiPixelPackedSampleModel is a concrete Factory Method class.
+createCompatibleSampleModel is a factory method returns  MultiPixelPackedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/MultiPixelPackedSampleModel.java
+
+Factory Method pattern.
+SampleModel is a Factory Method class.
+ComponentSampleModel is a concrete Factory Method class.
+createSubsetSampleModel is a factory method returns  ComponentSampleModel
+ which extends SampleModel
+File Location: java/awt/image/ComponentSampleModel.java
+
+Factory Method pattern.
+ComponentSampleModel is a Factory Method class.
+PixelInterleavedSampleModel is a concrete Factory Method class.
+createSubsetSampleModel is a factory method returns  PixelInterleavedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/PixelInterleavedSampleModel.java
+
+Factory Method pattern.
+ComponentSampleModel is a Factory Method class.
+BandedSampleModel is a concrete Factory Method class.
+createSubsetSampleModel is a factory method returns  BandedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/BandedSampleModel.java
+
+Factory Method pattern.
+SampleModel is a Factory Method class.
+SinglePixelPackedSampleModel is a concrete Factory Method class.
+createSubsetSampleModel is a factory method returns  SinglePixelPackedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/SinglePixelPackedSampleModel.java
+
+Factory Method pattern.
+SampleModel is a Factory Method class.
+MultiPixelPackedSampleModel is a concrete Factory Method class.
+createSubsetSampleModel is a factory method returns  MultiPixelPackedSampleModel
+ which extends SampleModel
+File Location: java/awt/image/MultiPixelPackedSampleModel.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+BandCombineOp is a concrete Factory Method class.
+createCompatibleDestRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/BandCombineOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+ConvolveOp is a concrete Factory Method class.
+createCompatibleDestRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/ConvolveOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+LookupOp is a concrete Factory Method class.
+createCompatibleDestRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/LookupOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+RescaleOp is a concrete Factory Method class.
+createCompatibleDestRaster is a factory method returns  SunWritableRaster
+ which extends WritableRaster
+File Location: java/awt/image/RescaleOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+ColorConvertOp is a concrete Factory Method class.
+getPoint2D is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/image/ColorConvertOp.java
+
+Factory Method pattern.
+RasterOp is a Factory Method class.
+BandCombineOp is a concrete Factory Method class.
+getPoint2D is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/image/BandCombineOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+ConvolveOp is a concrete Factory Method class.
+getPoint2D is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/image/ConvolveOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+LookupOp is a concrete Factory Method class.
+getPoint2D is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/image/LookupOp.java
+
+Factory Method pattern.
+BufferedImageOp is a Factory Method class.
+RescaleOp is a concrete Factory Method class.
+getPoint2D is a factory method returns  Float
+ which extends Point2D
+File Location: java/awt/image/RescaleOp.java
+
+Factory Method pattern.
+ColorModel is a Factory Method class.
+DirectColorModel is a concrete Factory Method class.
+coerceData is a factory method returns  DirectColorModel
+ which extends ColorModel
+File Location: java/awt/image/DirectColorModel.java
+
+Factory Method pattern.
+ColorModel is a Factory Method class.
+ComponentColorModel is a concrete Factory Method class.
+coerceData is a factory method returns  ComponentColorModel
+ which extends ColorModel
+File Location: java/awt/image/ComponentColorModel.java
+
+Visitor pattern found.
+Graphics is an abstract Visitor class.
+Canvas is a Vistee class.
+Component is an abstract Visitee class.
+ Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+paint is the accept method.
+clearRect is the visit method.
+width is exposed to visitor Graphics
+File Location: java/awt/Canvas.java
+
+Mediator Pattern.
+DropTarget is the mediator class.
+component controls a list of colleagues of type Component.
+removeNotify invokes the mediator. 
+Subtype(s) of colleague(s):  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+File Location: java/awt/dnd/DropTarget.java
+
+Mediator Pattern.
+MediaTracker is the mediator class.
+head controls a list of colleagues of type MediaEntry.
+setDone invokes the mediator. 
+Subtype(s) of colleague(s):  ImageMediaEntry
+File Location: java/awt/MediaTracker.java
+
+Observer Pattern.
+MediaTracker is an observer iterator.
+MediaEntry is the generic type for the listeners.
+removeImage is the notify method.
+cancel is the update method.
+Subject class(es):
+File Location: java/awt/MediaTracker.java
+
+Observer Pattern.
+MediaTracker is an observer iterator.
+MediaEntry is the generic type for the listeners.
+removeImage is the notify method.
+cancel is the update method.
+Subject class(es):
+File Location: java/awt/MediaTracker.java
+
+Observer Pattern.
+MediaTracker is an observer iterator.
+MediaEntry is the generic type for the listeners.
+removeImage is the notify method.
+cancel is the update method.
+Subject class(es):
+File Location: java/awt/MediaTracker.java
+
+Mediator Pattern.
+GraphicsDevice is the mediator class.
+fullScreenWindow controls a list of colleagues of type Window.
+getDefaultConfiguration invokes the mediator. 
+Subtype(s) of colleague(s):  Frame Dialog FileDialog
+File Location: java/awt/GraphicsDevice.java
+
+Mediator Pattern.
+Component is the mediator class.
+parent controls a list of colleagues of type Container.
+getGraphicsConfiguration invokes the mediator. 
+Subtype(s) of colleague(s):  Window Panel ScrollPane Dialog FileDialog Frame
+File Location: java/awt/Component.java
+
+Observer Pattern.
+Component is an observer iterator.
+PopupMenu is the generic type for the listeners.
+addNotify is the notify method.
+addNotify is the update method.
+Subject class(es): Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button
+File Location: java/awt/Component.java
+
+Mediator Pattern.
+Container is the mediator class.
+component controls a list of colleagues of type Component.
+invalidate invokes the mediator. 
+Subtype(s) of colleague(s):  Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button ScrollPane Panel Dialog FileDialog TextArea TextField Window Frame
+File Location: java/awt/Container.java
+
+Observer Pattern.
+Container is an observer iterator.
+Component is the generic type for the listeners.
+addNotify is the notify method.
+addNotify is the update method.
+Subject class(es): Window Panel Dialog FileDialog ScrollPane Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button
+File Location: java/awt/Container.java
+
+Observer Pattern.
+Container is an observer iterator.
+Component is the generic type for the listeners.
+removeNotify is the notify method.
+removeNotify is the update method.
+Subject class(es): DisposeAction Frame Container TextComponent Scrollbar List
+File Location: java/awt/Container.java
+
+Observer Pattern.
+Container is an observer iterator.
+Component is the generic type for the listeners.
+applyComponentOrientation is the notify method.
+applyComponentOrientation is the update method.
+Subject class(es): Window Container
+File Location: java/awt/Container.java
+
+Mediator Pattern.
+LightweightDispatcher is the mediator class.
+nativeContainer controls a list of colleagues of type Container.
+dispatchEvent invokes the mediator. 
+Subtype(s) of colleague(s):  Window Panel ScrollPane Dialog FileDialog Frame
+File Location: java/awt/Container.java
+
+Mediator Pattern.
+EventDispatchThread is the mediator class.
+theQueue controls a list of colleagues of type EventQueue.
+stopDispatching invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: java/awt/EventDispatchThread.java
+
+Mediator Pattern.
+KeyboardFocusManager is the mediator class.
+currentSequencedEvent controls a list of colleagues of type SequencedEvent.
+setCurrentSequencedEvent invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: java/awt/KeyboardFocusManager.java
+
+Mediator Pattern.
+DropTargetContext is the mediator class.
+dropTarget controls a list of colleagues of type DropTarget.
+setTargetActions invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: java/awt/dnd/DropTargetContext.java
+
+Observer Pattern.
+NativeInLightFixer is an observer iterator.
+Container is the generic type for the listeners.
+removeReferences is the notify method.
+removeContainerListener is the update method.
+Subject class(es): NativeInLightFixer
+File Location: java/awt/Component.java
+
+Observer Pattern.
+SelectiveAWTEventListener is an observer iterator.
+AWTEventListener is the generic type for the listeners.
+eventDispatched is the notify method.
+eventDispatched is the update method.
+Subject class(es): Toolkit ToolkitEventMulticaster SelectiveAWTEventListener AWTEventListenerProxy
+File Location: java/awt/Toolkit.java
+
+Mediator Pattern.
+Mediator: AWTEvent
+Colleagues:  Component MenuItem ActionEvent ItemEvent AdjustmentEvent MenuComponent KeyEvent MouseEvent Button
+FileLocation: java/awt/AWTEvent.java
+
+Mediator Pattern.
+Mediator: AWTEventMulticaster
+Colleagues:  MenuItem DropTargetAutoScroller AccessibleAWTList List TextField Button CheckboxMenuItem AccessibleAWTCheckbox Choice Checkbox Component DnDEventMulticaster Container Window Scrollbar ScrollPaneAdjustable TextComponent ToolkitEventMulticaster
+FileLocation: java/awt/AWTEventMulticaster.java
+
+Mediator Pattern.
+Mediator: AWTKeyStroke
+Colleagues:  DefaultKeyboardFocusManager KeyEvent KeyboardFocusManager RenderingHints ImageFilter
+FileLocation: java/awt/AWTKeyStroke.java
+
+Mediator Pattern.
+Mediator: BorderLayout
+Colleagues:  Container ComponentOrientation TextArea List TextField
+FileLocation: java/awt/BorderLayout.java
+
+Mediator Pattern.
+Mediator: BufferCapabilities
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/BufferCapabilities.java
+
+Mediator Pattern.
+Mediator: Button
+Colleagues:  Container Canvas Choice TextComponent TextArea Scrollbar Checkbox List Label TextField Window Frame Dialog FileDialog ScrollPane
+FileLocation: java/awt/Button.java
+
+Mediator Pattern.
+Mediator: Canvas
+Colleagues:  Container Choice TextComponent TextArea Scrollbar Checkbox List Label TextField Button Window Frame Dialog FileDialog ScrollPane PaintCallback Graphics
+FileLocation: java/awt/Canvas.java
+
+Mediator Pattern.
+Mediator: CardLayout
+Colleagues:  Container TextArea List TextField
+FileLocation: java/awt/CardLayout.java
+
+Mediator Pattern.
+Mediator: Checkbox
+Colleagues:  CheckboxGroup CheckboxPeer Container Canvas Choice TextComponent TextArea Scrollbar List Label TextField Button Window Frame Dialog FileDialog ScrollPane AccessibleAWTCheckbox AWTEventMulticaster
+FileLocation: java/awt/Checkbox.java
+
+Mediator Pattern.
+Mediator: Choice
+Colleagues:  Container Canvas TextComponent TextArea Scrollbar Checkbox List Label TextField Button Window Frame Dialog FileDialog ScrollPane
+FileLocation: java/awt/Choice.java
+
+Mediator Pattern.
+Mediator: Dialog
+Colleagues:  FileDialog Frame ScrollPane Window Canvas Container Choice TextComponent Scrollbar Checkbox List Label Button SequencedEvent RenderableImageProducer Component
+FileLocation: java/awt/Dialog.java
+
+Mediator Pattern.
+Mediator: Container
+Colleagues:  ScrollPane Window GraphicsDevice GraphicsConfiguration Frame Dialog FileDialog Canvas Choice TextComponent TextArea Scrollbar Checkbox List Label TextField Button LayoutManager2 LayoutManager BorderLayout FlowLayout CardLayout GridBagLayout Component ContainerPeer PeerPaintCallback PeerPrintCallback PaintCallback PrintCallback PaintHeavyweightComponentsCallback PrintHeavyweightComponentsCallback NativeInLightFixer AWTEventMulticaster AWTEvent InputMethodEvent LightweightDispatcher ComponentPeer DisposeAction KeyboardFocusManager DefaultKeyboardFocusManager ContainerOrderFocusTraversalPolicy
+FileLocation: java/awt/Container.java
+
+Mediator Pattern.
+Mediator: LightweightDispatcher
+Colleagues:  Toolkit ComponentEvent AWTEvent ToolkitEventMulticaster Component MouseEvent Container SelectiveAWTEventListener
+FileLocation: java/awt/Container.java
+
+Mediator Pattern.
+Mediator: DefaultKeyboardFocusManager
+Colleagues:  Component WindowEvent FocusEvent
+FileLocation: java/awt/DefaultKeyboardFocusManager.java
+
+Mediator Pattern.
+Mediator: DefaultFocusTraversalPolicy
+Colleagues:  ContainerOrderFocusTraversalPolicy ComponentPeer
+FileLocation: java/awt/DefaultFocusTraversalPolicy.java
+
+Mediator Pattern.
+Mediator: Component
+Colleagues:  AWTEvent Frame Dialog FileDialog Canvas Choice TextArea ScrollPane Scrollbar Checkbox List Label TextField ContainerEvent Window Button LightweightDispatcher DropTarget Insets Dimension TextHitInfo DataFlavor Point2D Point NumericShaper Color TextLayout FontRenderContext Font Rectangle2D Rectangle AffineTransform RenderingHints Key ColorModel PageAttributes JobAttributes MimeType MimeTypeParameterList MenuShortcut PackedColorModel AWTKeyStroke ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel ComponentColorModel AlphaComposite ImageGraphicAttribute ShapeGraphicAttribute FlipBufferStrategy BltBufferStrategy ComponentPeer NativeInLightFixer AccessibleAWTComponent TextComponent InputContext Container AccessibleAWTMenuComponent EventQueue BorderLayout FlowLayout CardLayout GridBagLayout Graphics Toolkit Cursor PaintAllCallback PeerPaintCallback PaintHeavyweightComponentsCallback PrintCallback PeerPrintCallback PrintAllCallback PrintHeavyweightComponentsCallback ImageMediaEntry BufferCapabilities InputEvent InputMethodEvent KeyEvent MenuComponent Event AWTEventMulticaster PaintEvent MouseWheelListener PopupMenu Menu KeyboardFocusManager DefaultKeyboardFocusManager ContainerOrderFocusTraversalPolicy ImageFilter
+FileLocation: java/awt/Component.java
+
+Mediator Pattern.
+Mediator: FileDialog
+Colleagues:  Dialog Frame ScrollPane Window Canvas Container Choice TextComponent Scrollbar Checkbox List Label Button
+FileLocation: java/awt/FileDialog.java
+
+Mediator Pattern.
+Mediator: FlowLayout
+Colleagues:  Container TextArea List TextField ComponentOrientation
+FileLocation: java/awt/FlowLayout.java
+
+Mediator Pattern.
+Mediator: EventQueue
+Colleagues:  EventDispatchThread ActiveEvent InvocationEvent SentEvent MenuComponent SequencedEvent Component InputMethodEvent Toolkit DefaultKeyboardFocusManager Window Robot
+FileLocation: java/awt/EventQueue.java
+
+Mediator Pattern.
+Mediator: GridBagConstraints
+Colleagues:  GridBagLayout Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper
+FileLocation: java/awt/GridBagConstraints.java
+
+Mediator Pattern.
+Mediator: FocusTraversalPolicy
+Colleagues:  Window ContainerOrderFocusTraversalPolicy DefaultKeyboardFocusManager
+FileLocation: java/awt/FocusTraversalPolicy.java
+
+Mediator Pattern.
+Mediator: Font
+Colleagues:  TextLayout RenderingHints TextLine StyledParagraph FontMetrics GlyphVector CharArrayIterator FontRenderContext Window Graphics ColorModel ICC_Profile PrintJob IndexColorModel
+FileLocation: java/awt/Font.java
+
+Mediator Pattern.
+Mediator: Frame
+Colleagues:  Font Window MenuBar FramePeer Dialog FileDialog ScrollPane Container Canvas Choice TextComponent Scrollbar Checkbox List Label Button Component Menu DisposeAction InputEvent DefaultKeyboardFocusManager
+FileLocation: java/awt/Frame.java
+
+Mediator Pattern.
+Mediator: Menu
+Colleagues:  MenuBar MenuItem CheckboxMenuItem PopupMenu Component MenuComponent
+FileLocation: java/awt/Menu.java
+
+Mediator Pattern.
+Mediator: ImageCapabilities
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/ImageCapabilities.java
+
+Mediator Pattern.
+Mediator: Insets
+Colleagues:  Container Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D GridBagConstraints CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper
+FileLocation: java/awt/Insets.java
+
+Mediator Pattern.
+Mediator: GridLayout
+Colleagues:  Container TextArea List TextField ComponentOrientation
+FileLocation: java/awt/GridLayout.java
+
+Mediator Pattern.
+Mediator: JobAttributes
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints AttributeValue TextLine ImageGraphicAttribute ShapeGraphicAttribute
+FileLocation: java/awt/JobAttributes.java
+
+Mediator Pattern.
+Mediator: KeyboardFocusManager
+Colleagues:  DefaultKeyboardFocusManager Toolkit Container RenderingHints Window Component FocusEvent
+FileLocation: java/awt/KeyboardFocusManager.java
+
+Mediator Pattern.
+Mediator: ImageMediaEntry
+Colleagues:  MediaTracker Component MediaEntry
+FileLocation: java/awt/MediaTracker.java
+
+Mediator Pattern.
+Mediator: Label
+Colleagues:  Container Canvas Choice TextComponent TextArea Scrollbar Checkbox List TextField Button Window Frame Dialog FileDialog ScrollPane
+FileLocation: java/awt/Label.java
+
+Mediator Pattern.
+Mediator: List
+Colleagues:  Container Canvas Choice TextComponent TextArea Scrollbar Checkbox Label TextField Button Window Frame Dialog FileDialog ScrollPane ListPeer AccessibleAWTList AWTEventMulticaster
+FileLocation: java/awt/List.java
+
+Mediator Pattern.
+Mediator: MenuBar
+Colleagues:  Frame Menu PopupMenu AWTEvent
+FileLocation: java/awt/MenuBar.java
+
+Mediator Pattern.
+Mediator: Rectangle
+Colleagues:  Component Rectangle2D DropTarget DataFlavor DragSourceContext Font EventDispatchThread AWTKeyStroke
+FileLocation: java/awt/Rectangle.java
+
+Mediator Pattern.
+Mediator: PopupMenu
+Colleagues:  Component MenuItem CheckboxMenuItem MenuBar Menu
+FileLocation: java/awt/PopupMenu.java
+
+Mediator Pattern.
+Mediator: MenuComponent
+Colleagues:  AWTEvent CheckboxMenuItem Menu PopupMenu AccessibleAWTMenuComponent MenuContainer Frame EventQueue MenuComponentPeer MenuBar ImageFilter MenuItem
+FileLocation: java/awt/MenuComponent.java
+
+Mediator Pattern.
+Mediator: MenuItem
+Colleagues:  Menu MenuShortcut MenuItemPeer AWTEvent CheckboxMenuItem InputEvent MenuComponent
+FileLocation: java/awt/MenuItem.java
+
+Mediator Pattern.
+Mediator: MenuShortcut
+Colleagues:  ImageFilter Toolkit KeyEvent
+FileLocation: java/awt/MenuShortcut.java
+
+Mediator Pattern.
+Mediator: PageAttributes
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints AttributeValue TextLine ImageGraphicAttribute ShapeGraphicAttribute
+FileLocation: java/awt/PageAttributes.java
+
+Mediator Pattern.
+Mediator: Point
+Colleagues:  Component Point2D DropTarget DataFlavor DragSourceContext TextLayout Font EventDispatchThread AWTKeyStroke
+FileLocation: java/awt/Point.java
+
+Mediator Pattern.
+Mediator: Panel
+Colleagues:  Window ScrollPane Dialog Frame FileDialog Canvas Container Choice TextComponent Scrollbar Checkbox List Label Button
+FileLocation: java/awt/Panel.java
+
+Mediator Pattern.
+Mediator: TextArea
+Colleagues:  TextField Window Container TextComponent Canvas Choice Scrollbar Checkbox List Label Button
+FileLocation: java/awt/TextArea.java
+
+Mediator Pattern.
+Mediator: TextComponent
+Colleagues:  TextArea Container Window Frame Dialog FileDialog Canvas Choice ScrollPane Scrollbar Checkbox List Label TextField Button TextComponentPeer AccessibleAWTTextComponent AWTEventMulticaster
+FileLocation: java/awt/TextComponent.java
+
+Mediator Pattern.
+Mediator: SentEvent
+Colleagues:  DefaultKeyboardFocusManager Toolkit
+FileLocation: java/awt/SentEvent.java
+
+Mediator Pattern.
+Mediator: RenderingHints
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/RenderingHints.java
+
+Mediator Pattern.
+Mediator: ScrollPane
+Colleagues:  Container ScrollPanePeer ScrollPaneAdjustable Component Window Dialog Frame FileDialog Canvas Choice TextComponent Scrollbar Checkbox List Label Button
+FileLocation: java/awt/ScrollPane.java
+
+Mediator Pattern.
+Mediator: PeerFixer
+Colleagues:  AWTEventMulticaster AdjustmentEvent ScrollPanePeer Adjustable Scrollbar Container ScrollPaneAdjustable Component
+FileLocation: java/awt/ScrollPane.java
+
+Mediator Pattern.
+Mediator: ScrollPaneAdjustable
+Colleagues:  ScrollPane AdjustmentListener AWTEventMulticaster
+FileLocation: java/awt/ScrollPaneAdjustable.java
+
+Mediator Pattern.
+Mediator: Scrollbar
+Colleagues:  Container Canvas Choice TextComponent TextArea Checkbox List Label TextField Button Window Frame Dialog FileDialog ScrollPane
+FileLocation: java/awt/Scrollbar.java
+
+Mediator Pattern.
+Mediator: MimeType
+Colleagues:  TextLine MimeTypeParameterList ImageGraphicAttribute ShapeGraphicAttribute Component DropTarget DragSourceContext Point2D TextLayout Font EventDispatchThread AWTKeyStroke SystemFlavorMap ImageFilter DataFlavor Insets Dimension2D GeneralPath RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext QuadCurve2D CubicCurve2D GridBagConstraints CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper
+FileLocation: java/awt/datatransfer/MimeType.java
+
+Mediator Pattern.
+Mediator: TextField
+Colleagues:  TextArea Window Container TextComponent Canvas Choice Scrollbar Checkbox List Label Button
+FileLocation: java/awt/TextField.java
+
+Mediator Pattern.
+Mediator: Toolkit
+Colleagues:  DropTargetAutoScroller RenderingHints DragSource Component AWTEventListener ToolkitEventMulticaster SelectiveAWTEventListener MenuComponent LightweightDispatcher
+FileLocation: java/awt/Toolkit.java
+
+Mediator Pattern.
+Mediator: Window
+Colleagues:  Frame Font Graphics ColorModel ICC_Profile PrintJob IndexColorModel Cursor Dialog FileDialog ScrollPane Canvas Container Choice TextComponent Scrollbar Checkbox List Label Button DisposeAction EventQueue GraphicsDevice WindowPeer AccessibleAWTComponent AWTEvent KeyEvent InputEvent AccessibleAWTWindow KeyboardFocusManager AccessibleAWTFrame AccessibleAWTDialog FocusTraversalPolicy ContainerOrderFocusTraversalPolicy DefaultKeyboardFocusManager MenuComponent Event FlipBufferStrategy GraphicsEnvironment BltBufferStrategy
+FileLocation: java/awt/Window.java
+
+Mediator Pattern.
+Mediator: ColorSpace
+Colleagues:  Color ICC_Profile BufferedImage ColorModel
+FileLocation: java/awt/color/ColorSpace.java
+
+Mediator Pattern.
+Mediator: DataFlavor
+Colleagues:  TextLine Insets Dimension TextHitInfo Point2D NumericShaper Color FontRenderContext AffineTransform RenderingHints Key ColorModel AttributeValue PageAttributes JobAttributes MimeType MimeTypeParameterList DisplayMode MenuShortcut AWTKeyStroke ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel AlphaComposite ImageGraphicAttribute ShapeGraphicAttribute TextLayout Font Rectangle2D Dimension2D ImageFilter GeneralPath RectangularShape BufferCapabilities Line2D RenderContext QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/datatransfer/DataFlavor.java
+
+Mediator Pattern.
+Mediator: MimeTypeParameterList
+Colleagues:  MimeType Insets Dimension2D ImageFilter Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext QuadCurve2D CubicCurve2D GridBagConstraints CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper DataFlavor
+FileLocation: java/awt/datatransfer/MimeTypeParameterList.java
+
+Mediator Pattern.
+Mediator: DragSource
+Colleagues:  DragSourceContext DnDEventMulticaster DragSourceMotionListener
+FileLocation: java/awt/dnd/DragSource.java
+
+Mediator Pattern.
+Mediator: DragSourceContext
+Colleagues:  DragSource DragSourceDragEvent DnDEventMulticaster
+FileLocation: java/awt/dnd/DragSourceContext.java
+
+Mediator Pattern.
+Mediator: DragSourceDragEvent
+Colleagues:  DragSourceContext DragSourceEvent
+FileLocation: java/awt/dnd/DragSourceDragEvent.java
+
+Mediator Pattern.
+Mediator: DropTarget
+Colleagues:  Component Insets TextHitInfo DataFlavor Point2D NumericShaper Color TextLayout FontRenderContext Font Rectangle2D AffineTransform RenderingHints Key PageAttributes JobAttributes MimeType MimeTypeParameterList MenuShortcut PackedColorModel ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel ComponentColorModel AlphaComposite ImageGraphicAttribute ShapeGraphicAttribute DropTargetPeer
+FileLocation: java/awt/dnd/DropTarget.java
+
+Mediator Pattern.
+Mediator: DropTargetContext
+Colleagues:  DropTarget DropTargetContextPeer DropTargetDropEvent DropTargetDragEvent
+FileLocation: java/awt/dnd/DropTargetContext.java
+
+Mediator Pattern.
+Mediator: MouseDragGestureRecognizer
+Colleagues:  DragGestureRecognizer Component
+FileLocation: java/awt/dnd/MouseDragGestureRecognizer.java
+
+Mediator Pattern.
+Mediator: AWTEventListenerProxy
+Colleagues:  Toolkit LightweightDispatcher ToolkitEventMulticaster SelectiveAWTEventListener
+FileLocation: java/awt/event/AWTEventListenerProxy.java
+
+Mediator Pattern.
+Mediator: InputMethodEvent
+Colleagues:  AWTEvent CharArrayIterator TextHitInfo
+FileLocation: java/awt/event/InputMethodEvent.java
+
+Mediator Pattern.
+Mediator: InvocationEvent
+Colleagues:  EventQueue DisposeAction RenderableImageProducer
+FileLocation: java/awt/event/InvocationEvent.java
+
+Mediator Pattern.
+Mediator: KeyEvent
+Colleagues:  AWTKeyStroke Toolkit ActionEvent AWTEvent InputEvent
+FileLocation: java/awt/event/KeyEvent.java
+
+Mediator Pattern.
+Mediator: MouseEvent
+Colleagues:  MouseWheelEvent InputEvent AWTEvent
+FileLocation: java/awt/event/MouseEvent.java
+
+Mediator Pattern.
+Mediator: PaintEvent
+Colleagues:  AWTEvent Rectangle
+FileLocation: java/awt/event/PaintEvent.java
+
+Mediator Pattern.
+Mediator: FontRenderContext
+Colleagues:  OptInfo AffineTransform DataFlavor TextLine ImageGraphicAttribute ShapeGraphicAttribute
+FileLocation: java/awt/font/FontRenderContext.java
+
+Mediator Pattern.
+Mediator: StyledParagraph
+Colleagues:  OptInfo RenderingHints InputMethodHighlight Toolkit TextLine
+FileLocation: java/awt/font/StyledParagraph.java
+
+Mediator Pattern.
+Mediator: ImageGraphicAttribute
+Colleagues:  DataFlavor Insets Dimension TextHitInfo Point2D NumericShaper Color TextLayout FontRenderContext Font Rectangle2D AffineTransform RenderingHints Key ColorModel AttributeValue PageAttributes JobAttributes TextLine DisplayMode MenuShortcut AWTKeyStroke ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel AlphaComposite ShapeGraphicAttribute MimeType MimeTypeParameterList
+FileLocation: java/awt/font/ImageGraphicAttribute.java
+
+Mediator Pattern.
+Mediator: ShapeGraphicAttribute
+Colleagues:  GraphicAttribute RectangularShape DataFlavor Insets Dimension TextHitInfo Point2D NumericShaper Color TextLayout FontRenderContext Font Rectangle2D AffineTransform RenderingHints Key ColorModel AttributeValue PageAttributes JobAttributes TextLine DisplayMode MenuShortcut AWTKeyStroke ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel AlphaComposite ImageGraphicAttribute MimeType MimeTypeParameterList
+FileLocation: java/awt/font/ShapeGraphicAttribute.java
+
+Mediator Pattern.
+Mediator: AffineTransform
+Colleagues:  GradientPaintContext Float Double Point AffineTransformOp Point2D GlyphVector GeneralPath Polygon Rectangle2D Line2D QuadCurve2D CubicCurve2D Arc2D Area Ellipse2D RoundRectangle2D RenderContext Insets Dimension2D ImageFilter DataFlavor TextLayout RectangularShape RenderingHints BufferCapabilities PageAttributes JobAttributes MimeType MimeTypeParameterList GridBagConstraints CharArrayIterator TextMeasurer Kernel ParameterBlock PageFormat Paper
+FileLocation: java/awt/geom/AffineTransform.java
+
+Mediator Pattern.
+Mediator: Area
+Colleagues:  GlyphVector Rectangle2D Float Double Rectangle Line2D QuadCurve2D CubicCurve2D ShapeGraphicAttribute
+FileLocation: java/awt/geom/Area.java
+
+Mediator Pattern.
+Mediator: AreaIterator
+Colleagues:  FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/Area.java
+
+Mediator Pattern.
+Mediator: ArcIterator
+Colleagues:  FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/ArcIterator.java
+
+Mediator Pattern.
+Mediator: TextLayout
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints TextLine ImageGraphicAttribute ShapeGraphicAttribute GraphicAttribute
+FileLocation: java/awt/font/TextLayout.java
+
+Mediator Pattern.
+Mediator: TextLine
+Colleagues:  TextLayout Float Float Float Double Double Double Rectangle Insets Dimension DataFlavor Point2D Color FontRenderContext RenderingHints Key ColorModel AttributeValue PageAttributes JobAttributes MimeType MimeTypeParameterList DisplayMode MenuShortcut AWTKeyStroke ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel AlphaComposite ImageGraphicAttribute ShapeGraphicAttribute TextHitInfo NumericShaper Font Rectangle2D AffineTransform StyledParagraph OptInfo CharArrayIterator TextMeasurer TextJustifier
+FileLocation: java/awt/font/TextLine.java
+
+Mediator Pattern.
+Mediator: TextMeasurer
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator Area Kernel ParameterBlock PageFormat Paper GridBagConstraints LineBreakMeasurer StyledParagraph
+FileLocation: java/awt/font/TextMeasurer.java
+
+Mediator Pattern.
+Mediator: CubicCurve2D
+Colleagues:  RectangularShape Float Double Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/geom/CubicCurve2D.java
+
+Mediator Pattern.
+Mediator: FlatteningPathIterator
+Colleagues:  GeneralPath RectIterator LineIterator QuadIterator CubicIterator ArcIterator AreaIterator EllipseIterator RoundRectIterator Area
+FileLocation: java/awt/geom/FlatteningPathIterator.java
+
+Mediator Pattern.
+Mediator: Dimension2D
+Colleagues:  Insets ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/geom/Dimension2D.java
+
+Mediator Pattern.
+Mediator: Ellipse2D
+Colleagues:  RectangularShape Rectangle Float Double
+FileLocation: java/awt/geom/Ellipse2D.java
+
+Mediator Pattern.
+Mediator: Rectangle2D
+Colleagues:  TextLayout Float Float Float Double Double Double Rectangle Line2D Arc2D RectangularShape Graphics DataFlavor TextLine ImageGraphicAttribute ShapeGraphicAttribute Component DropTarget DragSourceContext Point2D Font EventDispatchThread AWTKeyStroke
+FileLocation: java/awt/geom/Rectangle2D.java
+
+Mediator Pattern.
+Mediator: RectangularShape
+Colleagues:  Rectangle2D Float Float Float Double Double Double RenderableImageOp Rectangle GlyphVector TextLine ShapeGraphicAttribute TextLayout Arc2D RoundRectangle2D GeneralPath Line2D QuadCurve2D CubicCurve2D AffineTransformOp Area OptInfo Insets Dimension2D ImageFilter DataFlavor Point2D AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes RenderContext MimeType MimeTypeParameterList GridBagConstraints CharArrayIterator TextMeasurer Kernel ParameterBlock PageFormat Paper
+FileLocation: java/awt/geom/RectangularShape.java
+
+Mediator Pattern.
+Mediator: RoundRectIterator
+Colleagues:  FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/RoundRectIterator.java
+
+Mediator Pattern.
+Mediator: Point2D
+Colleagues:  Insets Dimension2D ImageFilter DataFlavor GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints Float Double Point TextLine ImageGraphicAttribute ShapeGraphicAttribute Dimension TextHitInfo NumericShaper Color FontRenderContext Font Rectangle2D Rectangle Key ColorModel MenuShortcut PackedColorModel AWTKeyStroke ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel ComponentColorModel AlphaComposite Component DropTarget DragSourceContext EventDispatchThread
+FileLocation: java/awt/geom/Point2D.java
+
+Mediator Pattern.
+Mediator: QuadCurve2D
+Colleagues:  FlatteningPathIterator Line2D RectangularShape Float Double Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes RenderContext MimeType MimeTypeParameterList CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/geom/QuadCurve2D.java
+
+Mediator Pattern.
+Mediator: Arc2D
+Colleagues:  GlyphVector Float Float Float Double Double Double Rectangle Line2D QuadCurve2D CubicCurve2D ShapeGraphicAttribute RectangularShape
+FileLocation: java/awt/geom/Arc2D.java
+
+Mediator Pattern.
+Mediator: LineIterator
+Colleagues:  GeneralPath Line2D Float Double FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/LineIterator.java
+
+Mediator Pattern.
+Mediator: QuadIterator
+Colleagues:  GeneralPath QuadCurve2D Float Double FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/QuadIterator.java
+
+Mediator Pattern.
+Mediator: RectIterator
+Colleagues:  FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/RectIterator.java
+
+Mediator Pattern.
+Mediator: CubicIterator
+Colleagues:  GeneralPath CubicCurve2D Float Double FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/CubicIterator.java
+
+Mediator Pattern.
+Mediator: EllipseIterator
+Colleagues:  FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/geom/EllipseIterator.java
+
+Mediator Pattern.
+Mediator: GeneralPath
+Colleagues:  TextLayout Shape Polygon Line2D QuadCurve2D CubicCurve2D Arc2D Area Ellipse2D RoundRectangle2D TextLine AffineTransform PathIterator FlatteningPathIterator Insets Dimension2D ImageFilter DataFlavor Point2D RectangularShape RenderingHints BufferCapabilities PageAttributes JobAttributes RenderContext MimeType MimeTypeParameterList CharArrayIterator TextMeasurer Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/geom/GeneralPath.java
+
+Mediator Pattern.
+Mediator: GeneralPathIterator
+Colleagues:  FlatteningPathIterator GeneralPath Area AffineTransform
+FileLocation: java/awt/geom/GeneralPathIterator.java
+
+Mediator Pattern.
+Mediator: Line2D
+Colleagues:  Float Float Double Double Point2D Point Insets Dimension2D ImageFilter DataFlavor GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/geom/Line2D.java
+
+Mediator Pattern.
+Mediator: BandedSampleModel
+Colleagues:  Raster ComponentSampleModel MultiPixelPackedSampleModel DataBufferByte DataBufferInt SampleModel DataBuffer RenderableImageProducer WritableRaster DataFlavor TextLine ImageGraphicAttribute ShapeGraphicAttribute
+FileLocation: java/awt/image/BandedSampleModel.java
+
+Mediator Pattern.
+Mediator: BufferedImage
+Colleagues:  ImageGraphicAttribute Raster AffineTransformOp GraphicsEnvironment ColorConvertOp ConvolveOp RenderableImageProducer WritableRaster
+FileLocation: java/awt/image/BufferedImage.java
+
+Mediator Pattern.
+Mediator: RoundRectangle2D
+Colleagues:  RectangularShape Rectangle Float Double
+FileLocation: java/awt/geom/RoundRectangle2D.java
+
+Mediator Pattern.
+Mediator: AffineTransformOp
+Colleagues:  BufferedImageFilter ColorSpace AffineTransform IndexColorModel ComponentColorModel ColorConvertOp Graphics2D Graphics
+FileLocation: java/awt/image/AffineTransformOp.java
+
+Mediator Pattern.
+Mediator: AreaAveragingScaleFilter
+Colleagues:  MemoryImageSource ImageFilter RenderableImageProducer BufferedImageFilter ReplicateScaleFilter RGBImageFilter
+FileLocation: java/awt/image/AreaAveragingScaleFilter.java
+
+Mediator Pattern.
+Mediator: ColorConvertOp
+Colleagues:  AffineTransformOp IndexColorModel LookupOp Graphics RescaleOp BufferedImageFilter
+FileLocation: java/awt/image/ColorConvertOp.java
+
+Mediator Pattern.
+Mediator: ColorModel
+Colleagues:  AreaAveragingScaleFilter IndexColorModel DirectColorModel ComponentColorModel BufferedImageFilter PixelGrabber RGBImageFilter ColorConvertOp Component DropTarget DataFlavor DragSourceContext Point2D TextLayout Font EventDispatchThread AWTKeyStroke RenderingHints
+FileLocation: java/awt/image/ColorModel.java
+
+Mediator Pattern.
+Mediator: ComponentColorModel
+Colleagues:  BufferedImage ICC_ColorSpace ColorModel DataBuffer SinglePixelPackedSampleModel MultiPixelPackedSampleModel IndexColorModel ComponentSampleModel ColorPaintContext SampleModel GradientPaintContext AffineTransformOp TexturePaintContext
+FileLocation: java/awt/image/ComponentColorModel.java
+
+Mediator Pattern.
+Mediator: ComponentSampleModel
+Colleagues:  ColorConvertOp DataBuffer Raster MultiPixelPackedSampleModel DataBufferByte DataBufferInt SampleModel RenderableImageProducer WritableRaster
+FileLocation: java/awt/image/ComponentSampleModel.java
+
+Mediator Pattern.
+Mediator: CropImageFilter
+Colleagues:  MemoryImageSource ImageFilter ReplicateScaleFilter BufferedImageFilter PixelGrabber RenderableImageProducer RGBImageFilter AreaAveragingScaleFilter
+FileLocation: java/awt/image/CropImageFilter.java
+
+Mediator Pattern.
+Mediator: DataBuffer
+Colleagues:  SinglePixelPackedSampleModel DataBufferByte DataBufferInt MultiPixelPackedSampleModel ComponentSampleModel
+FileLocation: java/awt/image/DataBuffer.java
+
+Mediator Pattern.
+Mediator: BufferedImageFilter
+Colleagues:  ImageFilter ColorModel IndexColorModel DirectColorModel ComponentColorModel ReplicateScaleFilter MemoryImageSource RGBImageFilter AreaAveragingScaleFilter RenderableImageProducer Raster BufferedImageOp AffineTransformOp ColorConvertOp ConvolveOp LookupOp RescaleOp BufferedImage PixelGrabber DataBufferInt DataBufferByte
+FileLocation: java/awt/image/BufferedImageFilter.java
+
+Mediator Pattern.
+Mediator: DirectColorModel
+Colleagues:  BufferedImage PackedColorModel ICC_ColorSpace
+FileLocation: java/awt/image/DirectColorModel.java
+
+Mediator Pattern.
+Mediator: FilteredImageSource
+Colleagues:  PixelGrabber MemoryImageSource RenderableImageProducer ImageFilter
+FileLocation: java/awt/image/FilteredImageSource.java
+
+Mediator Pattern.
+Mediator: SampleModel
+Colleagues:  Raster ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel RenderableImageProducer WritableRaster
+FileLocation: java/awt/image/SampleModel.java
+
+Mediator Pattern.
+Mediator: SinglePixelPackedSampleModel
+Colleagues:  Raster MultiPixelPackedSampleModel DataBufferByte DataBufferInt SampleModel DataBuffer RenderableImageProducer WritableRaster
+FileLocation: java/awt/image/SinglePixelPackedSampleModel.java
+
+Mediator Pattern.
+Mediator: ReplicateScaleFilter
+Colleagues:  MemoryImageSource ImageFilter BufferedImageFilter PixelGrabber RenderableImageProducer AreaAveragingScaleFilter RGBImageFilter
+FileLocation: java/awt/image/ReplicateScaleFilter.java
+
+Mediator Pattern.
+Mediator: ConvolveOp
+Colleagues:  BufferedImageFilter IndexColorModel ColorSpace ColorConvertOp Graphics
+FileLocation: java/awt/image/ConvolveOp.java
+
+Mediator Pattern.
+Mediator: IndexColorModel
+Colleagues:  ColorConvertOp DirectColorModel ComponentColorModel DataBuffer ConvolveOp WritableRaster
+FileLocation: java/awt/image/IndexColorModel.java
+
+Mediator Pattern.
+Mediator: Kernel
+Colleagues:  ConvolveOp Insets Dimension2D ImageFilter DataFlavor GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D GridBagConstraints CharArrayIterator TextMeasurer Area ParameterBlock PageFormat Paper Point2D
+FileLocation: java/awt/image/Kernel.java
+
+Mediator Pattern.
+Mediator: LookupOp
+Colleagues:  BufferedImageFilter LookupTable ColorSpace ColorConvertOp WritableRaster RescaleOp ByteLookupTable ShortLookupTable
+FileLocation: java/awt/image/LookupOp.java
+
+Mediator Pattern.
+Mediator: ImageFilter
+Colleagues:  ReplicateScaleFilter BufferedImageFilter PixelGrabber MemoryImageSource RenderableImageProducer Component Insets Dimension TextHitInfo DataFlavor Cursor Float Float Double Double Point NumericShaper Color TextLayout Font Rectangle AffineTransform RenderingHints Graphics BufferedImage Event ColorModel AttributeValue PageAttributes JobAttributes MenuComponent IndexColorModel TextLine MimeType MimeTypeParameterList FontMetrics CheckboxGroup ScrollPaneAdjustable MenuShortcut Robot DirectColorModel HeavyweightFocusRequest AWTKeyStroke BorderLayout FlowLayout CardLayout GridBagLayout RGBImageFilter AreaAveragingScaleFilter Dimension2D Point2D GeneralPath RectangularShape BufferCapabilities Line2D RenderContext QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock PageFormat Paper GridBagConstraints
+FileLocation: java/awt/image/ImageFilter.java
+
+Mediator Pattern.
+Mediator: MultiPixelPackedSampleModel
+Colleagues:  Raster DataBufferByte DataBufferInt SampleModel DataBuffer WritableRaster RenderableImageProducer
+FileLocation: java/awt/image/MultiPixelPackedSampleModel.java
+
+Mediator Pattern.
+Mediator: PackedColorModel
+Colleagues:  DropTarget ColorModel DataFlavor DragSourceContext Point2D TextLayout Font EventDispatchThread AWTKeyStroke
+FileLocation: java/awt/image/PackedColorModel.java
+
+Mediator Pattern.
+Mediator: PixelGrabber
+Colleagues:  ImageFilter ColorModel ReplicateScaleFilter IndexColorModel DirectColorModel ComponentColorModel BufferedImageFilter MemoryImageSource RGBImageFilter AreaAveragingScaleFilter RenderableImageProducer ImageProducer
+FileLocation: java/awt/image/PixelGrabber.java
+
+Mediator Pattern.
+Mediator: PixelInterleavedSampleModel
+Colleagues:  DataFlavor ComponentSampleModel TextLine ImageGraphicAttribute ShapeGraphicAttribute
+FileLocation: java/awt/image/PixelInterleavedSampleModel.java
+
+Mediator Pattern.
+Mediator: RGBImageFilter
+Colleagues:  ImageFilter BufferedImageFilter PixelGrabber ColorModel MemoryImageSource IndexColorModel DirectColorModel ComponentColorModel ReplicateScaleFilter AreaAveragingScaleFilter RenderableImageProducer
+FileLocation: java/awt/image/RGBImageFilter.java
+
+Mediator Pattern.
+Mediator: Raster
+Colleagues:  BufferedImageFilter DataBuffer Robot BufferedImage SinglePixelPackedSampleModel MultiPixelPackedSampleModel ComponentColorModel ComponentSampleModel TexturePaintContext SampleModel RescaleOp AffineTransformOp WritableRaster IndexColorModel DirectColorModel ColorConvertOp BandCombineOp LookupOp
+FileLocation: java/awt/image/Raster.java
+
+Mediator Pattern.
+Mediator: RescaleOp
+Colleagues:  BufferedImageFilter ColorSpace ColorConvertOp WritableRaster
+FileLocation: java/awt/image/RescaleOp.java
+
+Mediator Pattern.
+Mediator: VolatileImage
+Colleagues:  PixelGrabber BufferedImage
+FileLocation: java/awt/image/VolatileImage.java
+
+Mediator Pattern.
+Mediator: WritableRaster
+Colleagues:  Raster ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel PackedColorModel ComponentColorModel LookupOp SampleModel RescaleOp BufferedImage ColorConvertOp DirectColorModel BandCombineOp
+FileLocation: java/awt/image/WritableRaster.java
+
+Mediator Pattern.
+Mediator: ParameterBlock
+Colleagues:  RenderableImageOp Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D GridBagConstraints CharArrayIterator TextMeasurer Area Kernel PageFormat Paper RectangularShape AffineTransform
+FileLocation: java/awt/image/renderable/ParameterBlock.java
+
+Mediator Pattern.
+Mediator: RenderableImageOp
+Colleagues:  RenderableImageProducer ParameterBlock ContextualRenderedImageFactory
+FileLocation: java/awt/image/renderable/RenderableImageOp.java
+
+Mediator Pattern.
+Mediator: RenderableImageProducer
+Colleagues:  InvocationEvent RenderableImage RenderableImageOp RenderedImage BufferedImage Raster ColorModel ImageConsumer ImageFilter ReplicateScaleFilter BufferedImageFilter PixelGrabber AreaAveragingScaleFilter SampleModel ComponentSampleModel SinglePixelPackedSampleModel MultiPixelPackedSampleModel IndexColorModel DirectColorModel ComponentColorModel RGBImageFilter Dialog
+FileLocation: java/awt/image/renderable/RenderableImageProducer.java
+
+Mediator Pattern.
+Mediator: Paper
+Colleagues:  PageFormat Insets Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D GridBagConstraints CharArrayIterator TextMeasurer Area Kernel ParameterBlock Float Float Float Double Double Double Rectangle
+FileLocation: java/awt/print/Paper.java
+
+Mediator Pattern.
+Mediator: PageFormat
+Colleagues:  Insets Paper Dimension2D ImageFilter DataFlavor Point2D GeneralPath TextLayout RectangularShape AffineTransform RenderingHints BufferCapabilities PageAttributes JobAttributes Line2D RenderContext MimeType MimeTypeParameterList QuadCurve2D CubicCurve2D CharArrayIterator TextMeasurer Area Kernel ParameterBlock GridBagConstraints
+FileLocation: java/awt/print/PageFormat.java
+
+Mediator Pattern.
+Mediator: SelectiveAWTEventListener
+Colleagues:  Toolkit LightweightDispatcher ToolkitEventMulticaster
+FileLocation: java/awt/Toolkit.java
+
+Mediator Pattern.
+Mediator: NativeInLightFixer
+Colleagues:  AWTEventMulticaster ComponentPeer Container ContainerEvent
+FileLocation: java/awt/Component.java
+
+Mediator Pattern.
+Mediator: ToolkitEventMulticaster
+Colleagues:  Toolkit DnDEventMulticaster LightweightDispatcher SelectiveAWTEventListener
+FileLocation: java/awt/Toolkit.java
+
+Mediator Pattern.
+Mediator: Float
+Colleagues:  ShapeGraphicAttribute Double Double Double Rectangle Float Float TextLayout
+FileLocation: java/awt/geom/Rectangle2D.java
+
+Mediator Pattern.
+Mediator: Double
+Colleagues:  TextLayout Float Float Float Rectangle Double Double
+FileLocation: java/awt/geom/Rectangle2D.java
+
+Mediator Pattern.
+Mediator: OptInfo
+Colleagues:  TextLayout FontRenderContext Graphics2D Graphics RenderingHints
+FileLocation: java/awt/font/TextLayout.java
+
+Mediator Pattern.
+Mediator: PolygonPathIterator
+Colleagues:  FlatteningPathIterator AffineTransform Area
+FileLocation: java/awt/Polygon.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTWindow
+Colleagues:  AccessibleAWTFrame AccessibleAWTDialog AccessibleAWTTextComponent AccessibleAWTTextArea AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList AccessibleAWTTextField Window
+FileLocation: java/awt/Window.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTFrame
+Colleagues:  AccessibleAWTDialog Frame AccessibleAWTWindow AccessibleAWTTextComponent Window AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList
+FileLocation: java/awt/Frame.java
+
+Mediator Pattern.
+Mediator: DropTargetAutoScroller
+Colleagues:  AWTEventMulticaster Rectangle Autoscroll MenuItem List TextField Button
+FileLocation: java/awt/dnd/DropTarget.java
+
+Mediator Pattern.
+Mediator: DropTargetEventTargetFilter
+Colleagues:  Container DropTarget
+FileLocation: java/awt/Container.java
+
+Mediator Pattern.
+Mediator: AccessibleContainerHandler
+Colleagues:  Container ContainerEvent AWTEventMulticaster
+FileLocation: java/awt/Container.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTButton
+Colleagues:  AccessibleAWTLabel Button
+FileLocation: java/awt/Button.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTTextField
+Colleagues:  AccessibleAWTTextArea AccessibleAWTWindow AccessibleAWTTextComponent AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList
+FileLocation: java/awt/TextField.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTLabel
+Colleagues:  AccessibleAWTButton Label
+FileLocation: java/awt/Label.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTList
+Colleagues:  AccessibleAWTWindow AccessibleAWTTextComponent AccessibleAWTTextArea AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTTextField List AccessibleAWTFrame AccessibleAWTDialog Container
+FileLocation: java/awt/List.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTListChild
+Colleagues:  AccessibleAWTWindow AccessibleAWTTextComponent AccessibleAWTTextArea AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList AccessibleAWTTextField List AccessibleAWTFrame AccessibleAWTDialog
+FileLocation: java/awt/List.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTCheckbox
+Colleagues:  CheckboxMenuItem Checkbox Choice List AccessibleAWTWindow AccessibleAWTTextComponent AccessibleAWTTextArea AccessibleAWTScrollBar AccessibleAWTList AccessibleAWTTextField AccessibleAWTFrame AccessibleAWTDialog
+FileLocation: java/awt/Checkbox.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTScrollBar
+Colleagues:  AccessibleAWTWindow AccessibleAWTTextComponent AccessibleAWTTextArea AccessibleAWTCheckbox AccessibleAWTList AccessibleAWTTextField AccessibleAWTFrame AccessibleAWTDialog
+FileLocation: java/awt/Scrollbar.java
+
+Mediator Pattern.
+Mediator: PeerFixer
+Colleagues:  AWTEventMulticaster AdjustmentEvent ScrollPanePeer Adjustable Scrollbar Container ScrollPaneAdjustable Component
+FileLocation: java/awt/ScrollPane.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTTextArea
+Colleagues:  AccessibleAWTTextField AccessibleAWTWindow AccessibleAWTTextComponent AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList
+FileLocation: java/awt/TextArea.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTDialog
+Colleagues:  AccessibleAWTFrame Dialog AccessibleAWTWindow AccessibleAWTTextComponent Window AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList
+FileLocation: java/awt/Dialog.java
+
+Mediator Pattern.
+Mediator: AccessibleAWTTextComponent
+Colleagues:  AccessibleAWTTextArea AccessibleAWTWindow AccessibleAWTFrame AccessibleAWTDialog AccessibleAWTScrollBar AccessibleAWTCheckbox AccessibleAWTList AccessibleAWTTextField TextComponent
+FileLocation: java/awt/TextComponent.java
+
+Mediator Pattern.
+Mediator: DisposeAction
+Colleagues:  InvocationEvent Window InputContext Dialog Component Container Frame
+FileLocation: java/awt/Window.java
+
+Mediator Pattern.
+Mediator: Dialog$1
+Colleagues:  InvocationEvent EventDispatchThread Dialog
+FileLocation: java/awt/Dialog.java
+
+Mediator Pattern.
+Mediator: TextLine$2
+Colleagues:  TextLine Float Float Float Double Double Double Rectangle
+FileLocation: java/awt/font/TextLine.java
+
+Mediator Pattern.
+Mediator: KeyboardFocusManager$1
+Colleagues:  InvocationEvent KeyboardFocusManager
+FileLocation: java/awt/KeyboardFocusManager.java
+
+Mediator Pattern.
+Mediator: Any
+Colleagues:  TexturePaintContext ComponentColorModel WritableRaster
+FileLocation: java/awt/TexturePaintContext.java
+
+Proxy Pattern.
+ScrollPane is a proxy.
+Container is a proxy interface.
+The real object(s): ScrollPaneAdjustable
+File Location: java/awt/ScrollPane.java
+
+Proxy Pattern.
+Polygon is a proxy.
+Shape is a proxy interface.
+The real object(s): Rectangle
+File Location: java/awt/Polygon.java
+
+Proxy Pattern.
+CardLayout is a proxy.
+Serializable is a proxy interface.
+The real object(s): Vector
+File Location: java/awt/CardLayout.java
+
+Proxy Pattern.
+Choice is a proxy.
+Component is a proxy interface.
+The real object(s): Vector
+File Location: java/awt/Choice.java
+
+Proxy Pattern.
+List is a proxy.
+Component is a proxy interface.
+The real object(s): Vector
+File Location: java/awt/List.java
+
+Proxy Pattern.
+Area is a proxy.
+Cloneable is a proxy interface.
+The real object(s): Vector
+File Location: java/awt/geom/Area.java
+
+Proxy Pattern.
+PageFormat is a proxy.
+Cloneable is a proxy interface.
+The real object(s): Paper
+File Location: java/awt/print/PageFormat.java
+
+Proxy Pattern.
+GridBagConstraints is a proxy.
+Cloneable is a proxy interface.
+The real object(s): Insets
+File Location: java/awt/GridBagConstraints.java
+
+Proxy Pattern.
+GridBagLayout is a proxy.
+Serializable is a proxy interface.
+The real object(s): Hashtable
+File Location: java/awt/GridBagLayout.java
+
+Proxy Pattern.
+TransferableProxy is a proxy.
+Transferable is a proxy interface.
+The real object(s): TransferableProxy
+File Location: java/awt/dnd/DropTargetContext.java
+
+Proxy Pattern.
+Cursor is a proxy.
+Serializable is a proxy interface.
+The real object(s): Properties
+File Location: java/awt/Cursor.java
+
+Proxy Pattern.
+TextLayout is a proxy.
+Cloneable is a proxy interface.
+The real object(s): Rectangle2D
+File Location: java/awt/font/TextLayout.java
+
+Proxy Pattern.
+MimeTypeParameterList is a proxy.
+Cloneable is a proxy interface.
+The real object(s): Hashtable
+File Location: java/awt/datatransfer/MimeTypeParameterList.java
+
+Adapter Pattern.
+Adapting classes:  Object Cloneable
+TextMeasurer is an adapter class.
+StyledParagraph is the adaptee class.
+File Location: java/awt/font/TextMeasurer.java
+File Location: java/awt/font/StyledParagraph.java
+
+Adapter Pattern.
+Adapting classes:  Object BufferedImageOp RasterOp
+AffineTransformOp is an adapter class.
+RenderingHints is the adaptee class.
+File Location: java/awt/image/AffineTransformOp.java
+File Location: java/awt/RenderingHints.java
+
+Adapter Pattern.
+Adapting classes:  Object PathConsumer
+FillAdapter is an adapter class.
+GeneralPath is the adaptee class.
+File Location: java/awt/BasicStroke.java
+File Location: java/awt/geom/GeneralPath.java
+
+Facade Pattern.
+MenuItem is a facade class.
+Hidden types: MenuItemPeer ActionListener
+Facade access types: AWTEvent PopupMenu CheckboxMenuItem Menu
+File Location: java/awt/MenuItem.java
+
+Facade Pattern.
+DropTarget is a facade class.
+Hidden types: SystemFlavorMap DropTargetPeer SerializationTester
+Facade access types: Component DropTargetContext
+File Location: java/awt/dnd/DropTarget.java
+
+Facade Pattern.
+ScrollPane is a facade class.
+Hidden types: ScrollPanePeer Graphics Toolkit GraphicsEnvironment
+Facade access types: ScrollPane
+File Location: java/awt/ScrollPane.java
+
+Facade Pattern.
+EventQueue is a facade class.
+Hidden types: ActiveEvent InputMethodEvent ActionEvent InvocationEvent
+Facade access types: Component Window MenuItem InputMethodEvent MenuComponent EventDispatchThread CheckboxMenuItem Dialog DefaultKeyboardFocusManager Robot KeyboardFocusManager SequencedEvent SentEvent
+File Location: java/awt/EventQueue.java
+
+Facade Pattern.
+Button is a facade class.
+Hidden types: ButtonPeer AWTEventMulticaster ActionListener GraphicsEnvironment
+Facade access types: AWTEvent
+File Location: java/awt/Button.java
+
+Facade Pattern.
+Checkbox is a facade class.
+Hidden types: CheckboxPeer Toolkit AWTEventMulticaster ItemListener GraphicsEnvironment
+Facade access types: CheckboxGroup
+File Location: java/awt/Checkbox.java
+
+Facade Pattern.
+Choice is a facade class.
+Hidden types: Toolkit ChoicePeer AWTEventMulticaster ItemListener GraphicsEnvironment
+Facade access types: Choice
+File Location: java/awt/Choice.java
+
+Facade Pattern.
+FileDialog is a facade class.
+Hidden types: Toolkit FileDialogPeer
+Facade access types: FileDialog
+File Location: java/awt/FileDialog.java
+
+Facade Pattern.
+Label is a facade class.
+Hidden types: GraphicsEnvironment Toolkit LabelPeer
+Facade access types: AccessibleAWTLabel
+File Location: java/awt/Label.java
+
+Facade Pattern.
+List is a facade class.
+Hidden types: Toolkit ListPeer AWTEventMulticaster ItemListener ActionListener GraphicsEnvironment
+Facade access types: AccessibleAWTListChild
+File Location: java/awt/List.java
+
+Facade Pattern.
+Robot is a facade class.
+Hidden types: Toolkit GraphicsDevice RobotPeer DirectColorModel Raster EventQueue GraphicsEnvironment
+Facade access types: Robot
+File Location: java/awt/Robot.java
+
+Facade Pattern.
+Scrollbar is a facade class.
+Hidden types: Toolkit ScrollbarPeer AWTEventMulticaster AdjustmentListener GraphicsEnvironment
+Facade access types: AccessibleAWTScrollBar
+File Location: java/awt/Scrollbar.java
+
+Facade Pattern.
+TextArea is a facade class.
+Hidden types: Toolkit TextAreaPeer
+Facade access types: TextArea
+File Location: java/awt/TextArea.java
+
+Facade Pattern.
+TextField is a facade class.
+Hidden types: Toolkit TextFieldPeer AWTEventMulticaster ActionListener
+Facade access types: TextField
+File Location: java/awt/TextField.java
+
+Facade Pattern.
+ArcIterator is a facade class.
+Hidden types: AffineTransform RectangularShape Arc2D
+Facade access types: ArcIterator
+File Location: java/awt/geom/ArcIterator.java
+
+Facade Pattern.
+ConvolveOp is a facade class.
+Hidden types: Kernel BufferedImage IndexColorModel ColorSpace ColorModel Graphics Raster Point2D
+Facade access types: ConvolveOp
+File Location: java/awt/image/ConvolveOp.java
+
+Facade Pattern.
+LookupOp is a facade class.
+Hidden types: LookupTable ComponentColorModel ByteLookupTable ShortLookupTable
+Facade access types: RescaleOp
+File Location: java/awt/image/LookupOp.java
+
+Facade Pattern.
+RescaleOp is a facade class.
+Hidden types: DataBuffer Raster SampleModel BufferedImage ColorModel ColorSpace WritableRaster Point2D
+Facade access types: RescaleOp
+File Location: java/awt/image/RescaleOp.java
+
+Facade Pattern.
+CheckboxMenuItem is a facade class.
+Hidden types: Toolkit CheckboxMenuItemPeer AWTEventMulticaster ItemListener EventQueue
+Facade access types: CheckboxMenuItem
+File Location: java/awt/CheckboxMenuItem.java
+
+Facade Pattern.
+ColorPaintContext is a facade class.
+Hidden types: ColorModel Raster
+Facade access types: ColorPaintContext
+File Location: java/awt/ColorPaintContext.java
+
+Facade Pattern.
+GradientPaintContext is a facade class.
+Hidden types: Raster ColorModel AffineTransform Point2D Color DirectColorModel
+Facade access types: GradientPaintContext
+File Location: java/awt/GradientPaintContext.java
+
+Facade Pattern.
+TextComponent is a facade class.
+Hidden types: TextComponentPeer TextListener GraphicsEnvironment
+Facade access types: TextField TextArea
+File Location: java/awt/TextComponent.java
+
+Facade Pattern.
+ScrollPaneAdjustable is a facade class.
+Hidden types: AdjustmentListener AWTEventMulticaster
+Facade access types: ScrollPane
+File Location: java/awt/ScrollPaneAdjustable.java
+
+Facade Pattern.
+ImageGraphicAttribute is a facade class.
+Hidden types: Graphics Image
+Facade access types: ImageGraphicAttribute
+File Location: java/awt/font/ImageGraphicAttribute.java
+
+Facade Pattern.
+LineBreakMeasurer is a facade class.
+Hidden types: TextMeasurer CharArrayIterator
+Facade access types: LineBreakMeasurer
+File Location: java/awt/font/LineBreakMeasurer.java
+
+Facade Pattern.
+StyledParagraph is a facade class.
+Hidden types: InputMethodHighlight Toolkit
+Facade access types: OptInfo TextLine TextMeasurer
+File Location: java/awt/font/StyledParagraph.java
+
+Facade Pattern.
+ShapeGraphicAttribute is a facade class.
+Hidden types: RectangularShape Graphics2D Shape
+Facade access types: ShapeGraphicAttribute
+File Location: java/awt/font/ShapeGraphicAttribute.java
+
+Facade Pattern.
+TextMeasurer is a facade class.
+Hidden types: NumericShaper StyledParagraph TextLine Font LineMetrics
+Facade access types: LineBreakMeasurer
+File Location: java/awt/font/TextMeasurer.java
+
+Facade Pattern.
+CubicIterator is a facade class.
+Hidden types: CubicCurve2D AffineTransform
+Facade access types: CubicIterator
+File Location: java/awt/geom/CubicIterator.java
+
+Facade Pattern.
+EllipseIterator is a facade class.
+Hidden types: AffineTransform RectangularShape
+Facade access types: EllipseIterator
+File Location: java/awt/geom/EllipseIterator.java
+
+Facade Pattern.
+FlatteningPathIterator is a facade class.
+Hidden types: QuadCurve2D CubicCurve2D
+Facade access types: FlatteningPathIterator
+File Location: java/awt/geom/FlatteningPathIterator.java
+
+Facade Pattern.
+LineIterator is a facade class.
+Hidden types: Line2D AffineTransform
+Facade access types: LineIterator
+File Location: java/awt/geom/LineIterator.java
+
+Facade Pattern.
+QuadIterator is a facade class.
+Hidden types: QuadCurve2D AffineTransform
+Facade access types: QuadIterator
+File Location: java/awt/geom/QuadIterator.java
+
+Facade Pattern.
+RectIterator is a facade class.
+Hidden types: AffineTransform RectangularShape
+Facade access types: RectIterator
+File Location: java/awt/geom/RectIterator.java
+
+Facade Pattern.
+RoundRectIterator is a facade class.
+Hidden types: AffineTransform RectangularShape RoundRectangle2D
+Facade access types: RoundRectIterator
+File Location: java/awt/geom/RoundRectIterator.java
+
+Facade Pattern.
+AffineTransformOp is a facade class.
+Hidden types: BufferedImage ColorSpace ColorModel AffineTransform Graphics2D Graphics Raster RectangularShape RenderingHints
+Facade access types: AffineTransformOp
+File Location: java/awt/image/AffineTransformOp.java
+
+Facade Pattern.
+BandCombineOp is a facade class.
+Hidden types: Raster WritableRaster Point2D
+Facade access types: BandCombineOp
+File Location: java/awt/image/BandCombineOp.java
+
+Facade Pattern.
+BufferedImageFilter is a facade class.
+Hidden types: ColorModel DataBufferByte Raster BufferedImage BufferedImageOp DataBufferInt DirectColorModel
+Facade access types: BufferedImageFilter
+File Location: java/awt/image/BufferedImageFilter.java
+
+Facade Pattern.
+ColorConvertOp is a facade class.
+Hidden types: ICC_ColorSpace ICC_Profile
+Facade access types: RescaleOp AffineTransformOp LookupOp ConvolveOp
+File Location: java/awt/image/ColorConvertOp.java
+
+Facade Pattern.
+MemoryImageSource is a facade class.
+Hidden types: ImageConsumer ColorModel
+Facade access types: MemoryImageSource
+File Location: java/awt/image/MemoryImageSource.java
+
+Facade Pattern.
+PixelGrabber is a facade class.
+Hidden types: ImageProducer ColorModel Image
+Facade access types: PixelGrabber
+File Location: java/awt/image/PixelGrabber.java
+
+Facade Pattern.
+RenderableImageOp is a facade class.
+Hidden types: ParameterBlock ContextualRenderedImageFactory RectangularShape AffineTransform
+Facade access types: RenderableImageOp
+File Location: java/awt/image/renderable/RenderableImageOp.java
+
+Facade Pattern.
+RenderableImageProducer is a facade class.
+Hidden types: RenderableImage RenderedImage Raster ColorModel ImageConsumer SampleModel
+Facade access types: RenderableImageProducer
+File Location: java/awt/image/renderable/RenderableImageProducer.java
+
+Facade Pattern.
+Container is a facade class.
+Hidden types: ContainerPeer LayoutManager LayoutManager2 ContainerListener
+Facade access types: LightweightDispatcher Component GridLayout GridBagLayout Window Frame Panel CardLayout Dialog PeerFixer BorderLayout FlowLayout ContainerOrderFocusTraversalPolicy DefaultKeyboardFocusManager ScrollPane FileDialog
+File Location: java/awt/Container.java
+
+Facade Pattern.
+Window is a facade class.
+Hidden types: GraphicsEnvironment WindowPeer WindowListener WindowFocusListener WindowStateListener
+Facade access types: FileDialog Container Frame GraphicsDevice DefaultKeyboardFocusManager Dialog FocusTraversalPolicy KeyboardFocusManager
+File Location: java/awt/Window.java
+
+Facade Pattern.
+Frame is a facade class.
+Hidden types: KeyboardFocusManager Toolkit FramePeer
+Facade access types: AccessibleAWTFrame
+File Location: java/awt/Frame.java
+
+Facade Pattern.
+Font is a facade class.
+Hidden types: GraphicsEnvironment FontRenderContext GlyphVector
+Facade access types: TextLayout TextLine TextMeasurer FontMetrics StyledParagraph
+File Location: java/awt/Font.java
+
+Facade Pattern.
+DefaultKeyboardFocusManager is a facade class.
+Hidden types: Component ComponentEvent FocusEvent WindowEvent SentEvent EventQueue EventDispatchThread AWTEvent Window FocusTraversalPolicy Container ComponentPeer InputEvent AWTKeyStroke
+Facade access types: DefaultKeyboardFocusManager
+File Location: java/awt/DefaultKeyboardFocusManager.java
+
+Facade Pattern.
+BufferedImage is a facade class.
+Hidden types: GraphicsEnvironment Rectangle ComponentSampleModel
+Facade access types: VolatileImage ColorConvertOp RescaleOp LookupOp BufferedImageFilter TexturePaintContext AffineTransformOp TexturePaint ConvolveOp
+File Location: java/awt/image/BufferedImage.java
+
+Facade Pattern.
+TextLayout is a facade class.
+Hidden types: TextHitInfo GraphicAttribute
+Facade access types: TextMeasurer
+File Location: java/awt/font/TextLayout.java
+
+Facade Pattern.
+DragSource is a facade class.
+Hidden types: GraphicsEnvironment Toolkit DnDEventMulticaster AWTEventMulticaster DragSourceMotionListener SystemFlavorMap
+Facade access types: DragSourceContext DragGestureEvent
+File Location: java/awt/dnd/DragSource.java
+
+Facade Pattern.
+Canvas is a facade class.
+Hidden types: Toolkit Graphics
+Facade access types: Canvas
+File Location: java/awt/Canvas.java
+
+Facade Pattern.
+SystemFlavorMap is a facade class.
+Hidden types: MimeType DataFlavor
+Facade access types: DropTarget DragSource
+File Location: java/awt/datatransfer/SystemFlavorMap.java
+
+Facade Pattern.
+FlipBufferStrategy is a facade class.
+Hidden types: Image VolatileImage
+Facade access types: Component
+File Location: java/awt/Component.java
+
+Facade Pattern.
+BltBufferStrategy is a facade class.
+Hidden types: Image VolatileImage
+Facade access types: Component
+File Location: java/awt/Component.java
+
+Facade Pattern.
+NativeInLightFixer is a facade class.
+Hidden types: ComponentPeer Component ContainerEvent Container
+Facade access types: NativeInLightFixer
+File Location: java/awt/Component.java
+
+Facade Pattern.
+DropTargetAutoScroller is a facade class.
+Hidden types: Autoscroll Rectangle Toolkit
+Facade access types: DropTarget
+File Location: java/awt/dnd/DropTarget.java
+
+Facade Pattern.
+OptInfo is a facade class.
+Hidden types: Graphics2D FontRenderContext Graphics StyledParagraph
+Facade access types: TextLayout
+File Location: java/awt/font/TextLayout.java

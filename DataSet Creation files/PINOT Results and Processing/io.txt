@@ -1,0 +1,767 @@
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+read is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+read is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+skip is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+available is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+close is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+mark is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+reset is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Decorator Pattern
+FilterInputStream is a Decorator class
+markSupported is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: FilterInputStream.java
+
+Chain of Responsibility Pattern
+BufferedInputStream is a Chain of Responsibility Handler class
+skip is a handle operation
+in of type InputStream propogates the request
+File Location: BufferedInputStream.java
+
+Decorator Pattern
+BufferedInputStream is a Decorator class
+available is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: BufferedInputStream.java
+
+Chain of Responsibility Pattern
+BufferedInputStream is a Chain of Responsibility Handler class
+close is a handle operation
+in of type InputStream propogates the request
+File Location: BufferedInputStream.java
+
+Decorator Pattern
+FilterOutputStream is a Decorator class
+write is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: FilterOutputStream.java
+
+Decorator Pattern
+FilterOutputStream is a Decorator class
+flush is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: FilterOutputStream.java
+
+Decorator Pattern
+FilterOutputStream is a Decorator class
+close is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: FilterOutputStream.java
+
+Chain of Responsibility Pattern
+BufferedWriter is a Chain of Responsibility Handler class
+write is a handle operation
+out of type Writer propogates the request
+File Location: BufferedWriter.java
+
+Decorator Pattern
+BufferedOutputStream is a Decorator class
+flush is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: BufferedOutputStream.java
+
+Decorator Pattern
+BufferedReader is a Decorator class
+ready is a decorate operation
+in of type Reader is the Decoratee class
+File Location: BufferedReader.java
+
+Decorator Pattern
+DataInputStream is a Decorator class
+read is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: DataInputStream.java
+
+Chain of Responsibility Pattern
+PushbackInputStream is a Chain of Responsibility Handler class
+close is a handle operation
+in of type InputStream propogates the request
+File Location: PushbackInputStream.java
+
+Decorator Pattern
+DataOutputStream is a Decorator class
+write is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: DataOutputStream.java
+
+Decorator Pattern
+DataOutputStream is a Decorator class
+write is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: DataOutputStream.java
+
+Decorator Pattern
+DataOutputStream is a Decorator class
+flush is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: DataOutputStream.java
+
+Chain of Responsibility Pattern
+PeekInputStream is a Chain of Responsibility Handler class
+read is a handle operation
+in of type InputStream propogates the request
+File Location: ObjectInputStream.java
+
+Chain of Responsibility Pattern
+PeekInputStream is a Chain of Responsibility Handler class
+read is a handle operation
+in of type InputStream propogates the request
+File Location: ObjectInputStream.java
+
+Decorator Pattern
+PeekInputStream is a Decorator class
+available is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: ObjectInputStream.java
+
+Decorator Pattern
+PeekInputStream is a Decorator class
+close is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: ObjectInputStream.java
+
+Decorator Pattern
+BlockDataOutputStream is a Decorator class
+flush is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: ObjectOutputStream.java
+
+Decorator Pattern
+BlockDataOutputStream is a Decorator class
+close is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: ObjectOutputStream.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+read is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+read is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+skip is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+ready is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+markSupported is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+mark is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+reset is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+close is a decorate operation
+in of type Reader is the Decoratee class
+File Location: FilterReader.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+write is a decorate operation
+out of type Writer is the Decoratee class
+File Location: FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+write is a decorate operation
+out of type Writer is the Decoratee class
+File Location: FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+write is a decorate operation
+out of type Writer is the Decoratee class
+File Location: FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+flush is a decorate operation
+out of type Writer is the Decoratee class
+File Location: FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+close is a decorate operation
+out of type Writer is the Decoratee class
+File Location: FilterWriter.java
+
+Decorator Pattern
+LineNumberInputStream is a Decorator class
+mark is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: LineNumberInputStream.java
+
+Decorator Pattern
+LineNumberInputStream is a Decorator class
+reset is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: LineNumberInputStream.java
+
+Chain of Responsibility Pattern
+SequenceInputStream is a Chain of Responsibility Handler class
+available is a handle operation
+in of type InputStream propogates the request
+File Location: SequenceInputStream.java
+
+ InputStream Writer
+ InputStream OutputStream Reader Writer
+Strategy Pattern.
+Callback is the Context class.
+ObjectInputValidation is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through obj of type ObjectInputValidation
+File Location: ObjectInputStream.java,
+               ObjectInputValidation.java
+
+Strategy Pattern.
+StreamTokenizer is the Context class.
+Reader is the Strategy interface.
+Concrete Strategy classes:  BufferedReader CharArrayReader InputStreamReader FilterReader PipedReader StringReader FileReader LineNumberReader PushbackReader
+Delegation through reader of type Reader
+File Location: StreamTokenizer.java,
+               Reader.java
+
+Strategy Pattern.
+StreamTokenizer is the Context class.
+InputStream is the Strategy interface.
+Concrete Strategy classes:  FilterInputStream ByteArrayInputStream ObjectInputStream PeekInputStream BlockDataInputStream FileInputStream PipedInputStream SequenceInputStream StringBufferInputStream LineNumberInputStream PushbackInputStream DataInputStream BufferedInputStream
+Delegation through input of type InputStream
+File Location: StreamTokenizer.java,
+               InputStream.java
+
+Flyweight Pattern.
+SerializablePermission is immutable.
+File location: SerializablePermission.java
+
+Flyweight Pattern.
+File is a flyweight factory.
+separator is a flyweight object (declared public-static-final).
+File location: File.java
+
+Flyweight Pattern.
+ObjectStreamConstants is a flyweight factory.
+SUBSTITUTION_PERMISSION is a flyweight object (declared public-static-final).
+File location: ObjectStreamConstants.java
+
+Flyweight Pattern.
+EntryFuture is a flyweight factory.
+unset is a flyweight object.
+get is the getFlyweight method.
+File location: ObjectStreamClass.java
+
+Composite pattern.
+FilePermissionCollection is the composite class.
+perms is the composite instance.
+Serializable is the component class.
+File Location: FilePermission.java
+File Location: Serializable.java
+
+Composite pattern.
+HandleTable is the composite class.
+entries is the composite instance.
+Object is the component class.
+File Location: ObjectInputStream.java
+File Location: /usr/java/j2sdk1.4.2_01/jre/lib/rt.jar/java/lang(Object.class)
+
+Composite pattern.
+HandleTable is the composite class.
+objs is the composite instance.
+Object is the component class.
+File Location: ObjectOutputStream.java
+File Location: /usr/java/j2sdk1.4.2_01/jre/lib/rt.jar/java/lang(Object.class)
+
+Composite pattern.
+GetFieldImpl is the composite class.
+objVals is the composite instance.
+Object is the component class.
+File Location: ObjectInputStream.java
+File Location: /usr/java/j2sdk1.4.2_01/jre/lib/rt.jar/java/lang(Object.class)
+
+Composite pattern.
+ReplaceTable is the composite class.
+reps is the composite instance.
+Object is the component class.
+File Location: ObjectOutputStream.java
+File Location: /usr/java/j2sdk1.4.2_01/jre/lib/rt.jar/java/lang(Object.class)
+
+Composite pattern.
+PutFieldImpl is the composite class.
+objVals is the composite instance.
+Object is the component class.
+File Location: ObjectOutputStream.java
+File Location: /usr/java/j2sdk1.4.2_01/jre/lib/rt.jar/java/lang(Object.class)
+
+Template Method Found.
+ObjectOutputStream is the template class
+writeObject is the template method
+writeObjectOverride is a primitive method
+File Location: ObjectOutputStream.java
+
+Template Method Found.
+ObjectStreamClass is the template class
+computeDefaultSUID is the template method
+hasStaticInitializer is a primitive method
+File Location: ObjectStreamClass.java
+
+Template Method Found.
+RandomAccessFile is the template class
+readBoolean is the template method
+read is a primitive method
+File Location: RandomAccessFile.java
+
+Template Method Found.
+Win32FileSystem is the template class
+getDriveDirectory is the template method
+getDriveDirectory is a primitive method
+File Location: Win32FileSystem.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+ObjectStreamClass$2 is a concrete Factory Method class.
+run is a factory method returns  Long
+ which extends Object
+File Location: ObjectStreamClass.java
+
+Factory Method pattern.
+Permission is a Factory Method class.
+FilePermission is a concrete Factory Method class.
+newPermissionCollection is a factory method returns  FilePermissionCollection
+ which extends PermissionCollection
+File Location: FilePermission.java
+
+Mediator Pattern.
+ObjectStreamClass is the mediator class.
+fields controls a list of colleagues of type ObjectStreamField.
+getClassSignature invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: ObjectStreamClass.java
+
+Mediator Pattern.
+ObjectInputStream is the mediator class.
+curDesc controls a list of colleagues of type ObjectStreamClass.
+readUTF invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+ObjectOutputStream is an observer iterator.
+BlockDataOutputStream is the generic type for the listeners.
+writeProxyDesc is the notify method.
+writeUTF is the update method.
+Subject class(es): ObjectOutputStream
+File Location: ObjectOutputStream.java
+
+Observer Pattern.
+ObjectOutputStream is an observer iterator.
+BlockDataOutputStream is the generic type for the listeners.
+writeSerialData is the notify method.
+setBlockDataMode is the update method.
+Subject class(es): ObjectOutputStream
+File Location: ObjectOutputStream.java
+
+Observer Pattern.
+ObjectOutputStream is an observer iterator.
+BlockDataOutputStream is the generic type for the listeners.
+writeSerialData is the notify method.
+setBlockDataMode is the update method.
+Subject class(es): ObjectOutputStream
+File Location: ObjectOutputStream.java
+
+Observer Pattern.
+ObjectOutputStream is an observer iterator.
+BlockDataOutputStream is the generic type for the listeners.
+writeSerialData is the notify method.
+writeByte is the update method.
+Subject class(es): ObjectOutputStream
+File Location: ObjectOutputStream.java
+
+Mediator Pattern.
+ObjectOutputStream is the mediator class.
+bout controls a list of colleagues of type BlockDataOutputStream.
+access$2 invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: ObjectOutputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readBooleans is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readChars is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readShorts is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readInts is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readFloats is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readLongs is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readDoubles is the notify method.
+readFully is the update method.
+Subject class(es): ObjectInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataInputStream is an observer iterator.
+PeekInputStream is the generic type for the listeners.
+readUTFBody is the notify method.
+readFully is the update method.
+Subject class(es): BlockDataInputStream
+File Location: ObjectInputStream.java
+
+Observer Pattern.
+BlockDataOutputStream is an observer iterator.
+OutputStream is the generic type for the listeners.
+write is the notify method.
+write is the update method.
+Subject class(es): ObjectOutputStream PutFieldImpl BlockDataOutputStream
+File Location: ObjectOutputStream.java
+
+Mediator Pattern.
+Mediator: FilterInputStream
+Colleagues:  PushbackInputStream ObjectInputStream PeekInputStream BlockDataInputStream PipedInputStream SequenceInputStream InputStream DataInputStream BufferedInputStream LineNumberInputStream StreamTokenizer FileInputStream
+FileLocation: FilterInputStream.java
+
+Mediator Pattern.
+Mediator: BufferedInputStream
+Colleagues:  FilterInputStream ObjectInputStream PeekInputStream BlockDataInputStream PipedInputStream SequenceInputStream PushbackInputStream InputStream DataInputStream LineNumberInputStream FileInputStream
+FileLocation: BufferedInputStream.java
+
+Mediator Pattern.
+Mediator: BufferedOutputStream
+Colleagues:  FilterOutputStream PrintStream ByteArrayOutputStream DataOutputStream ObjectOutputStream BlockDataOutputStream FileOutputStream PipedOutputStream OutputStream
+FileLocation: BufferedOutputStream.java
+
+Mediator Pattern.
+Mediator: BufferedReader
+Colleagues:  LineNumberReader Reader CharArrayReader FilterReader PipedReader PushbackReader StringReader
+FileLocation: BufferedReader.java
+
+Mediator Pattern.
+Mediator: BufferedWriter
+Colleagues:  PrintStream PrintWriter PipedWriter Writer OutputStreamWriter
+FileLocation: BufferedWriter.java
+
+Mediator Pattern.
+Mediator: DataInputStream
+Colleagues:  FilterInputStream BufferedInputStream ObjectInputStream PeekInputStream BlockDataInputStream FileInputStream PipedInputStream SequenceInputStream PushbackInputStream InputStream LineNumberInputStream RandomAccessFile DataInput
+FileLocation: DataInputStream.java
+
+Mediator Pattern.
+Mediator: DataOutputStream
+Colleagues:  FilterOutputStream PrintStream BufferedOutputStream ByteArrayOutputStream ObjectOutputStream BlockDataOutputStream PipedOutputStream OutputStream FileOutputStream ObjectStreamClass RandomAccessFile DataOutput
+FileLocation: DataOutputStream.java
+
+Mediator Pattern.
+Mediator: ExpiringCache
+Colleagues:  Win32FileSystem Entry
+FileLocation: ExpiringCache.java
+
+Mediator Pattern.
+Mediator: File
+Colleagues:  Win32FileSystem FileSystem
+FileLocation: File.java
+
+Mediator Pattern.
+Mediator: ObjectOutputStream
+Colleagues:  File BlockDataOutputStream FilePermission FilterOutputStream PrintStream BufferedOutputStream ByteArrayOutputStream FileOutputStream ObjectStreamClass HandleTable
+FileLocation: ObjectOutputStream.java
+
+Mediator Pattern.
+Mediator: FilterOutputStream
+Colleagues:  OutputStream ObjectOutputStream PipedOutputStream PrintStream BufferedOutputStream ByteArrayOutputStream DataOutputStream BlockDataOutputStream FileOutputStream
+FileLocation: FilterOutputStream.java
+
+Mediator Pattern.
+Mediator: FilterReader
+Colleagues:  PushbackReader Reader BufferedReader CharArrayReader LineNumberReader PipedReader StringReader StreamTokenizer
+FileLocation: FilterReader.java
+
+Mediator Pattern.
+Mediator: FilterWriter
+Colleagues:  PrintWriter BufferedWriter OutputStreamWriter PipedWriter Writer
+FileLocation: FilterWriter.java
+
+Mediator Pattern.
+Mediator: InputStream
+Colleagues:  FilterInputStream BufferedInputStream ObjectInputStream PeekInputStream BlockDataInputStream PipedInputStream SequenceInputStream LineNumberInputStream DataInputStream PushbackInputStream FileInputStream
+FileLocation: InputStream.java
+
+Mediator Pattern.
+Mediator: LineNumberInputStream
+Colleagues:  PushbackInputStream ObjectInputStream PeekInputStream BlockDataInputStream PipedInputStream SequenceInputStream InputStream FilterInputStream BufferedInputStream DataInputStream StreamTokenizer
+FileLocation: LineNumberInputStream.java
+
+Mediator Pattern.
+Mediator: LineNumberReader
+Colleagues:  FilterReader BufferedReader StreamTokenizer
+FileLocation: LineNumberReader.java
+
+Mediator Pattern.
+Mediator: ObjectInputStream
+Colleagues:  File BlockDataInputStream HandleTable FilePermission InputStream FilterInputStream LineNumberInputStream SequenceInputStream StreamTokenizer BufferedInputStream PushbackInputStream ObjectStreamClass
+FileLocation: ObjectInputStream.java
+
+Mediator Pattern.
+Mediator: PipedWriter
+Colleagues:  PrintWriter PipedReader Writer BufferedWriter
+FileLocation: PipedWriter.java
+
+Mediator Pattern.
+Mediator: PrintStream
+Colleagues:  FilterOutputStream BufferedOutputStream DataOutputStream ObjectOutputStream BlockDataOutputStream PipedOutputStream FileOutputStream BufferedWriter ByteArrayOutputStream OutputStream
+FileLocation: PrintStream.java
+
+Mediator Pattern.
+Mediator: PrintWriter
+Colleagues:  BufferedWriter OutputStreamWriter PipedWriter Writer
+FileLocation: PrintWriter.java
+
+Mediator Pattern.
+Mediator: PipedOutputStream
+Colleagues:  OutputStream PipedInputStream FilterOutputStream PrintStream DataOutputStream BufferedOutputStream ByteArrayOutputStream BlockDataOutputStream
+FileLocation: PipedOutputStream.java
+
+Mediator Pattern.
+Mediator: ObjectStreamClass
+Colleagues:  ObjectOutputStream EntryFuture ObjectInputStream FieldReflector
+FileLocation: ObjectStreamClass.java
+
+Mediator Pattern.
+Mediator: OutputStream
+Colleagues:  PrintStream FilterOutputStream BufferedOutputStream ByteArrayOutputStream DataOutputStream ObjectOutputStream BlockDataOutputStream PipedOutputStream
+FileLocation: OutputStream.java
+
+Mediator Pattern.
+Mediator: PushbackInputStream
+Colleagues:  FilterInputStream BufferedInputStream DataInputStream LineNumberInputStream PeekInputStream SequenceInputStream StreamTokenizer ObjectInputStream BlockDataInputStream FileInputStream PipedInputStream
+FileLocation: PushbackInputStream.java
+
+Mediator Pattern.
+Mediator: PushbackReader
+Colleagues:  FilterReader StreamTokenizer BufferedReader
+FileLocation: PushbackReader.java
+
+Mediator Pattern.
+Mediator: Reader
+Colleagues:  FilterReader BufferedReader CharArrayReader LineNumberReader PipedReader StringReader StreamTokenizer PushbackReader
+FileLocation: Reader.java
+
+Mediator Pattern.
+Mediator: SequenceInputStream
+Colleagues:  FilterInputStream BufferedInputStream ObjectInputStream PeekInputStream BlockDataInputStream PipedInputStream LineNumberInputStream PushbackInputStream InputStream DataInputStream StreamTokenizer FileInputStream
+FileLocation: SequenceInputStream.java
+
+Mediator Pattern.
+Mediator: Win32FileSystem
+Colleagues:  File ExpiringCache
+FileLocation: Win32FileSystem.java
+
+Mediator Pattern.
+Mediator: Writer
+Colleagues:  PrintWriter BufferedWriter OutputStreamWriter PipedWriter PrintStream
+FileLocation: Writer.java
+
+Mediator Pattern.
+Mediator: HandleTable
+Colleagues:  ObjectInputStream HandleList GetFieldImpl
+FileLocation: ObjectInputStream.java
+
+Mediator Pattern.
+Mediator: BlockDataInputStream
+Colleagues:  ObjectInputStream PeekInputStream FilterInputStream DataInputStream LineNumberInputStream SequenceInputStream StreamTokenizer BufferedInputStream PushbackInputStream Bits
+FileLocation: ObjectInputStream.java
+
+Mediator Pattern.
+Mediator: ValidationList
+Colleagues:  ObjectInputStream ObjectInputValidation
+FileLocation: ObjectInputStream.java
+
+Mediator Pattern.
+Mediator: BlockDataOutputStream
+Colleagues:  ObjectOutputStream OutputStream FilterOutputStream PrintStream BufferedOutputStream DataOutputStream PipedOutputStream FileOutputStream ByteArrayOutputStream PutFieldImpl Bits
+FileLocation: ObjectOutputStream.java
+
+Mediator Pattern.
+Mediator: PeekInputStream
+Colleagues:  BlockDataInputStream InputStream FilterInputStream BufferedInputStream PushbackInputStream LineNumberInputStream PipedInputStream SequenceInputStream ObjectInputStream DataInputStream StreamTokenizer FileInputStream
+FileLocation: ObjectInputStream.java
+
+Mediator Pattern.
+Mediator: FieldReflector
+Colleagues:  ObjectStreamClass Bits
+FileLocation: ObjectStreamClass.java
+
+Proxy Pattern.
+ObjectStreamClass is a proxy.
+Serializable is a proxy interface.
+The real object(s): Long
+File Location: ObjectStreamClass.java
+
+Proxy Pattern.
+BlockDataInputStream is a proxy.
+InputStream is a proxy interface.
+The real object(s): PeekInputStream
+File Location: ObjectInputStream.java
+
+Proxy Pattern.
+BlockDataOutputStream is a proxy.
+OutputStream is a proxy interface.
+The real object(s): DataOutputStream
+File Location: ObjectOutputStream.java
+
+Adapter Pattern.
+Adapting classes:  InputStream Object ObjectInput DataInput ObjectStreamConstants
+ObjectInputStream is an adapter class.
+ValidationList is the adaptee class.
+File Location: ObjectInputStream.java
+File Location: ObjectInputStream.java
+
+Adapter Pattern.
+Adapting classes:  FilterOutputStream OutputStream Object
+PrintStream is an adapter class.
+BufferedWriter is the adaptee class.
+File Location: PrintStream.java
+File Location: BufferedWriter.java
+
+Adapter Pattern.
+Adapting classes:  OutputStream Object ObjectOutput DataOutput ObjectStreamConstants
+ObjectOutputStream is an adapter class.
+HandleTable is the adaptee class.
+File Location: ObjectOutputStream.java
+File Location: ObjectOutputStream.java
+
+Adapter Pattern.
+Adapting classes:  OutputStream Object ObjectOutput DataOutput ObjectStreamConstants
+ObjectOutputStream is an adapter class.
+ReplaceTable is the adaptee class.
+File Location: ObjectOutputStream.java
+File Location: ObjectOutputStream.java
+
+Facade Pattern.
+ObjectStreamClass is a facade class.
+Hidden types: ByteArrayOutputStream DataOutputStream
+Facade access types: ObjectStreamField ObjectOutputStream ObjectInputStream
+File Location: ObjectStreamClass.java
+
+Facade Pattern.
+PrintStream is a facade class.
+Hidden types: BufferedWriter Writer OutputStreamWriter
+Facade access types: PrintStream
+File Location: PrintStream.java
+
+Facade Pattern.
+File is a facade class.
+Hidden types: FileSystem FilenameFilter FileFilter ObjectOutputStream ObjectInputStream
+Facade access types: FileOutputStream RandomAccessFile FileInputStream Win32FileSystem
+File Location: File.java
+
+Facade Pattern.
+StreamTokenizer is a facade class.
+Hidden types: Reader InputStream
+Facade access types: StreamTokenizer
+File Location: StreamTokenizer.java
+
+Facade Pattern.
+Win32FileSystem is a facade class.
+Hidden types: File ExpiringCache
+Facade access types: Win32FileSystem
+File Location: Win32FileSystem.java

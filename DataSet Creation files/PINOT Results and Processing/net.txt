@@ -1,0 +1,351 @@
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+URLConnection$1 is a Decorator class
+getContentTypeFor is a decorate operation
+map of type FileNameMap is the Decoratee class
+File Location: URLConnection.java
+
+
+ FileNameMap
+Bridge Pattern.
+InetAddress is abstract.
+InetAddressImpl is an interface.
+InetAddress delegates InetAddressImpl.
+File Location: InetAddress.java,
+               InetAddressImpl.java
+
+Bridge Pattern.
+URLConnection is abstract.
+ContentHandlerFactory is an interface.
+URLConnection delegates ContentHandlerFactory.
+File Location: URLConnection.java,
+               ContentHandlerFactory.java
+
+Bridge Pattern.
+DatagramSocket is abstract.
+DatagramSocketImplFactory is an interface.
+DatagramSocket delegates DatagramSocketImplFactory.
+File Location: DatagramSocket.java,
+               DatagramSocketImplFactory.java
+
+SocksSocketImpl::bind is the pivot point.
+State Pattern.
+Socket is the Context class.
+SocketImpl is the State interface.
+Concrete State classes:  PlainSocketImpl SocksSocketImpl
+Delegation through impl of type SocketImpl
+setImpl changes the state variable impl
+setImpl is invoked by  implAccept createImpl  
+File Location: Socket.java,
+               SocketImpl.java
+
+SocksSocketImplFactory::guessVersion is the pivot point.
+State Pattern.
+Socket is the Context class.
+SocketImplFactory is the State interface.
+Concrete State classes:  SocksSocketImplFactory
+Delegation through factory of type SocketImplFactory
+checkSocks changes the state variable factory
+checkSocks is invoked by  setImpl
+File Location: Socket.java,
+               SocketImplFactory.java
+
+Strategy Pattern.
+ServerSocket is the Context class.
+SocketImpl is the Strategy interface.
+Concrete Strategy classes:  PlainSocketImpl SocksSocketImpl
+Delegation through impl of type SocketImpl
+File Location: ServerSocket.java,
+               SocketImpl.java
+
+Strategy Pattern.
+ServerSocket is the Context class.
+SocketImplFactory is the Strategy interface.
+Concrete Strategy classes:  SocksSocketImplFactory
+Delegation through factory of type SocketImplFactory
+File Location: ServerSocket.java,
+               SocketImplFactory.java
+
+Strategy Pattern.
+URL is the Context class.
+URLStreamHandler is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through handler of type URLStreamHandler
+File Location: URL.java,
+               URLStreamHandler.java
+
+Strategy Pattern.
+URL is the Context class.
+URLStreamHandlerFactory is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through factory of type URLStreamHandlerFactory
+File Location: URL.java,
+               URLStreamHandlerFactory.java
+
+Flyweight Pattern.
+FactoryURLClassLoader is immutable.
+File location: URLClassLoader.java
+
+Flyweight Pattern.
+NetPermission is immutable.
+File location: NetPermission.java
+
+Flyweight Pattern.
+NetworkInterface is immutable.
+File location: NetworkInterface.java
+
+Flyweight Pattern.
+PasswordAuthentication is immutable.
+File location: PasswordAuthentication.java
+
+Flyweight Pattern.
+Cache is immutable.
+File location: InetAddress.java
+
+Flyweight Pattern.
+URLConnection is a flyweight factory.
+UnknownContentHandlerP is a flyweight object.
+lookupContentHandlerClassFor is the getFlyweight method.
+File location: URLConnection.java
+
+Composite pattern.
+checkedAddresses is the composite class.
+local_addrs is the composite instance.
+Object is the component class.
+File Location: NetworkInterface.java
+File Location: /usr/java/j2sdk1.4.2_01/jre/lib/rt.jar/java/lang(Object.class)
+
+Template Method Found.
+NetworkInterface is the template class
+getByName is the template method
+getByName0 is a primitive method
+File Location: NetworkInterface.java
+
+Template Method Found.
+PlainSocketImpl is the template class
+doConnect is the template method
+socketConnect is a primitive method
+File Location: PlainSocketImpl.java
+
+Template Method Found.
+SocketOutputStream is the template class
+socketWrite is the template method
+socketWrite0 is a primitive method
+File Location: SocketOutputStream.java
+
+Factory Method pattern.
+InetAddressImpl is a Factory Method class.
+Inet4AddressImpl is a concrete Factory Method class.
+loopbackAddress is a factory method returns  Inet4Address
+ which extends InetAddress
+File Location: Inet4AddressImpl.java
+
+Factory Method pattern.
+InetAddressImpl is a Factory Method class.
+Inet6AddressImpl is a concrete Factory Method class.
+loopbackAddress is a factory method returns  Inet4Address Inet6Address
+ which extends InetAddress
+File Location: Inet6AddressImpl.java
+
+Factory Method pattern.
+PrivilegedExceptionAction is a Factory Method class.
+SocksSocketImplFactory$1 is a concrete Factory Method class.
+run is a factory method returns  Socket
+ which extends Object
+File Location: SocksSocketImplFactory.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+URLClassLoader$5 is a concrete Factory Method class.
+run is a factory method returns  FactoryURLClassLoader
+ which extends Object
+File Location: URLClassLoader.java
+
+Factory Method pattern.
+PrivilegedAction is a Factory Method class.
+URLClassLoader$6 is a concrete Factory Method class.
+run is a factory method returns  FactoryURLClassLoader
+ which extends Object
+File Location: URLClassLoader.java
+
+Factory Method pattern.
+SocketOptions is a Factory Method class.
+PlainSocketImpl is a concrete Factory Method class.
+getOption is a factory method returns  Integer
+ which extends Object
+File Location: PlainSocketImpl.java
+
+Factory Method pattern.
+InetAddressImpl is a Factory Method class.
+Inet4AddressImpl is a concrete Factory Method class.
+anyLocalAddress is a factory method returns  Inet4Address
+ which extends InetAddress
+File Location: Inet4AddressImpl.java
+
+Factory Method pattern.
+InetAddressImpl is a Factory Method class.
+Inet6AddressImpl is a concrete Factory Method class.
+anyLocalAddress is a factory method returns  Inet4Address Inet6Address
+ which extends InetAddress
+File Location: Inet6AddressImpl.java
+
+Factory Method pattern.
+SocketImpl is a Factory Method class.
+PlainSocketImpl is a concrete Factory Method class.
+getInputStream is a factory method returns  SocketInputStream
+ which extends InputStream
+File Location: PlainSocketImpl.java
+
+Factory Method pattern.
+SocketImpl is a Factory Method class.
+PlainSocketImpl is a concrete Factory Method class.
+getOutputStream is a factory method returns  SocketOutputStream
+ which extends OutputStream
+File Location: PlainSocketImpl.java
+
+Factory Method pattern.
+SocketImplFactory is a Factory Method class.
+SocksSocketImplFactory is a concrete Factory Method class.
+createSocketImpl is a factory method returns  SocksSocketImpl
+ which extends SocketImpl
+File Location: SocksSocketImplFactory.java
+
+Factory Method pattern.
+Permission is a Factory Method class.
+SocketPermission is a concrete Factory Method class.
+newPermissionCollection is a factory method returns  SocketPermissionCollection
+ which extends PermissionCollection
+File Location: SocketPermission.java
+
+Mediator Pattern.
+SocketImpl is the mediator class.
+socket controls a list of colleagues of type Socket.
+create invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: SocketImpl.java
+
+Mediator Pattern.
+SocketInputStream is the mediator class.
+impl controls a list of colleagues of type PlainSocketImpl.
+setEOF invokes the mediator. 
+Subtype(s) of colleague(s):  SocksSocketImpl
+File Location: SocketInputStream.java
+
+Mediator Pattern.
+URLConnection is the mediator class.
+url controls a list of colleagues of type URL.
+getInputStream invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: URLConnection.java
+
+Mediator Pattern.
+Mediator: DatagramSocket
+Colleagues:  MulticastSocket PlainDatagramSocketImpl PlainSocketImpl
+FileLocation: DatagramSocket.java
+
+Mediator Pattern.
+Mediator: Inet6Address
+Colleagues:  URLStreamHandler Inet4Address
+FileLocation: Inet6Address.java
+
+Mediator Pattern.
+Mediator: InetAddress
+Colleagues:  InetSocketAddress Inet4Address Inet6Address URI PlainSocketImpl InetAddressImpl Inet4AddressImpl DatagramSocket MulticastSocket Socket
+FileLocation: InetAddress.java
+
+Mediator Pattern.
+Mediator: NetworkInterface
+Colleagues:  URI URLClassLoader$3
+FileLocation: NetworkInterface.java
+
+Mediator Pattern.
+Mediator: InetSocketAddress
+Colleagues:  URI InetAddress
+FileLocation: InetSocketAddress.java
+
+Mediator Pattern.
+Mediator: Inet6AddressImpl
+Colleagues:  InetAddress Inet4AddressImpl
+FileLocation: Inet6AddressImpl.java
+
+Mediator Pattern.
+Mediator: ServerSocket
+Colleagues:  URI SocketImpl SocksSocketImpl
+FileLocation: ServerSocket.java
+
+Mediator Pattern.
+Mediator: SocketImpl
+Colleagues:  URI SocksSocketImpl
+FileLocation: SocketImpl.java
+
+Mediator Pattern.
+Mediator: PlainSocketImpl
+Colleagues:  SocksSocketImpl ServerSocket
+FileLocation: PlainSocketImpl.java
+
+Mediator Pattern.
+Mediator: Socket
+Colleagues:  ServerSocket SocksSocketImplFactory SocksSocketImpl SocketOptions PlainDatagramSocketImpl Inet4Address Inet6Address PlainSocketImpl SocketInputStream SocketOutputStream SocketImpl URI
+FileLocation: Socket.java
+
+Mediator Pattern.
+Mediator: SocksSocketImpl
+Colleagues:  Socket Inet4Address Inet6Address ServerSocket SocketImpl InetSocketAddress PlainSocketImpl
+FileLocation: SocksSocketImpl.java
+
+Mediator Pattern.
+Mediator: SocksSocketImplFactory
+Colleagues:  ServerSocket SocksSocketImpl
+FileLocation: SocksSocketImplFactory.java
+
+Mediator Pattern.
+Mediator: URL
+Colleagues:  URLClassLoader URLStreamHandler
+FileLocation: URL.java
+
+Mediator Pattern.
+Mediator: URLConnection
+Colleagues:  URL ContentHandler
+FileLocation: URLConnection.java
+
+Mediator Pattern.
+Mediator: URLStreamHandler
+Colleagues:  URL Inet6Address InetAddress Inet4Address
+FileLocation: URLStreamHandler.java
+
+Facade Pattern.
+MulticastSocket is a facade class.
+Hidden types: DatagramSocketImpl InetSocketAddress SocketOptions InetAddress NetworkInterface DatagramPacket
+Facade access types: MulticastSocket
+File Location: MulticastSocket.java
+
+Facade Pattern.
+ServerSocket is a facade class.
+Hidden types: SocketImplFactory SocketImpl SocketOptions
+Facade access types: PlainSocketImpl
+File Location: ServerSocket.java
+
+Facade Pattern.
+SocketOutputStream is a facade class.
+Hidden types: PlainSocketImpl Socket SocketImpl
+Facade access types: SocketOutputStream
+File Location: SocketOutputStream.java
+
+Facade Pattern.
+SocksSocketImpl is a facade class.
+Hidden types: InetSocketAddress InetAddress PasswordAuthentication
+Facade access types: SocksSocketImplFactory
+File Location: SocksSocketImpl.java
+
+Facade Pattern.
+URLClassLoader is a facade class.
+Hidden types: URL URLConnection JarURLConnection SocketPermission
+Facade access types: URLClassLoader$1
+File Location: URLClassLoader.java
+
+Facade Pattern.
+URL is a facade class.
+Hidden types: URLStreamHandlerFactory Parts
+Facade access types: URLClassLoader URLStreamHandler HttpURLConnection JarURLConnection
+File Location: URL.java

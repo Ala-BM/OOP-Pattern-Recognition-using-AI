@@ -1,0 +1,1086 @@
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+ArrayType is a Decorator class
+hashCode is a decorate operation
+elemtype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+ArrayType is a Decorator class
+allparams is a decorate operation
+elemtype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+ArrayType is a Decorator class
+isErroneous is a decorate operation
+elemtype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+ArrayType is a Decorator class
+isParameterized is a decorate operation
+elemtype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+ArrayType is a Decorator class
+contains is a decorate operation
+elemtype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+ArrayType is a Decorator class
+complete is a decorate operation
+elemtype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+MethodType is a Decorator class
+isErroneous is a decorate operation
+restype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+MethodType is a Decorator class
+contains is a decorate operation
+restype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+MethodType is a Decorator class
+isSameType is a decorate operation
+restype of type Type is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Decorator Pattern
+AssignItem is a Decorator class
+width is a decorate operation
+lhs of type Item is the Decoratee class
+File Location: src/com/sun/tools/javac/v8/comp/Items.java
+
+
+ Type Item
+Bridge Pattern.
+Symbol is abstract.
+Completer is an interface.
+Symbol delegates Completer.
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java,
+               src/com/sun/tools/javac/v8/code/Symbol.java
+
+Bridge Pattern.
+ClassReader is abstract.
+SourceCompleter is an interface.
+ClassReader delegates SourceCompleter.
+File Location: src/com/sun/tools/javac/v8/code/ClassReader.java,
+               src/com/sun/tools/javac/v8/code/ClassReader.java
+
+MemberItem::invoke is the pivot point.
+State Pattern.
+Gen is the Context class.
+Item is the State interface.
+Concrete State classes:  StackItem IndexedItem SelfItem LocalItem StaticItem MemberItem ImmediateItem AssignItem CondItem Items$1
+Delegation through result of type Item
+genExpr changes the state variable result
+genExpr is invoked by  genCond genArgs visitVarDef visitSwitch visitSynchronized visitExec visitReturn visitThrow visitApply visitConditional visitNewArray visitParens visitAssign visitAssignop visitUnary visitBinary appendStrings completeBinop visitTypeCast visitTypeTest visitIndexed visitSelect
+File Location: src/com/sun/tools/javac/v8/comp/Gen.java,
+               src/com/sun/tools/javac/v8/comp/Items.java
+
+Strategy Pattern.
+Items is the Context class.
+Item is the Strategy interface.
+Concrete Strategy classes:  StackItem IndexedItem SelfItem LocalItem StaticItem MemberItem ImmediateItem AssignItem CondItem Items$1
+Delegation through voidItem of type Item
+File Location: src/com/sun/tools/javac/v8/comp/Items.java,
+               src/com/sun/tools/javac/v8/comp/Items.java
+
+Strategy Pattern.
+Items is the Context class.
+Item is the Strategy interface.
+Concrete Strategy classes:  StackItem IndexedItem SelfItem LocalItem StaticItem MemberItem ImmediateItem AssignItem CondItem Items$1
+Delegation through thisItem of type Item
+File Location: src/com/sun/tools/javac/v8/comp/Items.java,
+               src/com/sun/tools/javac/v8/comp/Items.java
+
+Strategy Pattern.
+Items is the Context class.
+Item is the Strategy interface.
+Concrete Strategy classes:  StackItem IndexedItem SelfItem LocalItem StaticItem MemberItem ImmediateItem AssignItem CondItem Items$1
+Delegation through superItem of type Item
+File Location: src/com/sun/tools/javac/v8/comp/Items.java,
+               src/com/sun/tools/javac/v8/comp/Items.java
+
+visitClassDef is called by ClassDef::accept is the pivot point.
+State Pattern.
+TransInner is the Context class.
+Tree is the State interface.
+Concrete State classes:  TopLevel Import ClassDef MethodDef VarDef Skip Block DoLoop WhileLoop ForLoop Labelled Switch Case Synchronized Try Catch Conditional If Exec Break Continue Return Throw Assert Apply NewClass NewArray Parens Assign Assignop Unary Binary TypeCast TypeTest Indexed Select Ident Literal TypeIdent TypeArray TypeParameter Erroneous
+Delegation through outermostMemberDef of type Tree
+visitClassDef changes the state variable outermostMemberDef
+visitClassDef is invoked by  visitClassDef accept
+File Location: src/com/sun/tools/javac/v8/comp/TransInner.java,
+               src/com/sun/tools/javac/v8/tree/Tree.java
+
+Assign::accept is the pivot point.
+State Pattern.
+TransInner is the Context class.
+Tree is the State interface.
+Concrete State classes:  TopLevel Import ClassDef MethodDef VarDef Skip Block DoLoop WhileLoop ForLoop Labelled Switch Case Synchronized Try Catch Conditional If Exec Break Continue Return Throw Assert Apply NewClass NewArray Parens Assign Assignop Unary Binary TypeCast TypeTest Indexed Select Ident Literal TypeIdent TypeArray TypeParameter Erroneous
+Delegation through enclOp of type Tree
+translate changes the state variable enclOp
+translate is invoked by  visitAssign visitAssignop visitUnary translateTopLevelClass
+File Location: src/com/sun/tools/javac/v8/comp/TransInner.java,
+               src/com/sun/tools/javac/v8/tree/Tree.java
+
+Strategy Pattern.
+ClassSymbol is the Context class.
+FileEntry is the Strategy interface.
+Concrete Strategy classes:  Regular Zipped
+Delegation through classfile of type FileEntry
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java,
+               src/com/sun/tools/javac/v8/util/FileEntry.java
+
+Gen$2::genLast is the pivot point.
+State Pattern.
+GenContext is the Context class.
+GenFinalizer is the State interface.
+Concrete State classes:  Gen$1 Gen$2
+Delegation through finalize of type GenFinalizer
+visitSynchronized changes the state variable finalize
+visitSynchronized is invoked by  accept
+File Location: src/com/sun/tools/javac/v8/comp/Gen.java,
+               src/com/sun/tools/javac/v8/comp/Gen.java
+
+Unary::accept is the pivot point.
+State Pattern.
+CondItem is the Context class.
+Tree is the State interface.
+Concrete State classes:  TopLevel Import ClassDef MethodDef VarDef Skip Block DoLoop WhileLoop ForLoop Labelled Switch Case Synchronized Try Catch Conditional If Exec Break Continue Return Throw Assert Apply NewClass NewArray Parens Assign Assignop Unary Binary TypeCast TypeTest Indexed Select Ident Literal TypeIdent TypeArray TypeParameter Erroneous
+Delegation through tree of type Tree
+negate changes the state variable tree
+negate is invoked by  visitUnary
+File Location: src/com/sun/tools/javac/v8/comp/Items.java,
+               src/com/sun/tools/javac/v8/tree/Tree.java
+
+Strategy Pattern.
+PendingExit is the Context class.
+Tree is the Strategy interface.
+Concrete Strategy classes:  TopLevel Import ClassDef MethodDef VarDef Skip Block DoLoop WhileLoop ForLoop Labelled Switch Case Synchronized Try Catch Conditional If Exec Break Continue Return Throw Assert Apply NewClass NewArray Parens Assign Assignop Unary Binary TypeCast TypeTest Indexed Select Ident Literal TypeIdent TypeArray TypeParameter Erroneous
+Delegation through tree of type Tree
+File Location: src/com/sun/tools/javac/v8/comp/Flow.java,
+               src/com/sun/tools/javac/v8/tree/Tree.java
+
+Flyweight Pattern.
+Source is a flyweight factory.
+JDK1_2 is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/Source.java
+
+Flyweight Pattern.
+Log is a flyweight factory.
+outKey is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/util/Log.java
+
+Flyweight Pattern.
+ClassReader is a flyweight factory.
+pathSep is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/ClassReader.java
+
+Flyweight Pattern.
+Scope is a flyweight factory.
+emptyScope is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/Scope.java
+
+Flyweight Pattern.
+Type is a flyweight factory.
+noType is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/Type.java
+
+Flyweight Pattern.
+Infer is a flyweight factory.
+anyPoly is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/comp/Infer.java
+
+Flyweight Pattern.
+Tree is a flyweight factory.
+emptyList is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Flyweight Pattern.
+ClassSymbol is a flyweight factory.
+emptyList is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Flyweight Pattern.
+VarSymbol is a flyweight factory.
+emptyList is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Flyweight Pattern.
+MethodSymbol is a flyweight factory.
+emptyList is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Flyweight Pattern.
+VarDef is a flyweight factory.
+emptyList is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Flyweight Pattern.
+TypeParameter is a flyweight factory.
+emptyList is a flyweight object (declared public-static-final).
+File location: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Composite pattern.
+Pool is the composite class.
+pool is the composite instance.
+Object is the component class.
+File Location: src/com/sun/tools/javac/v8/code/Pool.java
+File Location: /home/shini/sandbox/pinot/lib/rt.jar/java/lang(Object.class)
+
+Composite pattern.
+ClassReader is the composite class.
+poolObj is the composite instance.
+Object is the component class.
+File Location: src/com/sun/tools/javac/v8/code/ClassReader.java
+File Location: /home/shini/sandbox/pinot/lib/rt.jar/java/lang(Object.class)
+
+Template Method Found.
+ClassReader is the template class
+list is the template method
+extraZipFileActions is a primitive method
+File Location: src/com/sun/tools/javac/v8/code/ClassReader.java
+
+Factory Method pattern.
+Symbol is a Factory Method class.
+VarSymbol is a concrete Factory Method class.
+clone is a factory method returns  VarSymbol
+ which extends Symbol
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Factory Method pattern.
+Symbol is a Factory Method class.
+MethodSymbol is a concrete Factory Method class.
+clone is a factory method returns  MethodSymbol
+ which extends Symbol
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Factory Method pattern.
+Scope is a Factory Method class.
+ErrorScope is a concrete Factory Method class.
+dup is a factory method returns  ErrorScope
+ which extends Scope
+File Location: src/com/sun/tools/javac/v8/code/Scope.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+ClassType is a concrete Factory Method class.
+constType is a factory method returns  ClassType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+FileEntry is a Factory Method class.
+Regular is a concrete Factory Method class.
+open is a factory method returns  FileInputStream
+ which extends InputStream
+File Location: src/com/sun/tools/javac/v8/util/FileEntry.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+ClassType is a concrete Factory Method class.
+map is a factory method returns  ClassType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+ArrayType is a concrete Factory Method class.
+map is a factory method returns  ArrayType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+MethodType is a concrete Factory Method class.
+map is a factory method returns  MethodType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+ClassType is a concrete Factory Method class.
+classBound is a factory method returns  ClassType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+ClassType is a concrete Factory Method class.
+subst is a factory method returns  ClassType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+ArrayType is a concrete Factory Method class.
+subst is a factory method returns  ArrayType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Type is a Factory Method class.
+MethodType is a concrete Factory Method class.
+subst is a factory method returns  MethodType
+ which extends Type
+File Location: src/com/sun/tools/javac/v8/code/Type.java
+
+Factory Method pattern.
+Scope is a Factory Method class.
+ErrorScope is a concrete Factory Method class.
+dupUnshared is a factory method returns  ErrorScope
+ which extends Scope
+File Location: src/com/sun/tools/javac/v8/code/Scope.java
+
+Factory Method pattern.
+Symbol is a Factory Method class.
+VarSymbol is a concrete Factory Method class.
+asMemberOf is a factory method returns  VarSymbol
+ which extends Symbol
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Factory Method pattern.
+Symbol is a Factory Method class.
+MethodSymbol is a concrete Factory Method class.
+asMemberOf is a factory method returns  MethodSymbol
+ which extends Symbol
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Visitor pattern found.
+Visitor is an abstract Visitor class.
+Tree is a Vistee class.
+accept is the accept method.
+visitTree is the visit method.
+THIS pointer is exposed to visitor Visitor
+File Location: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Observer Pattern.
+Main is an observer iterator.
+Option is the generic type for the listeners.
+help is the notify method.
+help is the update method.
+Subject class(es): Main Main$5
+File Location: src/com/sun/tools/javac/v8/Main.java
+
+Observer Pattern.
+Main is an observer iterator.
+Option is the generic type for the listeners.
+xhelp is the notify method.
+xhelp is the update method.
+Subject class(es): Main$8
+File Location: src/com/sun/tools/javac/v8/Main.java
+
+Mediator Pattern.
+Main is the mediator class.
+recognizedOptions controls a list of colleagues of type Option.
+access$1 invokes the mediator. 
+Subtype(s) of colleague(s):  XOption HiddenOption Main$1 Main$2 Main$3 Main$4 Main$5 Main$9 Main$6 Main$7 Main$8 Main$10
+File Location: src/com/sun/tools/javac/v8/Main.java
+
+Observer Pattern.
+ClassReader is an observer iterator.
+Scope is the generic type for the listeners.
+enterTypevars is the notify method.
+enter is the update method.
+Subject class(es): ClassReader
+File Location: src/com/sun/tools/javac/v8/code/ClassReader.java
+
+Mediator Pattern.
+Scope is the mediator class.
+owner controls a list of colleagues of type Symbol.
+lookup invokes the mediator. 
+Subtype(s) of colleague(s):  TypeSymbol VarSymbol MethodSymbol ResolveError ClassSymbol PackageSymbol OperatorSymbol StaticError AccessError AmbiguityError
+File Location: src/com/sun/tools/javac/v8/code/Scope.java
+
+Mediator Pattern.
+Items is the mediator class.
+voidItem controls a list of colleagues of type Item.
+makeCondItem invokes the mediator. 
+Subtype(s) of colleague(s):  StackItem IndexedItem SelfItem LocalItem StaticItem MemberItem ImmediateItem AssignItem CondItem Items$1
+File Location: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Resolve is the mediator class.
+varNotFound controls a list of colleagues of type ResolveError.
+absentKindName invokes the mediator. 
+Subtype(s) of colleague(s):  AccessError StaticError AmbiguityError
+File Location: src/com/sun/tools/javac/v8/comp/Resolve.java
+
+Observer Pattern.
+TransInner is an observer iterator.
+Scope is the generic type for the listeners.
+freevarDefs is the notify method.
+enter is the update method.
+Subject class(es): TransInner
+File Location: src/com/sun/tools/javac/v8/comp/TransInner.java
+
+Mediator Pattern.
+Entry is the mediator class.
+sym controls a list of colleagues of type Symbol.
+next invokes the mediator. 
+Subtype(s) of colleague(s):  TypeSymbol VarSymbol MethodSymbol ResolveError ClassSymbol PackageSymbol OperatorSymbol StaticError AccessError AmbiguityError
+File Location: src/com/sun/tools/javac/v8/code/Scope.java
+
+Mediator Pattern.
+Mediator: Main
+Colleagues:  Main Options CommandLine List Context JavaCompiler
+FileLocation: src/com/sun/tools/javac/v8/Main.java
+
+Mediator Pattern.
+Mediator: CommandLine
+Colleagues:  Main Todo
+FileLocation: src/com/sun/tools/javac/v8/CommandLine.java
+
+Mediator Pattern.
+Mediator: ClassReader
+Colleagues:  CompleteClassReader Table Name Symbol PackageSymbol ClassSymbol ListBuffer Todo List Type MethodType Scope ErrorScope ClassType JavaCompiler Hashtable Enter TypeSymbol Options TransInner Resolve CompleteEnter MemberEnter
+FileLocation: src/com/sun/tools/javac/v8/code/ClassReader.java
+
+Mediator Pattern.
+Mediator: ClassWriter
+Colleagues:  TransInner ClassFile ClassType JavaCompiler Convert
+FileLocation: src/com/sun/tools/javac/v8/code/ClassWriter.java
+
+Mediator Pattern.
+Mediator: CRTable
+Colleagues:  CondItem ListBuffer Todo Gen ClassWriter SourceComputer Hashtable Position
+FileLocation: src/com/sun/tools/javac/v8/code/CRTable.java
+
+Mediator Pattern.
+Mediator: JavaCompiler
+Colleagues:  Main Symtab Todo Enter Attr Gen Flow TransTypes TransInner Check ClassSymbol TreeMaker Name
+FileLocation: src/com/sun/tools/javac/v8/JavaCompiler.java
+
+Mediator Pattern.
+Mediator: Type
+Colleagues:  MethodType Name List Check Flow Attr ArrayType Resolve ClassType ResolveError ConstFold Tree PackageType Symbol TypeSymbol PackageSymbol ClassSymbol MethodSymbol FileEntry Bits Gen ClassWriter TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/code/Type.java
+
+Mediator Pattern.
+Mediator: Code
+Colleagues:  Gen Todo CompleteClassReader ListBuffer List Position LocalItem Bits
+FileLocation: src/com/sun/tools/javac/v8/code/Code.java
+
+Mediator Pattern.
+Mediator: Pool
+Colleagues:  ImmediateItem Hashtable Options ClassWriter
+FileLocation: src/com/sun/tools/javac/v8/code/Pool.java
+
+Mediator Pattern.
+Mediator: CompleteClassReader
+Colleagues:  ClassReader Code
+FileLocation: src/com/sun/tools/javac/v8/code/CompleteClassReader.java
+
+Mediator Pattern.
+Mediator: Target
+Colleagues:  TransInner Options
+FileLocation: src/com/sun/tools/javac/v8/code/Target.java
+
+Mediator Pattern.
+Mediator: Symbol
+Colleagues:  List Name Resolve Check Flow TransTypes Enter MethodSymbol PackageSymbol TransInner ResolveError ClassType ArrayType MethodType ClassSymbol Gen Code Type ClassWriter FreeVarCollector Completer CompleteEnter ClassReader MemberEnter
+FileLocation: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Mediator Pattern.
+Mediator: Scope
+Colleagues:  Enter ErrorScope
+FileLocation: src/com/sun/tools/javac/v8/code/Scope.java
+
+Mediator Pattern.
+Mediator: Source
+Colleagues:  Parser Context Options
+FileLocation: src/com/sun/tools/javac/v8/code/Source.java
+
+Mediator Pattern.
+Mediator: Gen
+Colleagues:  Gen$2 Code CRTable JavaCompiler Pool
+FileLocation: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Mediator Pattern.
+Mediator: Check
+Colleagues:  Attr PackageSymbol MethodSymbol TransInner Enter Options ArrayType Flow ClassType ErrorScope Entry CompleteEnter MemberEnter ClassSymbol
+FileLocation: src/com/sun/tools/javac/v8/comp/Check.java
+
+Mediator Pattern.
+Mediator: Attr
+Colleagues:  CompleteEnter PackageSymbol MethodSymbol
+FileLocation: src/com/sun/tools/javac/v8/comp/Attr.java
+
+Mediator Pattern.
+Mediator: ConstFold
+Colleagues:  TransInner ClassType Attr ArrayType MethodType Pair
+FileLocation: src/com/sun/tools/javac/v8/comp/ConstFold.java
+
+Mediator Pattern.
+Mediator: Enter
+Colleagues:  JavaCompiler Hashtable MemberEnter ErrorScope Attr ClassSymbol
+FileLocation: src/com/sun/tools/javac/v8/comp/Enter.java
+
+Mediator Pattern.
+Mediator: TransInner
+Colleagues:  TreeTranslator TreeMaker Hashtable Options TransTypes ErrorScope Convert ClassSymbol ListBuffer Todo JavaCompiler
+FileLocation: src/com/sun/tools/javac/v8/comp/TransInner.java
+
+Mediator Pattern.
+Mediator: Flow
+Colleagues:  ComplexityScanner Bits List Log ListBuffer Check Type ClassType ArrayType MethodType TreeInfo Todo FreeVarCollector JavaCompiler TreeScanner
+FileLocation: src/com/sun/tools/javac/v8/comp/Flow.java
+
+Mediator Pattern.
+Mediator: Resolve
+Colleagues:  Gen PackageSymbol Attr MethodType TypeSymbol ClassReader MethodSymbol TransInner ResolveError ClassSymbol
+FileLocation: src/com/sun/tools/javac/v8/comp/Resolve.java
+
+Mediator Pattern.
+Mediator: TransTypes
+Colleagues:  TransInner MethodType ClassType ErrorScope PackageSymbol MethodSymbol JavaCompiler Hashtable
+FileLocation: src/com/sun/tools/javac/v8/comp/TransTypes.java
+
+Mediator Pattern.
+Mediator: Parser
+Colleagues:  JavaCompiler Scanner
+FileLocation: src/com/sun/tools/javac/v8/parser/Parser.java
+
+Mediator Pattern.
+Mediator: Keywords
+Colleagues:  Scanner Context Parser Name
+FileLocation: src/com/sun/tools/javac/v8/parser/Keywords.java
+
+Mediator Pattern.
+Mediator: TreeScanner
+Colleagues:  ComplexityScanner Tree Flow List FreeVarCollector
+FileLocation: src/com/sun/tools/javac/v8/tree/TreeScanner.java
+
+Mediator Pattern.
+Mediator: TreeTranslator
+Colleagues:  TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/TreeTranslator.java
+
+Mediator Pattern.
+Mediator: TreeInfo
+Colleagues:  Gen PackageSymbol TransInner Todo
+FileLocation: src/com/sun/tools/javac/v8/tree/TreeInfo.java
+
+Mediator Pattern.
+Mediator: TreeMaker
+Colleagues:  Parser Context TransInner Todo MethodType Attr ArrayType TransTypes ClassType Flow
+FileLocation: src/com/sun/tools/javac/v8/tree/TreeMaker.java
+
+Mediator Pattern.
+Mediator: Hashtable
+Colleagues:  Options List Name ArrayType MethodType Pair Context Source Target ClassReader Enter MemberEnter CompleteEnter Pool CRTable SourceComputer Check Pretty TransInner FreeVarCollector Symtab Gen Parser Attr Todo ListBuffer
+FileLocation: src/com/sun/tools/javac/v8/util/Hashtable.java
+
+Mediator Pattern.
+Mediator: List
+Colleagues:  Hashtable Name ArrayType MethodType Pair Set ClassType ListBuffer JavaCompiler
+FileLocation: src/com/sun/tools/javac/v8/util/List.java
+
+Mediator Pattern.
+Mediator: ListBuffer
+Colleagues:  Todo List Gen Parser
+FileLocation: src/com/sun/tools/javac/v8/util/ListBuffer.java
+
+Mediator Pattern.
+Mediator: Tree
+Colleagues:  Type Pretty Gen Visitor Enter MemberEnter SourceComputer Attr TreeScanner TreeTranslator Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Name
+Colleagues:  Table Convert Type ClassType PackageType Symbol PackageSymbol ClassSymbol MethodSymbol ClassFile JavaCompiler Enter List
+FileLocation: src/com/sun/tools/javac/v8/util/Name.java
+
+Mediator Pattern.
+Mediator: Set
+Colleagues:  JavaCompiler ArrayType MethodType Pair Attr Check Name Log List ClassWriter
+FileLocation: src/com/sun/tools/javac/v8/util/Set.java
+
+Mediator Pattern.
+Mediator: Log
+Colleagues:  Scanner Context Parser
+FileLocation: src/com/sun/tools/javac/v8/util/Log.java
+
+Mediator Pattern.
+Mediator: Context
+Colleagues:  Main Hashtable Options Log Table JavaCompiler Symtab Todo Enter ClassWriter TreeMaker Resolve Infer TreeInfo ConstFold Keywords Flow TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/util/Context.java
+
+Mediator Pattern.
+Mediator: Options
+Colleagues:  Option Hashtable Main Log JavaCompiler ClassWriter Flow
+FileLocation: src/com/sun/tools/javac/v8/util/Options.java
+
+Mediator Pattern.
+Mediator: Pair
+Colleagues:  Hashtable List Name ArrayType MethodType Set ClassType
+FileLocation: src/com/sun/tools/javac/v8/util/Pair.java
+
+Mediator Pattern.
+Mediator: Main$4
+Colleagues:  Main Target Source Option
+FileLocation: src/com/sun/tools/javac/v8/Main.java
+
+Mediator Pattern.
+Mediator: Main$3
+Colleagues:  Main Source Target Option
+FileLocation: src/com/sun/tools/javac/v8/Main.java
+
+Mediator Pattern.
+Mediator: Table
+Colleagues:  Scanner Context Parser ByteBuffer Name Symtab TreeMaker Check
+FileLocation: src/com/sun/tools/javac/v8/util/Name.java
+
+Mediator Pattern.
+Mediator: TypeSymbol
+Colleagues:  PackageSymbol ClassSymbol Resolve Name
+FileLocation: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Mediator Pattern.
+Mediator: PackageSymbol
+Colleagues:  Resolve Name Check Flow TransTypes TreeMaker Symbol ClassSymbol MethodSymbol MemberEnter ClassType TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Mediator Pattern.
+Mediator: ClassSymbol
+Colleagues:  ClassType ArrayType MethodSymbol Gen ClassWriter Code Type TransTypes TransInner Resolve Check PackageSymbol Symbol List
+FileLocation: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Mediator Pattern.
+Mediator: MethodSymbol
+Colleagues:  List Symbol PackageSymbol Type Pretty ClassSymbol MethodType Check Name TransTypes Enter MemberEnter Attr Resolve ResolveError Flow TransInner Gen ErrorScope Entry ClassType ArrayType
+FileLocation: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Mediator Pattern.
+Mediator: ClassType
+Colleagues:  MethodType ArrayType PackageType List Type Pretty Symbol Attr ResolveError Check Flow ClassSymbol MethodSymbol ClassWriter Resolve PackageSymbol Gen CompleteEnter TransTypes
+FileLocation: src/com/sun/tools/javac/v8/code/Type.java
+
+Mediator Pattern.
+Mediator: ArrayType
+Colleagues:  Hashtable List Name MethodType Pair Set ConstFold ClassType Check ClassSymbol Resolve Type PackageType MethodSymbol TransTypes PackageSymbol Attr
+FileLocation: src/com/sun/tools/javac/v8/code/Type.java
+
+Mediator Pattern.
+Mediator: MethodType
+Colleagues:  Type PackageType ClassType ArrayType Symbol List Attr ResolveError Check Flow Hashtable Name Pair Set ConstFold MethodSymbol TransTypes
+FileLocation: src/com/sun/tools/javac/v8/code/Type.java
+
+Mediator Pattern.
+Mediator: PackageType
+Colleagues:  ClassType PackageSymbol ClassSymbol MethodType Name Symbol List Type Pretty
+FileLocation: src/com/sun/tools/javac/v8/code/Type.java
+
+Mediator Pattern.
+Mediator: Import
+Colleagues:  Gen Visitor MemberEnter Pretty TreeScanner TreeTranslator Enter SourceComputer Attr Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: ClassDef
+Colleagues:  Gen Visitor Enter Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner MemberEnter SourceComputer Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: TopLevel
+Colleagues:  Gen Visitor Enter MemberEnter Pretty TreeScanner TreeTranslator SourceComputer Attr Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: MethodDef
+Colleagues:  Gen Visitor MemberEnter SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: VarDef
+Colleagues:  Gen Visitor MemberEnter SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Skip
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Block
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: DoLoop
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: WhileLoop
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: ForLoop
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Labelled
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Switch
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Case
+Colleagues:  Gen Visitor SourceComputer Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Attr Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Synchronized
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Try
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Catch
+Colleagues:  Gen Visitor SourceComputer Pretty TreeScanner TreeTranslator Enter MemberEnter Attr Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Conditional
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: If
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Exec
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Break
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Continue
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Return
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Throw
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Assert
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Apply
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner FreeVarCollector Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: NewClass
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner FreeVarCollector Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: NewArray
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Parens
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Assign
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Assignop
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Unary
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Binary
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: TypeCast
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: TypeTest
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Indexed
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Select
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes TransInner FreeVarCollector Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Ident
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner Flow TreeTranslator TransTypes TransInner FreeVarCollector Enter MemberEnter Check TreeInfo
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Literal
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: TypeIdent
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: TypeArray
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator TransTypes Enter MemberEnter Check TreeInfo TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: Erroneous
+Colleagues:  Gen Visitor SourceComputer Attr Pretty TreeScanner TreeTranslator Enter MemberEnter Check TreeInfo TransTypes TransInner
+FileLocation: src/com/sun/tools/javac/v8/tree/Tree.java
+
+Mediator Pattern.
+Mediator: NameAndType
+Colleagues:  Hashtable List Name ArrayType MethodType Pair Set ConstFold ClassType
+FileLocation: src/com/sun/tools/javac/v8/code/ClassFile.java
+
+Mediator Pattern.
+Mediator: Method
+Colleagues:  Hashtable List Name ArrayType MethodType Pair Set ConstFold ClassType
+FileLocation: src/com/sun/tools/javac/v8/code/Pool.java
+
+Mediator Pattern.
+Mediator: Variable
+Colleagues:  Hashtable List Name ArrayType MethodType Pair Set ConstFold ClassType
+FileLocation: src/com/sun/tools/javac/v8/code/Pool.java
+
+Mediator Pattern.
+Mediator: MemberEnter
+Colleagues:  CompleteEnter Tree
+FileLocation: src/com/sun/tools/javac/v8/comp/Enter.java
+
+Mediator Pattern.
+Mediator: CompleteEnter
+Colleagues:  Symbol Hashtable Options Log ListBuffer Todo Env Set List MethodType TreeMaker
+FileLocation: src/com/sun/tools/javac/v8/comp/Enter.java
+
+Mediator Pattern.
+Mediator: Item
+Colleagues:  AssignItem StackItem CondItem Gen ImmediateItem LocalItem
+FileLocation: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Mediator: LocalItem
+Colleagues:  Gen StackItem ImmediateItem AssignItem
+FileLocation: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Mediator: StaticItem
+Colleagues:  Item Pool LocalItem Gen$1 AssignItem
+FileLocation: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Mediator: MemberItem
+Colleagues:  Item Pool LocalItem Gen$1 AssignItem Gen PackageSymbol StackItem CondItem
+FileLocation: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Mediator: AssignItem
+Colleagues:  Item StackItem LocalItem CondItem Gen Gen$1
+FileLocation: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Mediator: CondItem
+Colleagues:  Item StackItem AssignItem Gen
+FileLocation: src/com/sun/tools/javac/v8/comp/Items.java
+
+Mediator Pattern.
+Mediator: ResolveError
+Colleagues:  Resolve Name ClassType ArrayType MethodType
+FileLocation: src/com/sun/tools/javac/v8/comp/Resolve.java
+
+Mediator Pattern.
+Mediator: StaticError
+Colleagues:  Resolve ClassType ArrayType MethodType
+FileLocation: src/com/sun/tools/javac/v8/comp/Resolve.java
+
+Mediator Pattern.
+Mediator: AmbiguityError
+Colleagues:  Resolve Name
+FileLocation: src/com/sun/tools/javac/v8/comp/Resolve.java
+
+Mediator Pattern.
+Mediator: SourceComputer
+Colleagues:  CRTable Tree Options
+FileLocation: src/com/sun/tools/javac/v8/code/CRTable.java
+
+Mediator Pattern.
+Mediator: Type$1
+Colleagues:  ArrayType ClassType MethodType
+FileLocation: src/com/sun/tools/javac/v8/code/Type.java
+
+Mediator Pattern.
+Mediator: FreeVarCollector
+Colleagues:  ComplexityScanner TreeInfo Symbol Flow
+FileLocation: src/com/sun/tools/javac/v8/comp/TransInner.java
+
+Mediator Pattern.
+Mediator: Gen$1
+Colleagues:  Gen Todo StackItem ImmediateItem AssignItem
+FileLocation: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Mediator Pattern.
+Mediator: Gen$2
+Colleagues:  Gen Todo
+FileLocation: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Mediator Pattern.
+Mediator: ComplexityScanner
+Colleagues:  FreeVarCollector Flow
+FileLocation: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Proxy Pattern.
+Gen is a proxy.
+Flags is a proxy interface.
+The real object(s): Type
+File Location: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Adapter Pattern.
+Adapting classes:  Object Tokens
+Parser is an adapter class.
+Hashtable is the adaptee class.
+File Location: src/com/sun/tools/javac/v8/parser/Parser.java
+File Location: src/com/sun/tools/javac/v8/util/Hashtable.java
+
+Adapter Pattern.
+Adapting classes:  Object Tokens
+Parser is an adapter class.
+Hashtable is the adaptee class.
+File Location: src/com/sun/tools/javac/v8/parser/Parser.java
+File Location: src/com/sun/tools/javac/v8/util/Hashtable.java
+
+Adapter Pattern.
+Adapting classes:  Object Flags Kinds TypeTags
+Symbol is an adapter class.
+Completer is the adaptee class.
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java
+File Location: src/com/sun/tools/javac/v8/code/Symbol.java
+
+Facade Pattern.
+Keywords is a facade class.
+Hidden types: Context Name
+Facade access types: Scanner Parser
+File Location: src/com/sun/tools/javac/v8/parser/Keywords.java
+
+Facade Pattern.
+Parser is a facade class.
+Hidden types: Position Hashtable TreeInfo Source
+Facade access types: JavaCompiler
+File Location: src/com/sun/tools/javac/v8/parser/Parser.java
+
+Facade Pattern.
+Main is a facade class.
+Hidden types: ListBuffer Context CommandLine List JavaCompiler
+Facade access types: Main
+File Location: src/com/sun/tools/javac/v8/Main.java
+
+Facade Pattern.
+Gen is a facade class.
+Hidden types: Target Pool Hashtable Enumeration Scope Tree Env Bits
+Facade access types: JavaCompiler
+File Location: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Facade Pattern.
+TransInner is a facade class.
+Hidden types: Hashtable Tree Scope Convert Target
+Facade access types: JavaCompiler
+File Location: src/com/sun/tools/javac/v8/comp/TransInner.java
+
+Facade Pattern.
+TransTypes is a facade class.
+Hidden types: Tree Scope Hashtable
+Facade access types: JavaCompiler
+File Location: src/com/sun/tools/javac/v8/comp/TransTypes.java
+
+Facade Pattern.
+Pretty is a facade class.
+Hidden types: Convert Tree Hashtable
+Facade access types: Tree JavaCompiler
+File Location: src/com/sun/tools/javac/v8/tree/Pretty.java
+
+Facade Pattern.
+JavaCompiler is a facade class.
+Hidden types: Set Parser Todo Name
+Facade access types: Main
+File Location: src/com/sun/tools/javac/v8/JavaCompiler.java
+
+Facade Pattern.
+CompleteEnter is a facade class.
+Hidden types: Hashtable Log ListBuffer Env Todo Set List Scope
+Facade access types: CompleteEnter
+File Location: src/com/sun/tools/javac/v8/comp/Enter.java
+
+Facade Pattern.
+FreeVarCollector is a facade class.
+Hidden types: List Hashtable Symbol TreeInfo
+Facade access types: FreeVarCollector
+File Location: src/com/sun/tools/javac/v8/comp/TransInner.java
+
+Facade Pattern.
+Gen$1 is a facade class.
+Hidden types: ListBuffer Code
+Facade access types: Gen$1
+File Location: src/com/sun/tools/javac/v8/comp/Gen.java
+
+Facade Pattern.
+Gen$2 is a facade class.
+Hidden types: ListBuffer Gen
+Facade access types: Gen$2
+File Location: src/com/sun/tools/javac/v8/comp/Gen.java

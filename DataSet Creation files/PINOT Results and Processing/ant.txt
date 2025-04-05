@@ -1,0 +1,3014 @@
+Singleton Pattern
+SelectorUtils is a Singleton class
+instance is the Singleton instance
+getInstance creates and returns instance
+File location: src/main/org/apache/tools/ant/types/selectors/SelectorUtils.java
+
+
+Decorator Pattern
+CBZip2OutputStream is a Decorator class
+flush is a decorate operation
+bsStream of type OutputStream is the Decoratee class
+File Location: src/main/org/apache/tools/bzip2/CBZip2OutputStream.java
+
+Chain of Responsibility Pattern
+ZipOutputStream is a Chain of Responsibility Handler class
+close is a handle operation
+out of type OutputStream propogates the request
+File Location: src/main/org/apache/tools/zip/ZipOutputStream.java
+
+Chain of Responsibility Pattern
+ZipOutputStream is a Chain of Responsibility Handler class
+flush is a handle operation
+out of type OutputStream propogates the request
+File Location: src/main/org/apache/tools/zip/ZipOutputStream.java
+
+Chain of Responsibility Pattern
+BuildException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: src/main/org/apache/tools/ant/BuildException.java
+
+Chain of Responsibility Pattern
+BuildException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: src/main/org/apache/tools/ant/BuildException.java
+
+Decorator Pattern
+PreSetDefinition is a Decorator class
+getClassName is a decorate operation
+parent of type AntTypeDefinition is the Decoratee class
+File Location: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Decorator Pattern
+PreSetDefinition is a Decorator class
+getClassLoader is a decorate operation
+parent of type AntTypeDefinition is the Decoratee class
+File Location: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Decorator Pattern
+PreSetDefinition is a Decorator class
+getExposedClass is a decorate operation
+parent of type AntTypeDefinition is the Decoratee class
+File Location: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Decorator Pattern
+PreSetDefinition is a Decorator class
+getTypeClass is a decorate operation
+parent of type AntTypeDefinition is the Decoratee class
+File Location: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Decorator Pattern
+PreSetDefinition is a Decorator class
+checkClass is a decorate operation
+parent of type AntTypeDefinition is the Decoratee class
+File Location: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Decorator Pattern
+ExtendSelector is a Decorator class
+isSelected is a decorate operation
+dynselector of type FileSelector is the Decoratee class
+File Location: src/main/org/apache/tools/ant/types/selectors/ExtendSelector.java
+
+Decorator Pattern
+CommandLauncherProxy is a Decorator class
+exec is a decorate operation
+myLauncher of type CommandLauncher is the Decoratee class
+File Location: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Decorator Pattern
+TeeOutputStream is a Decorator class
+close is a decorate operation
+left of type OutputStream is the Decoratee class
+File Location: src/main/org/apache/tools/ant/util/TeeOutputStream.java
+
+Decorator Pattern
+TeeOutputStream is a Decorator class
+flush is a decorate operation
+left of type OutputStream is the Decoratee class
+File Location: src/main/org/apache/tools/ant/util/TeeOutputStream.java
+
+Decorator Pattern
+TeeOutputStream is a Decorator class
+write is a decorate operation
+left of type OutputStream is the Decoratee class
+File Location: src/main/org/apache/tools/ant/util/TeeOutputStream.java
+
+Decorator Pattern
+TeeOutputStream is a Decorator class
+write is a decorate operation
+left of type OutputStream is the Decoratee class
+File Location: src/main/org/apache/tools/ant/util/TeeOutputStream.java
+
+Decorator Pattern
+TeeOutputStream is a Decorator class
+write is a decorate operation
+left of type OutputStream is the Decoratee class
+File Location: src/main/org/apache/tools/ant/util/TeeOutputStream.java
+
+Chain of Responsibility Pattern
+MultiReader is a Chain of Responsibility Handler class
+close is a handle operation
+reader of type Reader propogates the request
+File Location: src/main/org/apache/tools/ant/taskdefs/Concat.java
+
+ OutputStream Throwable Reader
+ OutputStream AntTypeDefinition FileSelector CommandLauncher
+Bridge Pattern.
+ProjectHelper is abstract.
+TypeAdapter is an interface.
+ProjectHelper delegates TypeAdapter.
+File Location: src/main/org/apache/tools/ant/ProjectHelper.java,
+               src/main/org/apache/tools/ant/TypeAdapter.java
+
+Bridge Pattern.
+AntTypeDefinition is abstract.
+TypeAdapter is an interface.
+AntTypeDefinition delegates TypeAdapter.
+File Location: src/main/org/apache/tools/ant/AntTypeDefinition.java,
+               src/main/org/apache/tools/ant/TypeAdapter.java
+
+Bridge Pattern.
+MappingSelector is abstract.
+FileNameMapper is an interface.
+MappingSelector delegates FileNameMapper.
+File Location: src/main/org/apache/tools/ant/types/selectors/MappingSelector.java,
+               src/main/org/apache/tools/ant/util/FileNameMapper.java
+
+Bridge Pattern.
+ExecuteOn is abstract.
+FileNameMapper is an interface.
+ExecuteOn delegates FileNameMapper.
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteOn.java,
+               src/main/org/apache/tools/ant/util/FileNameMapper.java
+
+Bridge Pattern.
+Copy is abstract.
+FileNameMapper is an interface.
+Copy delegates FileNameMapper.
+File Location: src/main/org/apache/tools/ant/taskdefs/Copy.java,
+               src/main/org/apache/tools/ant/util/FileNameMapper.java
+
+Strategy Pattern.
+RegularExpression is the Context class.
+Regexp is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through regexp of type Regexp
+File Location: src/main/org/apache/tools/ant/types/RegularExpression.java,
+               src/main/org/apache/tools/ant/util/regexp/Regexp.java
+
+Strategy Pattern.
+Delegate is the Context class.
+ProjectComponent is the Strategy interface.
+Concrete Strategy classes:  DataType FileTokenizer StringTokenizer ChainableReaderFilter ContainsString DeleteCharacters LineTokenizer Task Argument TextElement ConditionBase IsReference IsFalse IsTrue Socket Http IsSet ExtensionInfo Message RegularExpression Filter Checksum Patch And Or Assertions DirSet Description FileList FileSet FilterChain FilterSet Mapper Path PatternSet PropertySet XMLCatalog ZipFileSet BuildNumber TaskAdapter AbstractFileSet AntFilterReader RedirectorElement Substitution Antlib Ant Available BUnzip2 BZip2 Basename CVSPass CallTarget UnknownElement AbstractCvsTask Chmod AntlibDefinition AntStructure ConditionTask Concat Copy Copydir DefBase Copyfile Cvs DefaultExcludes DependSet Definer Delete Deltree Exec Echo Dirname Ear ExecTask ExecuteOn FixCRLF Exit Expand GenerateKey GUnzip GZip ImportTask Get Input JDBCTask Javac Java Jar Javadoc KeySubst LoadProperties LoadFile MacroInstance MacroDef Mkdir Nice ManifestTask MatchingTask Move PathConvert PreSetDef Pack Parallel SendEmail Property Recorder Rename Replace Rmic SQLExec Sequential Sleep SignJar Taskdef SubAnt Sync TempFile Tar Transform Touch Unpack Tstamp Typedef UpToDate WaitFor Untar WhichResource War XmlProperty XSLTProcess Zip Not DifferentSelector FilenameSelector TypeSelector MajoritySelector NoneSelector NotSelector OrSelector PresentSelector ContainsRegexpSelector SelectSelector SizeSelector ModifiedSelector ContainsSelector AndSelector DateSelector DependSelector DepthSelector ExtendSelector ContainsRegex ReplaceRegex Trim ReplaceString IgnoreBlank NestedCondition DocletInfo ImplementationSpecificArgument ImplementationSpecificArgument ImplementationSpecificArgument TagArgument EmailTask MyCopy TarFileSet BaseExtendSelector BaseSelector BaseSelectorContainer MappingSelector
+Delegation through component of type ProjectComponent
+File Location: src/main/org/apache/tools/ant/util/ClasspathUtils.java,
+               src/main/org/apache/tools/ant/ProjectComponent.java
+
+Strategy Pattern.
+Mapper is the Context class.
+ContainerMapper is the Strategy interface.
+Concrete Strategy classes:  CompositeMapper
+Delegation through container of type ContainerMapper
+File Location: src/main/org/apache/tools/ant/types/Mapper.java,
+               src/main/org/apache/tools/ant/util/ContainerMapper.java
+
+Strategy Pattern.
+BuildEvent is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through task of type Task
+File Location: src/main/org/apache/tools/ant/BuildEvent.java,
+               src/main/org/apache/tools/ant/Task.java
+
+DefaultInputHandler::getPrompt is the pivot point.
+State Pattern.
+Project is the Context class.
+InputHandler is the State interface.
+Concrete State classes:  DefaultInputHandler
+Delegation through inputHandler of type InputHandler
+setInputHandler changes the state variable inputHandler
+setInputHandler is invoked by  addInputHandler initializeProject
+File Location: src/main/org/apache/tools/ant/Project.java,
+               src/main/org/apache/tools/ant/input/InputHandler.java
+
+PumpStreamHandler::stop is the pivot point.
+State Pattern.
+Execute is the Context class.
+ExecuteStreamHandler is the State interface.
+Concrete State classes:  PumpStreamHandler JikesOutputParser LogStreamHandler
+Delegation through streamHandler of type ExecuteStreamHandler
+setStreamHandler changes the state variable streamHandler
+setStreamHandler is invoked by   runExec runParallel
+File Location: src/main/org/apache/tools/ant/taskdefs/Execute.java,
+               src/main/org/apache/tools/ant/taskdefs/ExecuteStreamHandler.java
+
+Strategy Pattern.
+JikesOutputParser is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through task of type Task
+File Location: src/main/org/apache/tools/ant/taskdefs/JikesOutputParser.java,
+               src/main/org/apache/tools/ant/Task.java
+
+Strategy Pattern.
+Redirector is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through managingTask of type Task
+File Location: src/main/org/apache/tools/ant/taskdefs/Redirector.java,
+               src/main/org/apache/tools/ant/Task.java
+
+Strategy Pattern.
+TaskOutputStream is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through task of type Task
+File Location: src/main/org/apache/tools/ant/taskdefs/TaskOutputStream.java,
+               src/main/org/apache/tools/ant/Task.java
+
+Strategy Pattern.
+XSLTProcess is the Context class.
+XSLTLiaison is the Strategy interface.
+Concrete Strategy classes:  XSLTLiaison2
+Delegation through liaison of type XSLTLiaison
+File Location: src/main/org/apache/tools/ant/taskdefs/XSLTProcess.java,
+               src/main/org/apache/tools/ant/taskdefs/XSLTLiaison.java
+
+Strategy Pattern.
+PresentSelector is the Context class.
+FileNameMapper is the Strategy interface.
+Concrete Strategy classes:  IdentityMapper ContainerMapper MergingMapper FlatFileNameMapper GlobPatternMapper RmicFileNameMapper StyleMapper CompositeMapper
+Delegation through map of type FileNameMapper
+File Location: src/main/org/apache/tools/ant/types/selectors/PresentSelector.java,
+               src/main/org/apache/tools/ant/util/FileNameMapper.java
+
+Strategy Pattern.
+ContainsRegexpSelector is the Context class.
+Regexp is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through myExpression of type Regexp
+File Location: src/main/org/apache/tools/ant/types/selectors/ContainsRegexpSelector.java,
+               src/main/org/apache/tools/ant/util/regexp/Regexp.java
+
+Strategy Pattern.
+ModifiedSelector is the Context class.
+Cache is the Strategy interface.
+Concrete Strategy classes:  PropertiesfileCache
+Delegation through cache of type Cache
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/ModifiedSelector.java,
+               src/main/org/apache/tools/ant/types/selectors/modifiedselector/Cache.java
+
+Strategy Pattern.
+ModifiedSelector is the Context class.
+Algorithm is the Strategy interface.
+Concrete Strategy classes:  DigestAlgorithm
+Delegation through algorithm of type Algorithm
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/ModifiedSelector.java,
+               src/main/org/apache/tools/ant/types/selectors/modifiedselector/Algorithm.java
+
+StringTokenizer::getToken is the pivot point.
+State Pattern.
+TokenFilter is the Context class.
+Tokenizer is the State interface.
+Concrete State classes:  FileTokenizer StringTokenizer LineTokenizer
+Delegation through tokenizer of type Tokenizer
+chain changes the state variable tokenizer
+chain is invoked by  getAssembledReader
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java,
+               src/main/org/apache/tools/ant/util/Tokenizer.java
+
+Strategy Pattern.
+ContainsRegex is the Context class.
+Regexp is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through regexp of type Regexp
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java,
+               src/main/org/apache/tools/ant/util/regexp/Regexp.java
+
+Strategy Pattern.
+ReplaceRegex is the Context class.
+Regexp is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through regexp of type Regexp
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java,
+               src/main/org/apache/tools/ant/util/regexp/Regexp.java
+
+Strategy Pattern.
+Creator is the Context class.
+NestedCreator is the Strategy interface.
+Concrete Strategy classes:  IntrospectionHelper$1 IntrospectionHelper$2 IntrospectionHelper$3 IntrospectionHelper$4 IntrospectionHelper$5 IntrospectionHelper$13
+Delegation through nestedCreator of type NestedCreator
+File Location: src/main/org/apache/tools/ant/IntrospectionHelper.java,
+               src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Strategy Pattern.
+SourceFileScanner is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through task of type Task
+File Location: src/main/org/apache/tools/ant/util/SourceFileScanner.java,
+               src/main/org/apache/tools/ant/Task.java
+
+Strategy Pattern.
+TaskRunnable is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through task of type Task
+File Location: src/main/org/apache/tools/ant/taskdefs/Parallel.java,
+               src/main/org/apache/tools/ant/Task.java
+
+ExecTask::createHandler is the pivot point.
+State Pattern.
+LeadPipeInputStream is the Context class.
+Task is the State interface.
+Concrete State classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through managingTask of type Task
+setManagingTask changes the state variable managingTask
+setManagingTask is invoked by  createStreams
+File Location: src/main/org/apache/tools/ant/util/LeadPipeInputStream.java,
+               src/main/org/apache/tools/ant/Task.java
+
+ExecTask::createHandler is the pivot point.
+State Pattern.
+ConcatFileInputStream is the Context class.
+Task is the State interface.
+Concrete State classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through managingTask of type Task
+setManagingTask changes the state variable managingTask
+setManagingTask is invoked by  createStreams
+File Location: src/main/org/apache/tools/ant/util/ConcatFileInputStream.java,
+               src/main/org/apache/tools/ant/Task.java
+
+Strategy Pattern.
+TaskHandler is the Context class.
+TaskContainer is the Strategy interface.
+Concrete Strategy classes:  PreSetDef Target Antlib NestedSequential MacroInstance Element Parallel TaskList Sequential
+Delegation through container of type TaskContainer
+File Location: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java,
+               src/main/org/apache/tools/ant/TaskContainer.java
+
+Strategy Pattern.
+TaskHandler is the Context class.
+Task is the Strategy interface.
+Concrete Strategy classes:  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+Delegation through task of type Task
+File Location: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java,
+               src/main/org/apache/tools/ant/Task.java
+
+Flyweight Pattern.
+RegularExpression is a flyweight factory.
+DATA_TYPE_NAME is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/RegularExpression.java
+
+Flyweight Pattern.
+ZipOutputStream is a flyweight factory.
+DOS_TIME_MIN is a flyweight object.
+toDosTime is the getFlyweight method.
+File location: src/main/org/apache/tools/zip/ZipOutputStream.java
+
+Flyweight Pattern.
+Main is a flyweight factory.
+DEFAULT_BUILD_FILENAME is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/Main.java
+
+Flyweight Pattern.
+Manifest is a flyweight factory.
+ATTRIBUTE_MANIFEST_VERSION is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/Manifest.java
+
+Flyweight Pattern.
+ZipLong is immutable.
+File location: src/main/org/apache/tools/zip/ZipLong.java
+
+Flyweight Pattern.
+ZipShort is immutable.
+File location: src/main/org/apache/tools/zip/ZipShort.java
+
+Flyweight Pattern.
+FilterSet is a flyweight factory.
+DEFAULT_TOKEN_START is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/FilterSet.java
+
+Flyweight Pattern.
+XMLCatalog is a flyweight factory.
+APACHE_RESOLVER is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/XMLCatalog.java
+
+Flyweight Pattern.
+Location is a flyweight factory.
+UNKNOWN_LOCATION is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/Location.java
+
+Flyweight Pattern.
+MagicNames is a flyweight factory.
+SCRIPT_REPOSITORY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/MagicNames.java
+
+Flyweight Pattern.
+Project is a flyweight factory.
+JAVA_1_0 is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/Project.java
+
+Flyweight Pattern.
+TarConstants is a flyweight factory.
+TMAGIC is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/tar/TarConstants.java
+
+Flyweight Pattern.
+AsiExtraField is a flyweight factory.
+HEADER_ID is a flyweight object.
+getHeaderId is the getFlyweight method.
+File location: src/main/org/apache/tools/zip/AsiExtraField.java
+
+Flyweight Pattern.
+Substitution is a flyweight factory.
+DATA_TYPE_NAME is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/Substitution.java
+
+Flyweight Pattern.
+Antlib is a flyweight factory.
+TAG is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/Antlib.java
+
+Flyweight Pattern.
+ProjectHelper is a flyweight factory.
+ANT_CORE_URI is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/ProjectHelper.java
+
+Flyweight Pattern.
+Tar is a flyweight factory.
+WARN is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Flyweight Pattern.
+XSLTLiaison is a flyweight factory.
+FILE_PROTOCOL_PREFIX is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/XSLTLiaison.java
+
+Flyweight Pattern.
+FilenameSelector is a flyweight factory.
+NAME_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/FilenameSelector.java
+
+Flyweight Pattern.
+TypeSelector is a flyweight factory.
+TYPE_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/TypeSelector.java
+
+Flyweight Pattern.
+ContainsRegexpSelector is a flyweight factory.
+EXPRESSION_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/ContainsRegexpSelector.java
+
+Flyweight Pattern.
+SizeSelector is a flyweight factory.
+SIZE_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/SizeSelector.java
+
+Flyweight Pattern.
+JavaEnvUtils is a flyweight factory.
+JAVA_1_0 is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/util/JavaEnvUtils.java
+
+Flyweight Pattern.
+ContainsSelector is a flyweight factory.
+EXPRESSION_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/ContainsSelector.java
+
+Flyweight Pattern.
+DateSelector is a flyweight factory.
+MILLIS_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/DateSelector.java
+
+Flyweight Pattern.
+DepthSelector is a flyweight factory.
+MIN_KEY is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/DepthSelector.java
+
+Flyweight Pattern.
+EmptyEnumeration is immutable.
+File location: src/main/org/apache/tools/ant/util/CollectionUtils.java
+
+Flyweight Pattern.
+ClasspathUtils is a flyweight factory.
+REUSE_LOADER_REF is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/util/ClasspathUtils.java
+
+Flyweight Pattern.
+EmailTask is a flyweight factory.
+AUTO is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/email/EmailTask.java
+
+Flyweight Pattern.
+DelimiterType is a flyweight factory.
+NORMAL is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/SQLExec.java
+
+Flyweight Pattern.
+TarLongFileMode is a flyweight factory.
+WARN is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Flyweight Pattern.
+TarCompressionMethod is immutable.
+File location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Flyweight Pattern.
+UntarCompressionMethod is immutable.
+File location: src/main/org/apache/tools/ant/taskdefs/Untar.java
+
+Flyweight Pattern.
+FileType is a flyweight factory.
+FILE is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/ant/types/selectors/TypeSelector.java
+
+Flyweight Pattern.
+MailMessage is a flyweight factory.
+DEFAULT_HOST is a flyweight object (declared public-static-final).
+File location: src/main/org/apache/tools/mail/MailMessage.java
+
+Composite pattern.
+Checksum is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Checksum.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Assertions is the composite class.
+assertionList is the composite instance.
+DataType is the component class.
+File Location: src/main/org/apache/tools/ant/types/Assertions.java
+File Location: src/main/org/apache/tools/ant/types/DataType.java
+
+Composite pattern.
+PropertySet is the composite class.
+setRefs is the composite instance.
+DataType is the component class.
+File Location: src/main/org/apache/tools/ant/types/PropertySet.java
+File Location: src/main/org/apache/tools/ant/types/DataType.java
+
+Composite pattern.
+RedirectorElement is the composite class.
+inputFilterChains is the composite instance.
+DataType is the component class.
+File Location: src/main/org/apache/tools/ant/types/RedirectorElement.java
+File Location: src/main/org/apache/tools/ant/types/DataType.java
+
+Composite pattern.
+RedirectorElement is the composite class.
+outputFilterChains is the composite instance.
+DataType is the component class.
+File Location: src/main/org/apache/tools/ant/types/RedirectorElement.java
+File Location: src/main/org/apache/tools/ant/types/DataType.java
+
+Composite pattern.
+RedirectorElement is the composite class.
+errorFilterChains is the composite instance.
+DataType is the component class.
+File Location: src/main/org/apache/tools/ant/types/RedirectorElement.java
+File Location: src/main/org/apache/tools/ant/types/DataType.java
+
+Composite pattern.
+Antlib is the composite class.
+tasks is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Antlib.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+Ant is the composite class.
+properties is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Ant.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+Ant is the composite class.
+propertySets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Ant.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+UnknownElement is the composite class.
+children is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/UnknownElement.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+Concat is the composite class.
+sources is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Concat.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Concat is the composite class.
+filterChains is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Concat.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Copy is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Copy.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Copy is the composite class.
+filterChains is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Copy.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Copy is the composite class.
+filterSets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Copy.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+DependSet is the composite class.
+sourceFileSets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/DependSet.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+DependSet is the composite class.
+sourceFileLists is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/DependSet.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+DependSet is the composite class.
+targetFileSets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/DependSet.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+DependSet is the composite class.
+targetFileLists is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/DependSet.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Delete is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Delete.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+ExecuteOn is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteOn.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+ExecuteOn is the composite class.
+filelists is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteOn.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Expand is the composite class.
+patternsets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Expand.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Expand is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Expand.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Javadoc is the composite class.
+tags is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Javadoc is the composite class.
+fileSets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Javadoc is the composite class.
+packageSets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+LoadProperties is the composite class.
+filterChains is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/LoadProperties.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+LoadFile is the composite class.
+filterChains is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/LoadFile.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+MacroInstance is the composite class.
+unknownElements is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/MacroInstance.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+Parallel is the composite class.
+nestedTasks is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Parallel.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+SQLExec is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/SQLExec.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Sequential is the composite class.
+nestedTasks is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Sequential.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+SignJar is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/SignJar.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+SubAnt is the composite class.
+properties is the composite instance.
+Task is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/SubAnt.java
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Composite pattern.
+SubAnt is the composite class.
+propertySets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/SubAnt.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Tar is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Touch is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Touch.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Touch is the composite class.
+filelists is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Touch.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+UpToDate is the composite class.
+sourceFileSets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/UpToDate.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Zip is the composite class.
+groupfilesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Zip.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Zip is the composite class.
+filesetsFromGroupfilesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Zip.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+Zip is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Zip.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Composite pattern.
+EmailTask is the composite class.
+filesets is the composite instance.
+ProjectComponent is the component class.
+File Location: src/main/org/apache/tools/ant/taskdefs/email/EmailTask.java
+File Location: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Template Method Found.
+EscapeUnicode is the template class
+read is the template method
+initialize is a primitive method
+File Location: src/main/org/apache/tools/ant/filters/EscapeUnicode.java
+
+Template Method Found.
+EnumeratedAttribute is the template class
+indexOfValue is the template method
+getValues is a primitive method
+File Location: src/main/org/apache/tools/ant/types/EnumeratedAttribute.java
+
+Template Method Found.
+Task is the template class
+perform is the template method
+execute is a primitive method
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Template Method Found.
+Unpack is the template class
+validate is the template method
+getDefaultExtension is a primitive method
+File Location: src/main/org/apache/tools/ant/taskdefs/Unpack.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+Section is a concrete Factory Method class.
+clone is a factory method returns  Section
+ which extends Object
+File Location: src/main/org/apache/tools/ant/taskdefs/Manifest.java
+
+Factory Method pattern.
+AbstractFileSet is a Factory Method class.
+ZipFileSet is a concrete Factory Method class.
+getRef is a factory method returns  ZipFileSet
+ which extends AbstractFileSet
+File Location: src/main/org/apache/tools/ant/types/ZipFileSet.java
+
+Factory Method pattern.
+Enumeration is a Factory Method class.
+OneLiner is a concrete Factory Method class.
+nextElement is a factory method returns  BufferLine
+ which extends Object
+File Location: src/main/org/apache/tools/ant/taskdefs/FixCRLF.java
+
+Factory Method pattern.
+ClassLoader is a Factory Method class.
+AntClassLoader is a concrete Factory Method class.
+findResources is a factory method returns  ResourceEnumeration
+ which extends Enumeration
+File Location: src/main/org/apache/tools/ant/AntClassLoader.java
+
+Factory Method pattern.
+ThreadLocal is a Factory Method class.
+ResourceStack is a concrete Factory Method class.
+initialValue is a factory method returns  HashMap
+ which extends Object
+File Location: src/main/org/apache/tools/ant/taskdefs/Definer.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+TokenFilter is a concrete Factory Method class.
+chain is a factory method returns  TokenFilter
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+TailFilter is a concrete Factory Method class.
+chain is a factory method returns  TailFilter
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/TailFilter.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+TabsToSpaces is a concrete Factory Method class.
+chain is a factory method returns  TabsToSpaces
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/TabsToSpaces.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+StripLineComments is a concrete Factory Method class.
+chain is a factory method returns  StripLineComments
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/StripLineComments.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+StripLineBreaks is a concrete Factory Method class.
+chain is a factory method returns  StripLineBreaks
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/StripLineBreaks.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+StripJavaComments is a concrete Factory Method class.
+chain is a factory method returns  StripJavaComments
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/StripJavaComments.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+ReplaceTokens is a concrete Factory Method class.
+chain is a factory method returns  ReplaceTokens
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/ReplaceTokens.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+PrefixLines is a concrete Factory Method class.
+chain is a factory method returns  PrefixLines
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/PrefixLines.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+LineContainsRegExp is a concrete Factory Method class.
+chain is a factory method returns  LineContainsRegExp
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/LineContainsRegExp.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+LineContains is a concrete Factory Method class.
+chain is a factory method returns  LineContains
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/LineContains.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+HeadFilter is a concrete Factory Method class.
+chain is a factory method returns  HeadFilter
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/HeadFilter.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+ExpandProperties is a concrete Factory Method class.
+chain is a factory method returns  ExpandProperties
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/ExpandProperties.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+EscapeUnicode is a concrete Factory Method class.
+chain is a factory method returns  EscapeUnicode
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/EscapeUnicode.java
+
+Factory Method pattern.
+ChainableReader is a Factory Method class.
+ClassConstants is a concrete Factory Method class.
+chain is a factory method returns  ClassConstants
+ which extends Reader
+File Location: src/main/org/apache/tools/ant/filters/ClassConstants.java
+
+Visitor pattern found.
+FileScanner is an abstract Visitor class.
+AbstractFileSet is a Vistee class.
+setupDirectoryScanner is the accept method.
+setBasedir is the visit method.
+dir is exposed to visitor FileScanner
+File Location: src/main/org/apache/tools/ant/types/AbstractFileSet.java
+
+Mediator Pattern.
+Target is the mediator class.
+children controls a list of colleagues of type Task.
+replaceChild invokes the mediator. 
+Subtype(s) of colleague(s):  AntlibDefinition UnknownElement Antlib TaskAdapter Property AbstractCvsTask Ant AntStructure Available Unpack Pack Basename BuildNumber CVSPass CallTarget MatchingTask ExecTask Concat UpToDate Copy Copyfile DefaultExcludes Deltree Dirname Echo Exec Exit Expand Filter GenerateKey Get ImportTask Input JDBCTask Java Javadoc KeySubst LoadFile LoadProperties MacroInstance ManifestTask Mkdir Nice Parallel Patch PathConvert Recorder Rename EmailTask Sequential SignJar Sleep SubAnt Sync TempFile Touch Tstamp WhichResource XmlProperty Checksum BUnzip2 BZip2 Chmod Copydir DefBase Cvs DependSet Definer Delete Ear ExecuteOn FixCRLF GUnzip GZip Javac Jar MacroDef Move PreSetDef SendEmail Replace Rmic SQLExec Taskdef Tar Transform Typedef Untar War XSLTProcess Zip MyCopy
+File Location: src/main/org/apache/tools/ant/Target.java
+
+Mediator Pattern.
+Commandline is the mediator class.
+arguments controls a list of colleagues of type Argument.
+translateCommandline invokes the mediator. 
+Subtype(s) of colleague(s):  ImplementationSpecificArgument ImplementationSpecificArgument ImplementationSpecificArgument
+File Location: src/main/org/apache/tools/ant/types/Commandline.java
+
+Mediator Pattern.
+Task is the mediator class.
+wrapper controls a list of colleagues of type RuntimeConfigurable.
+setRuntimeConfigurableWrapper invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: src/main/org/apache/tools/ant/Task.java
+
+Observer Pattern.
+RuntimeConfigurable is an observer iterator.
+Creator is the generic type for the listeners.
+maybeConfigure is the notify method.
+store is the update method.
+Subject class(es): RuntimeConfigurable
+File Location: src/main/org/apache/tools/ant/RuntimeConfigurable.java
+
+Mediator Pattern.
+MacroDef is the mediator class.
+attributes controls a list of colleagues of type Attribute.
+access$1 invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Observer Pattern.
+Redirector is an observer iterator.
+Task is the generic type for the listeners.
+foldFiles is the notify method.
+log is the update method.
+Subject class(es): Redirector
+File Location: src/main/org/apache/tools/ant/taskdefs/Redirector.java
+
+Observer Pattern.
+Replace is an observer iterator.
+Replacefilter is the generic type for the listeners.
+validateReplacefilters is the notify method.
+validate is the update method.
+Subject class(es): Replace
+File Location: src/main/org/apache/tools/ant/taskdefs/Replace.java
+
+Mediator Pattern.
+SQLExec is the mediator class.
+transactions controls a list of colleagues of type Transaction.
+runStatements invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: src/main/org/apache/tools/ant/taskdefs/SQLExec.java
+
+Mediator Pattern.
+Tstamp is the mediator class.
+customFormats controls a list of colleagues of type CustomFormat.
+access$0 invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: src/main/org/apache/tools/ant/taskdefs/Tstamp.java
+
+Mediator Pattern.
+PreSetDefinition is the mediator class.
+element controls a list of colleagues of type UnknownElement.
+createObject invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Observer Pattern.
+MultiReader is an observer iterator.
+Reader is the generic type for the listeners.
+read is the notify method.
+close is the update method.
+Subject class(es): BaseFilterReader StringTokenizer TokenFilter$DeleteCharacters$1 TabsToSpaces StripLineBreaks StripJavaComments ReplaceTokens LineTokenizer EscapeUnicode MultiReader
+File Location: src/main/org/apache/tools/ant/taskdefs/Concat.java
+
+Observer Pattern.
+MultiReader is an observer iterator.
+Reader is the generic type for the listeners.
+read is the notify method.
+close is the update method.
+Subject class(es): Concat MultiReader
+File Location: src/main/org/apache/tools/ant/taskdefs/Concat.java
+
+Mediator Pattern.
+Mediator: XSLTProcess
+Colleagues:  Task FileUtils XSLTLoggerAware DirectoryScanner ZipScanner UnknownElement MatchingTask Antlib Project TaskHandler DefBase Ant CallTarget Sync XmlProperty Chmod ProjectComponent ComponentHelper MacroInstance
+FileLocation: src/main/org/apache/tools/ant/taskdefs/XSLTProcess.java
+
+Mediator Pattern.
+Mediator: ExtraFieldUtils
+Colleagues:  ZipEntry AsiExtraField UnrecognizedExtraField
+FileLocation: src/main/org/apache/tools/zip/ExtraFieldUtils.java
+
+Mediator Pattern.
+Mediator: CBZip2OutputStream
+Colleagues:  TarBuffer LogOutputStream LazyFileOutputStream TeeOutputStream DemuxOutputStream ZipOutputStream Execute PumpStreamHandler OutputStreamFunneler Redirector Concat
+FileLocation: src/main/org/apache/tools/bzip2/CBZip2OutputStream.java
+
+Mediator Pattern.
+Mediator: TarInputStream
+Colleagues:  DigestAlgorithm TarBuffer Checksum
+FileLocation: src/main/org/apache/tools/tar/TarInputStream.java
+
+Mediator Pattern.
+Mediator: TarOutputStream
+Colleagues:  PropertiesfileCache TarBuffer Tar
+FileLocation: src/main/org/apache/tools/tar/TarOutputStream.java
+
+Mediator Pattern.
+Mediator: TarBuffer
+Colleagues:  TarInputStream CBZip2OutputStream LogOutputStream ConcatFileInputStream LazyFileOutputStream ReaderInputStream TeeOutputStream DemuxOutputStream TarOutputStream
+FileLocation: src/main/org/apache/tools/tar/TarBuffer.java
+
+Mediator Pattern.
+Mediator: TarEntry
+Colleagues:  TarOutputStream TarUtils
+FileLocation: src/main/org/apache/tools/tar/TarEntry.java
+
+Mediator Pattern.
+Mediator: AbstractFileSet
+Colleagues:  FilterChain PatternSet AntFilterReader Path FileList Mapper Assertions PropertySet RedirectorElement XMLCatalog MatchingTask DataType Chmod Zip Javadoc Tar ZipFileSet ExecuteOn Concat UpToDate Copy Delete Expand SQLExec Touch NameEntry DirectoryScanner Checksum EmailTask SignJar TarFileSet FileScanner SelectorScanner Project DirSet Reference FileSet ZipScanner BaseSelectorContainer ProjectComponent PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty Resource FilterSet Commandline CommandlineJava SysProperties Section ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/types/AbstractFileSet.java
+
+Mediator Pattern.
+Mediator: AntFilterReader
+Colleagues:  FilterChain Path AbstractFileSet FileList Mapper PatternSet Assertions PropertySet RedirectorElement XMLCatalog Reference
+FileLocation: src/main/org/apache/tools/ant/types/AntFilterReader.java
+
+Mediator Pattern.
+Mediator: ZipEntry
+Colleagues:  ZipFile ExtraFieldUtils ZipOutputStream
+FileLocation: src/main/org/apache/tools/zip/ZipEntry.java
+
+Mediator Pattern.
+Mediator: AsiExtraField
+Colleagues:  ExtraFieldUtils ZipLong
+FileLocation: src/main/org/apache/tools/zip/AsiExtraField.java
+
+Mediator Pattern.
+Mediator: ZipFile
+Colleagues:  Zip AntTypeTable AntRefTable BoundedInputStream Expand
+FileLocation: src/main/org/apache/tools/zip/ZipFile.java
+
+Mediator Pattern.
+Mediator: ZipOutputStream
+Colleagues:  PropertiesfileCache CBZip2OutputStream LogOutputStream LazyFileOutputStream TeeOutputStream DemuxOutputStream
+FileLocation: src/main/org/apache/tools/zip/ZipOutputStream.java
+
+Mediator Pattern.
+Mediator: AntClassLoader
+Colleagues:  ExecuteJava LoaderUtils XSLTProcess AntTypeDefinition ResourceEnumeration OneLiner XMLCatalog WhichResource Locator FileUtils AntTypeTable AntRefTable Available ClasspathUtils JavaEnvUtils
+FileLocation: src/main/org/apache/tools/ant/AntClassLoader.java
+
+Mediator Pattern.
+Mediator: AntTypeDefinition
+Colleagues:  ComponentHelper PreSetDefinition AntTypeTable Definer TypeAdapter TaskAdapter AntClassLoader
+FileLocation: src/main/org/apache/tools/ant/AntTypeDefinition.java
+
+Mediator Pattern.
+Mediator: Assertions
+Colleagues:  FilterChain AntFilterReader Path AbstractFileSet FileList Mapper PatternSet PropertySet RedirectorElement XMLCatalog CommandlineJava Project ProjectComponent BaseAssertion Resource FilterSet DirSet FileSet ZipFileSet Section Commandline SysProperties
+FileLocation: src/main/org/apache/tools/ant/types/Assertions.java
+
+Mediator Pattern.
+Mediator: Commandline
+Colleagues:  CommandlineJava Resource FilterSet AbstractFileSet DirSet FileSet PatternSet ZipFileSet Section AbstractCvsTask Path Assertions SysProperties Chmod Javadoc
+FileLocation: src/main/org/apache/tools/ant/types/Commandline.java
+
+Mediator Pattern.
+Mediator: CommandlineJava
+Colleagues:  Assertions Commandline Java SysProperties Project BaseSelectorContainer PropertyHelper Property Ant GroupArgument Replace PlainMailer XmlProperty Resource Path FilterSet AbstractFileSet DirSet FileSet PatternSet ZipFileSet Section
+FileLocation: src/main/org/apache/tools/ant/types/CommandlineJava.java
+
+Mediator Pattern.
+Mediator: DataType
+Colleagues:  Substitution Path RegularExpression PatternSet PropertySet XMLCatalog Reference ZipFileSet FilterSet SelectSelector
+FileLocation: src/main/org/apache/tools/ant/types/DataType.java
+
+Mediator Pattern.
+Mediator: FilterChain
+Colleagues:  AntFilterReader AbstractFileSet FileList Mapper PatternSet Assertions PropertySet RedirectorElement XMLCatalog Path Reference
+FileLocation: src/main/org/apache/tools/ant/types/FilterChain.java
+
+Mediator Pattern.
+Mediator: DirSet
+Colleagues:  Resource DataType AbstractFileSet FileSet ZipFileSet ProjectComponent Path FilterSet PatternSet Commandline Assertions CommandlineJava SysProperties
+FileLocation: src/main/org/apache/tools/ant/types/DirSet.java
+
+Mediator Pattern.
+Mediator: Environment
+Colleagues:  ExecTask Variable Java
+FileLocation: src/main/org/apache/tools/ant/types/Environment.java
+
+Mediator Pattern.
+Mediator: FileList
+Colleagues:  FilterChain AntFilterReader Path AbstractFileSet Mapper PatternSet Assertions PropertySet RedirectorElement XMLCatalog ExecuteOn DataType Concat Touch
+FileLocation: src/main/org/apache/tools/ant/types/FileList.java
+
+Mediator Pattern.
+Mediator: FileSet
+Colleagues:  ZipFileSet DirSet Zip DataType Javadoc Resource AbstractFileSet ProjectComponent Path FilterSet PatternSet Commandline Assertions CommandlineJava SysProperties
+FileLocation: src/main/org/apache/tools/ant/types/FileSet.java
+
+Mediator Pattern.
+Mediator: Mapper
+Colleagues:  FilterChain AntFilterReader Path AbstractFileSet FileList PatternSet Assertions PropertySet RedirectorElement XMLCatalog ContainerMapper DataType ProjectComponent Project FileNameMapper IdentityMapper MergingMapper GlobPatternMapper StyleMapper MappingSelector ExecuteOn UpToDate Copy PathConvert XSLTProcess
+FileLocation: src/main/org/apache/tools/ant/types/Mapper.java
+
+Mediator Pattern.
+Mediator: FilterSet
+Colleagues:  Project ResourceEnumeration OneLiner Filter Filter DataType Resource Path AbstractFileSet DirSet FileSet PatternSet Commandline Assertions CommandlineJava SysProperties ZipFileSet Section ProjectComponent MatchingTask Chmod
+FileLocation: src/main/org/apache/tools/ant/types/FilterSet.java
+
+Mediator Pattern.
+Mediator: FilterSetCollection
+Colleagues:  FileUtils ResourceEnumeration OneLiner FilterSet
+FileLocation: src/main/org/apache/tools/ant/types/FilterSetCollection.java
+
+Mediator Pattern.
+Mediator: Path
+Colleagues:  DefaultCompilerAdapter DataType PathElement DefaultRmicAdapter XmlProperty AntFilterReader FilterChain AbstractFileSet FileList Mapper PatternSet Assertions PropertySet RedirectorElement XMLCatalog Delegate ExtendSelector Property Argument Available JDBCTask Java Javac Javadoc ExtensionInfo LoadProperties PathConvert Rmic SubAnt XSLTProcess WhichResource AntClassLoader ProjectComponent Reference MatchingTask Chmod ZipFileSet DirectoryScanner ZipScanner ExternalResolver ExecTask Concat Jar PathTokenizer CommandlineJava Resource FilterSet DirSet FileSet Section Commandline SysProperties ResourceEnumeration OneLiner Substitution RegularExpression Task Project Kjc Gcj
+FileLocation: src/main/org/apache/tools/ant/types/Path.java
+
+Mediator Pattern.
+Mediator: PatternSet
+Colleagues:  FilterChain AntFilterReader Path AbstractFileSet FileList Mapper Assertions PropertySet RedirectorElement XMLCatalog Javadoc DataType Expand Resource FilterSet Commandline CommandlineJava SysProperties Section DirSet FileSet ZipFileSet ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/types/PatternSet.java
+
+Mediator Pattern.
+Mediator: PropertySet
+Colleagues:  SysProperties ProjectComponent Project DataType ResourceEnumeration OneLiner Mapper AntTypeTable AntRefTable FileNameMapper IdentityMapper CompositeMapper MergingMapper GlobPatternMapper StyleMapper Ant FilterChain AntFilterReader Path AbstractFileSet FileList PatternSet Assertions RedirectorElement XMLCatalog
+FileLocation: src/main/org/apache/tools/ant/types/PropertySet.java
+
+Mediator Pattern.
+Mediator: Resource
+Colleagues:  Path FilterSet DirSet FileSet PatternSet Commandline Assertions SysProperties ZipFileSet Section AbstractFileSet CommandlineJava
+FileLocation: src/main/org/apache/tools/ant/types/Resource.java
+
+Mediator Pattern.
+Mediator: Substitution
+Colleagues:  ReplaceRegex DataType ContainsRegex
+FileLocation: src/main/org/apache/tools/ant/types/Substitution.java
+
+Mediator Pattern.
+Mediator: RedirectorElement
+Colleagues:  FilterChain AntFilterReader Path AbstractFileSet FileList Mapper PatternSet Assertions PropertySet XMLCatalog ExecuteOn IdentityMapper CompositeMapper MergingMapper GlobPatternMapper StyleMapper
+FileLocation: src/main/org/apache/tools/ant/types/RedirectorElement.java
+
+Mediator Pattern.
+Mediator: Reference
+Colleagues:  DataType Project Substitution RegularExpression FilterChain AntFilterReader FileList
+FileLocation: src/main/org/apache/tools/ant/types/Reference.java
+
+Mediator Pattern.
+Mediator: RegularExpression
+Colleagues:  ReplaceRegex RegexpMatcher ContainsRegex DataType LineContainsRegExp ContainsRegexpSelector
+FileLocation: src/main/org/apache/tools/ant/types/RegularExpression.java
+
+Mediator Pattern.
+Mediator: XMLCatalog
+Colleagues:  XSLTProcess DataType ResourceEnumeration OneLiner FilterChain AntFilterReader Path AbstractFileSet FileList Mapper PatternSet Assertions PropertySet RedirectorElement
+FileLocation: src/main/org/apache/tools/ant/types/XMLCatalog.java
+
+Mediator Pattern.
+Mediator: ZipFileSet
+Colleagues:  MatchingTask DataType Chmod Zip Javadoc Tar Project Path ZipScanner AbstractFileSet Checksum Concat UpToDate Copy Delete Expand SQLExec EmailTask SignJar TarFileSet Touch DirSet Reference FileSet Resource ProjectComponent FilterSet PatternSet Commandline Assertions CommandlineJava SysProperties
+FileLocation: src/main/org/apache/tools/ant/types/ZipFileSet.java
+
+Mediator Pattern.
+Mediator: ZipScanner
+Colleagues:  Path ResourceEnumeration OneLiner Resource AbstractFileSet Checksum ExecuteOn Concat FixCRLF UpToDate Copy Copydir Delete Zip Expand Javac Javadoc Replace Rmic SQLExec EmailTask SignJar TarFileSet Touch XSLTProcess AntTypeTable AntRefTable ResourceUtils DirectoryScanner
+FileLocation: src/main/org/apache/tools/ant/types/ZipScanner.java
+
+Mediator Pattern.
+Mediator: BuildException
+Colleagues:  DefaultLogger Location
+FileLocation: src/main/org/apache/tools/ant/BuildException.java
+
+Mediator Pattern.
+Mediator: DirectoryScanner
+Colleagues:  ZipScanner FileUtils
+FileLocation: src/main/org/apache/tools/ant/DirectoryScanner.java
+
+Mediator Pattern.
+Mediator: ComponentHelper
+Colleagues:  Definer Project Antlib MacroDef UnknownElement DefBase Ant CallTarget Sync XSLTProcess XmlProperty IntrospectionHelper AntTypeDefinition Creator PreSetDefinition AntTypeTable
+FileLocation: src/main/org/apache/tools/ant/ComponentHelper.java
+
+Mediator Pattern.
+Mediator: DefaultLogger
+Colleagues:  Project StringUtils BuildException XmlLogger DateUtils
+FileLocation: src/main/org/apache/tools/ant/DefaultLogger.java
+
+Mediator Pattern.
+Mediator: DemuxInputStream
+Colleagues:  CBZip2InputStream Project ConcatFileInputStream TarBuffer Pack Zip
+FileLocation: src/main/org/apache/tools/ant/DemuxInputStream.java
+
+Mediator Pattern.
+Mediator: IntrospectionHelper
+Colleagues:  ProjectHelper AntTypeTable AntRefTable NestedElementHandler UnknownElement AntStructure RuntimeConfigurable ModifiedSelector Project DynamicAttributeNS DynamicAttribute AttributeSetter MacroInstance NestedCreator
+FileLocation: src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Mediator Pattern.
+Mediator: Project
+Colleagues:  Ant ComponentHelper Main ChainReaderHelper AntClassLoader Mapper ExtendSelector Property JDBCTask LoadProperties Rmic Available PropertyHelper XmlProperty Redirector BuildNumber Checksum ExecTask UpToDate Java PathConvert Tstamp WhichResource RegexpMatcherFactory RegexpFactory Path ProjectHandler Target ClasspathUtils SelectSelector NameEntry PropertySet XmlLogger CallTarget Exec Exit Javac Param ExpandProperties RuntimeConfigurable PatternSet TextElement Javadoc SQLExec Message Description FileUtils JavaEnvUtils ResourceEnumeration OneLiner EnumeratedAttribute Location AbstractFileSet SizeSelector ModifiedSelector BaseSelectorContainer ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress AntTypeTable AntRefTable AntStructure ProjectHelperImpl TargetHandler TaskHandler SignJar SubAnt DataTypeHandler DemuxOutputStream Task UnknownElement BoundedInputStream ReaderInputStream BuildException RedirectorElement Unpack EmailTask Copydir ProjectHelper ProjectHelper2 AntXMLContext Reference BuildListener IntrospectionHelper RecorderEntry SubBuildListener ExecuteJava MatchingTask Chmod ProjectComponent Creator AntTypeDefinition
+FileLocation: src/main/org/apache/tools/ant/Project.java
+
+Mediator Pattern.
+Mediator: ProjectComponent
+Colleagues:  ExternalResolver Project ResourceUtils
+FileLocation: src/main/org/apache/tools/ant/ProjectComponent.java
+
+Mediator Pattern.
+Mediator: Main
+Colleagues:  Diagnostics ConcatFileInputStream ReaderInputStream
+FileLocation: src/main/org/apache/tools/ant/Main.java
+
+Mediator Pattern.
+Mediator: NoBannerLogger
+Colleagues:  Project DefaultLogger
+FileLocation: src/main/org/apache/tools/ant/NoBannerLogger.java
+
+Mediator Pattern.
+Mediator: AntStructure
+Colleagues:  Task ResourceEnumeration OneLiner AntTypeTable AntRefTable UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/AntStructure.java
+
+Mediator Pattern.
+Mediator: PropertyHelper
+Colleagues:  ProjectHelper ResourceEnumeration OneLiner AntTypeTable AntRefTable Path EnumeratedAttribute Target AbstractFileSet SizeSelector ModifiedSelector BaseSelectorContainer SelectSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PatternSet NameEntry PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress Project Location
+FileLocation: src/main/org/apache/tools/ant/PropertyHelper.java
+
+Mediator Pattern.
+Mediator: ProjectHelper
+Colleagues:  Main ProjectHelperImpl ProjectHelper2 Ant Description LoaderUtils AntClassLoader RuntimeConfigurable TaskAdapter Property PropertyHelper
+FileLocation: src/main/org/apache/tools/ant/ProjectHelper.java
+
+Mediator Pattern.
+Mediator: Target
+Colleagues:  Ant AntTypeTable AntRefTable ProjectHelper2 Task RuntimeConfigurable
+FileLocation: src/main/org/apache/tools/ant/Target.java
+
+Mediator Pattern.
+Mediator: Task
+Colleagues:  UnknownElement Ant CallTarget Java SubAnt DefBase Project ProjectComponent Definer LogOutputStream ConcatFileInputStream LeadPipeInputStream CVSPass MatchingTask ExecuteOn Concat MultiReader FixCRLF Delete Zip Jar Expand CompilerAdapterFactory Kjc Gcj JikesOutputParser Replace DefaultRmicAdapter Transaction Sleep Sync Tar TaskOutputStream Touch ExternalResolver ResourceUtils TaskAdapter Property AbstractCvsTask AntStructure Available Unpack Pack BuildNumber Checksum ExecTask Chmod UpToDate Copy Copydir Deltree Exec Exit Filter Javac Javadoc KeySubst LoadProperties MacroDef MacroInstance Mkdir Parallel PathConvert Recorder Rmic SQLExec EmailTask SignJar Tstamp WhichResource XSLTProcess XmlProperty Target Antlib TaskRunnable
+FileLocation: src/main/org/apache/tools/ant/Task.java
+
+Mediator Pattern.
+Mediator: TaskAdapter
+Colleagues:  AntTypeDefinition ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/TaskAdapter.java
+
+Mediator Pattern.
+Mediator: UnknownElement
+Colleagues:  MacroInstance ComponentHelper Antlib RuntimeConfigurable Target Ant Java CallTarget SubAnt Task AntStructure BuildNumber Chmod Exit Parallel Recorder TaskAdapter Property AbstractCvsTask Available Unpack Pack CVSPass Checksum ExecTask Concat FixCRLF UpToDate Copy Copydir Delete Deltree Zip Exec Expand Filter Javac Javadoc KeySubst LoadProperties MacroDef Mkdir PathConvert Replace Rmic SQLExec EmailTask SignJar Sleep Sync Tar Touch Tstamp WhichResource XSLTProcess XmlProperty PreSetDefinition
+FileLocation: src/main/org/apache/tools/ant/UnknownElement.java
+
+Mediator Pattern.
+Mediator: XmlLogger
+Colleagues:  Project DefaultLogger BuildException StringUtils DOMElementWriter AntTypeTable Location
+FileLocation: src/main/org/apache/tools/ant/XmlLogger.java
+
+Mediator Pattern.
+Mediator: AbstractCvsTask
+Colleagues:  Task Commandline Argument UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/AbstractCvsTask.java
+
+Mediator Pattern.
+Mediator: Antlib
+Colleagues:  Definer ProjectHelper2 MatchingTask Chmod Ant CallTarget Sync XSLTProcess XmlProperty UnknownElement Task AntlibDefinition AntStructure BuildNumber Exit Parallel Recorder DefBase TaskAdapter Property AbstractCvsTask Available Unpack Pack CVSPass Checksum ExecTask Concat FixCRLF UpToDate Copy Copydir Delete Deltree Zip Exec Expand Filter Java Javac Javadoc KeySubst LoadProperties Mkdir PathConvert Replace Rmic SQLExec EmailTask SignJar Sleep SubAnt Tar Touch Tstamp WhichResource
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Antlib.java
+
+Mediator Pattern.
+Mediator: BUnzip2
+Colleagues:  Unpack BoundedInputStream ReaderInputStream
+FileLocation: src/main/org/apache/tools/ant/taskdefs/BUnzip2.java
+
+Mediator Pattern.
+Mediator: Checksum
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Checksum.java
+
+Mediator Pattern.
+Mediator: Chmod
+Colleagues:  Path MatchingTask TaskHandler NestedElementHandler ComponentHelper FilterSet Project FileList Mapper Antlib RedirectorElement Ant Available Javadoc MacroInstance EmailTask Sync ExecTask AbstractFileSet SignJar Commandline Execute Task Argument UnknownElement Os
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Chmod.java
+
+Mediator Pattern.
+Mediator: CallTarget
+Colleagues:  TaskHandler Ant DefBase Project ProjectComponent UnknownElement ComponentHelper Antlib MacroInstance Sync XSLTProcess XmlProperty Java SubAnt
+FileLocation: src/main/org/apache/tools/ant/taskdefs/CallTarget.java
+
+Mediator Pattern.
+Mediator: Ant
+Colleagues:  DefBase Project ProjectComponent Antlib MacroInstance Sync CallTarget UnknownElement Java SubAnt FileUtils Target ProjectHelper AntTypeTable AntRefTable Task MatchingTask Chmod
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Ant.java
+
+Mediator Pattern.
+Mediator: Available
+Colleagues:  Antlib Project NestedCondition ProjectComponent MatchingTask Chmod Task AntClassLoader
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Available.java
+
+Mediator Pattern.
+Mediator: Basename
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Basename.java
+
+Mediator Pattern.
+Mediator: BuildNumber
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/BuildNumber.java
+
+Mediator Pattern.
+Mediator: DefBase
+Colleagues:  Definer Delegate AntClassLoader ComponentHelper ClasspathUtils Ant CallTarget Sync XSLTProcess XmlProperty TaskHandler UnknownElement Antlib MacroInstance
+FileLocation: src/main/org/apache/tools/ant/taskdefs/DefBase.java
+
+Mediator Pattern.
+Mediator: DefaultExcludes
+Colleagues:  Task DirectoryScanner UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/DefaultExcludes.java
+
+Mediator Pattern.
+Mediator: Copy
+Colleagues:  Sync AbstractFileSet ZipFileSet DirectoryScanner ZipScanner Move Task UnknownElement Antlib MyCopy FileNameMapper IdentityMapper CompositeMapper MergingMapper GlobPatternMapper StyleMapper SourceFileScanner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Copy.java
+
+Mediator Pattern.
+Mediator: Concat
+Colleagues:  Task ResourceEnumeration OneLiner Path AbstractFileSet ZipFileSet FileList DirectoryScanner ZipScanner UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Concat.java
+
+Mediator Pattern.
+Mediator: Copydir
+Colleagues:  Task DirectoryScanner ZipScanner ResourceEnumeration OneLiner AntTypeTable AntRefTable UnknownElement MatchingTask Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Copydir.java
+
+Mediator Pattern.
+Mediator: Copyfile
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Copyfile.java
+
+Mediator Pattern.
+Mediator: FixCRLF
+Colleagues:  Task DirectoryScanner ZipScanner UnknownElement MatchingTask Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/FixCRLF.java
+
+Mediator Pattern.
+Mediator: Expand
+Colleagues:  Task FileUtils AbstractFileSet ZipFileSet DirectoryScanner ZipScanner UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Expand.java
+
+Mediator Pattern.
+Mediator: Filter
+Colleagues:  Task FilterSet UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Filter.java
+
+Mediator Pattern.
+Mediator: Definer
+Colleagues:  ComponentHelper EnumeratedAttribute ResourceEnumeration OneLiner ResourceStack Task UnknownElement DefBase Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Definer.java
+
+Mediator Pattern.
+Mediator: Delete
+Colleagues:  Task AbstractFileSet ZipFileSet DirectoryScanner ZipScanner UnknownElement MatchingTask Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Delete.java
+
+Mediator Pattern.
+Mediator: DependSet
+Colleagues:  Task Os ResourceEnumeration OneLiner AbstractFileSet ZipFileSet DirectoryScanner ZipScanner FileList UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/DependSet.java
+
+Mediator Pattern.
+Mediator: Exec
+Colleagues:  StreamPumper Task
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Exec.java
+
+Mediator Pattern.
+Mediator: Dirname
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Dirname.java
+
+Mediator Pattern.
+Mediator: Execute
+Colleagues:  Property Os ExecTask AbstractCvsTask ExecuteStreamHandler PumpStreamHandler JikesOutputParser ExecuteWatchdog ProcessDestroyer Java DefaultCompilerAdapter Javadoc CBZip2OutputStream LogOutputStream LazyFileOutputStream TeeOutputStream DemuxOutputStream EnumeratedAttribute Target Location AbstractFileSet SizeSelector ModifiedSelector BaseSelectorContainer SelectSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PatternSet NameEntry PropertiesfileCache DigestAlgorithm EqualComparator CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: ExecuteJava
+Colleagues:  Java SysProperties AntClassLoader Watchdog
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ExecuteJava.java
+
+Mediator Pattern.
+Mediator: ExecuteOn
+Colleagues:  Chmod Task UnknownElement Mapper ExecTask AbstractFileSet FileList DirectoryScanner ExtendedDirectoryScanner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ExecuteOn.java
+
+Mediator Pattern.
+Mediator: ExecTask
+Colleagues:  SignJar Commandline ExecuteOn Chmod Task UnknownElement Antlib Project RedirectorElement Environment SysProperties Redirector
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ExecTask.java
+
+Mediator Pattern.
+Mediator: ExecuteWatchdog
+Colleagues:  Execute Watchdog
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ExecuteWatchdog.java
+
+Mediator Pattern.
+Mediator: Exit
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Exit.java
+
+Mediator Pattern.
+Mediator: Java
+Colleagues:  UnknownElement Redirector Ant CallTarget SubAnt
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Java.java
+
+Mediator Pattern.
+Mediator: ImportTask
+Colleagues:  Task ProjectHelper Location FileUtils ProjectHelperImpl ProjectHelper2 UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ImportTask.java
+
+Mediator Pattern.
+Mediator: Input
+Colleagues:  Task StringUtils InputHandler DefaultInputHandler InputRequest UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Input.java
+
+Mediator Pattern.
+Mediator: Get
+Colleagues:  Task FileUtils UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Get.java
+
+Mediator Pattern.
+Mediator: GenerateKey
+Colleagues:  Task JavaEnvUtils Chmod Argument UnknownElement ExecTask Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/GenerateKey.java
+
+Mediator Pattern.
+Mediator: Javac
+Colleagues:  DefaultCompilerAdapter FacadeTaskHelper Gcj Task Path DirectoryScanner ZipScanner UnknownElement MatchingTask Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Javac.java
+
+Mediator Pattern.
+Mediator: PathConvert
+Colleagues:  Task Path Reference Mapper FileNameMapper IdentityMapper CompositeMapper MergingMapper GlobPatternMapper StyleMapper UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/PathConvert.java
+
+Mediator Pattern.
+Mediator: Nice
+Colleagues:  Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Nice.java
+
+Mediator Pattern.
+Mediator: Javadoc
+Colleagues:  Task Path Commandline JavaEnvUtils Argument Html ExtensionInfo DocletParam ResourceEnumeration OneLiner DocletInfo LinkArgument FileUtils GroupArgument AbstractFileSet TagArgument ZipFileSet DirectoryScanner ZipScanner SourceFile UnknownElement Execute Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+
+Mediator Pattern.
+Mediator: MacroInstance
+Colleagues:  Task Attribute Text UnknownElement DefBase Ant CallTarget Sync XSLTProcess XmlProperty Antlib MacroDef
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MacroInstance.java
+
+Mediator Pattern.
+Mediator: Manifest
+Colleagues:  Jar ResourceEnumeration OneLiner AntTypeTable AntRefTable MacroDef Section IntrospectionHelper CollectionUtils EqualComparator AntStructure
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Manifest.java
+
+Mediator Pattern.
+Mediator: LogStreamHandler
+Colleagues:  Execute PumpStreamHandler CBZip2OutputStream LogOutputStream LazyFileOutputStream TeeOutputStream DemuxOutputStream
+FileLocation: src/main/org/apache/tools/ant/taskdefs/LogStreamHandler.java
+
+Mediator Pattern.
+Mediator: MacroDef
+Colleagues:  MacroInstance NestedSequential Task ProjectHelper AntlibDefinition AntTypeDefinition PreSetDefinition UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Mediator Pattern.
+Mediator: LoadFile
+Colleagues:  Task ChainReaderHelper UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/LoadFile.java
+
+Mediator Pattern.
+Mediator: LoadProperties
+Colleagues:  Task AntClassLoader ChainReaderHelper UnknownElement Property Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/LoadProperties.java
+
+Mediator Pattern.
+Mediator: LogOutputStream
+Colleagues:  CBZip2OutputStream LazyFileOutputStream TeeOutputStream DemuxOutputStream TarBuffer ZipOutputStream Execute PumpStreamHandler OutputStreamFunneler Redirector
+FileLocation: src/main/org/apache/tools/ant/taskdefs/LogOutputStream.java
+
+Mediator Pattern.
+Mediator: ManifestTask
+Colleagues:  Task Manifest EnumeratedAttribute UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ManifestTask.java
+
+Mediator Pattern.
+Mediator: MatchingTask
+Colleagues:  Path Chmod TaskHandler NestedElementHandler Task ComponentHelper FilterSet Project FileList Mapper Antlib RedirectorElement Ant Available Zip Javadoc MacroInstance EmailTask Sync XSLTProcess FixCRLF AbstractFileSet ZipFileSet ProjectComponent Copydir Delete Javac Replace Rmic
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MatchingTask.java
+
+Mediator Pattern.
+Mediator: Move
+Colleagues:  Copy ResourceEnumeration OneLiner AntTypeTable AntRefTable
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Move.java
+
+Mediator Pattern.
+Mediator: PreSetDef
+Colleagues:  Task ProjectHelper AntlibDefinition AntTypeDefinition UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Mediator Pattern.
+Mediator: ProcessDestroyer
+Colleagues:  ProcessDestroyerImpl ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/ProcessDestroyer.java
+
+Mediator Pattern.
+Mediator: Property
+Colleagues:  Ant Path EnumeratedAttribute Location AbstractFileSet SizeSelector ModifiedSelector BaseSelectorContainer SelectSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PatternSet NameEntry PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress Task Reference UnknownElement Antlib Target LoadProperties ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Property.java
+
+Mediator Pattern.
+Mediator: Patch
+Colleagues:  Task Commandline Argument UnknownElement Execute Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Patch.java
+
+Mediator Pattern.
+Mediator: Redirector
+Colleagues:  Java OutputStreamFunneler LeadPipeInputStream ConcatFileInputStream ChainReaderHelper BoundedInputStream ReaderInputStream ExecTask CBZip2OutputStream LogOutputStream TeeOutputStream DemuxOutputStream LazyFileOutputStream
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Redirector.java
+
+Mediator Pattern.
+Mediator: Replace
+Colleagues:  Task ResourceEnumeration OneLiner Path EnumeratedAttribute Location AbstractFileSet SizeSelector ModifiedSelector BaseSelectorContainer SelectSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PatternSet NameEntry PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress Replacefilter DirectoryScanner ZipScanner UnknownElement Property MatchingTask Antlib Target
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Replace.java
+
+Mediator Pattern.
+Mediator: Rename
+Colleagues:  Task FileUtils UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Rename.java
+
+Mediator Pattern.
+Mediator: RecorderEntry
+Colleagues:  Project BuildException
+FileLocation: src/main/org/apache/tools/ant/taskdefs/RecorderEntry.java
+
+Mediator Pattern.
+Mediator: PumpStreamHandler
+Colleagues:  Execute CBZip2OutputStream LogOutputStream LazyFileOutputStream TeeOutputStream DemuxOutputStream
+FileLocation: src/main/org/apache/tools/ant/taskdefs/PumpStreamHandler.java
+
+Mediator Pattern.
+Mediator: Recorder
+Colleagues:  UnknownElement RecorderEntry Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Recorder.java
+
+Mediator Pattern.
+Mediator: SQLExec
+Colleagues:  Task AbstractFileSet ZipFileSet DirectoryScanner ZipScanner ResourceEnumeration OneLiner UnknownElement Transaction JDBCTask Antlib Project ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/taskdefs/SQLExec.java
+
+Mediator Pattern.
+Mediator: Sequential
+Colleagues:  Task ResourceEnumeration OneLiner UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Sequential.java
+
+Mediator Pattern.
+Mediator: SignJar
+Colleagues:  Task AbstractFileSet ZipFileSet DirectoryScanner ZipScanner UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/SignJar.java
+
+Mediator Pattern.
+Mediator: Rmic
+Colleagues:  DefaultRmicAdapter FacadeTaskHelper Task RmicAdapterFactory RmicAdapter DirectoryScanner ZipScanner UnknownElement MatchingTask Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Rmic.java
+
+Mediator Pattern.
+Mediator: XmlProperty
+Colleagues:  TaskHandler DefBase Ant CallTarget Sync XSLTProcess ComponentHelper UnknownElement Antlib MacroInstance
+FileLocation: src/main/org/apache/tools/ant/taskdefs/XmlProperty.java
+
+Mediator Pattern.
+Mediator: SubAnt
+Colleagues:  UnknownElement Ant CallTarget Java Task Path BuildException Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/SubAnt.java
+
+Mediator Pattern.
+Mediator: Sync
+Colleagues:  TaskHandler Copy DefBase ComponentHelper UnknownElement Antlib MacroInstance XSLTProcess XmlProperty Task MyCopy
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Sync.java
+
+Mediator Pattern.
+Mediator: Tar
+Colleagues:  Task AbstractFileSet ZipFileSet ResourceEnumeration OneLiner TarFileSet TarOutputStream TarLongFileMode UnknownElement Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Mediator Pattern.
+Mediator: TempFile
+Colleagues:  Task FileUtils UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/TempFile.java
+
+Mediator Pattern.
+Mediator: Tstamp
+Colleagues:  Task ResourceEnumeration OneLiner UnknownElement CustomFormat Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Tstamp.java
+
+Mediator Pattern.
+Mediator: UpToDate
+Colleagues:  NestedCondition Task ResourceEnumeration OneLiner AbstractFileSet ZipFileSet ProjectComponent DirectoryScanner ZipScanner Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/UpToDate.java
+
+Mediator Pattern.
+Mediator: WhichResource
+Colleagues:  Task Path AntClassLoader UnknownElement Antlib Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/WhichResource.java
+
+Mediator Pattern.
+Mediator: Untar
+Colleagues:  Expand TarInputStream TarEntry
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Untar.java
+
+Mediator Pattern.
+Mediator: Zip
+Colleagues:  Jar ProjectComponent AbstractFileSet FileUtils Resource MergingMapper GlobPatternMapper ResourceUtils AntTypeTable AntRefTable BoundedInputStream ReaderInputStream ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Zip.java
+
+Mediator Pattern.
+Mediator: FilesMatch
+Colleagues:  NestedCondition FileUtils
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/FilesMatch.java
+
+Mediator Pattern.
+Mediator: Http
+Colleagues:  NestedCondition ProjectComponent Task
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/Http.java
+
+Mediator Pattern.
+Mediator: IsReference
+Colleagues:  NestedCondition Project ProjectComponent Reference AntTypeTable AntRefTable
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/IsReference.java
+
+Mediator Pattern.
+Mediator: IsSet
+Colleagues:  NestedCondition Project ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/IsSet.java
+
+Mediator Pattern.
+Mediator: DefaultCompilerAdapter
+Colleagues:  Kjc Javac
+FileLocation: src/main/org/apache/tools/ant/taskdefs/compilers/DefaultCompilerAdapter.java
+
+Mediator Pattern.
+Mediator: And
+Colleagues:  NestedCondition ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/And.java
+
+Mediator Pattern.
+Mediator: Socket
+Colleagues:  NestedCondition ProjectComponent Task
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/Socket.java
+
+Mediator Pattern.
+Mediator: Or
+Colleagues:  NestedCondition ResourceEnumeration OneLiner Os Available Checksum UpToDate
+FileLocation: src/main/org/apache/tools/ant/taskdefs/condition/Or.java
+
+Mediator Pattern.
+Mediator: FileUtils
+Colleagues:  Move ChainReaderHelper LineTokenizer Expand JavaEnvUtils Touch RootHandler Locator Location MappingSelector Os SourceFileScanner ResourceUtils Copy
+FileLocation: src/main/org/apache/tools/ant/util/FileUtils.java
+
+Mediator Pattern.
+Mediator: ProjectHelper2
+Colleagues:  Antlib Target AntXMLContext ProjectHelper
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelper2.java
+
+Mediator Pattern.
+Mediator: AntRefTable
+Colleagues:  Project AntTypeTable ExtraFieldUtils UnknownElement ZipFile ZipOutputStream ReplaceTokens AntClassLoader DirectoryScanner IntrospectionHelper ProjectHelperImpl Target FilterSet AbstractFileSet PropertyHelper SysProperties PropertySet ZipScanner DemuxOutputStream Main XmlLogger Ant AntStructure Checksum Copy Copydir Zip Manifest Section JDBCTask KeySubst Move Recorder Sync Unit Unit XmlProperty
+FileLocation: src/main/org/apache/tools/ant/Project.java
+
+Mediator Pattern.
+Mediator: TargetHandler
+Colleagues:  RootHandler Target
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelper2.java
+
+Mediator Pattern.
+Mediator: ElementHandler
+Colleagues:  RootHandler RuntimeConfigurable ProjectComponent MatchingTask Chmod UnknownElement Task ProjectHelper Target
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelper2.java
+
+Mediator Pattern.
+Mediator: CollectionUtils
+Colleagues:  Manifest ResourceEnumeration OneLiner Section
+FileLocation: src/main/org/apache/tools/ant/util/CollectionUtils.java
+
+Mediator Pattern.
+Mediator: LoaderUtils
+Colleagues:  Diagnostics Locator
+FileLocation: src/main/org/apache/tools/ant/util/LoaderUtils.java
+
+Mediator Pattern.
+Mediator: AntTypeTable
+Colleagues:  ComponentHelper AntRefTable PreSetDefinition Zip AntTypeDefinition
+FileLocation: src/main/org/apache/tools/ant/ComponentHelper.java
+
+Mediator Pattern.
+Mediator: PreSetDefinition
+Colleagues:  IntrospectionHelper AntTypeDefinition UnknownElement
+FileLocation: src/main/org/apache/tools/ant/taskdefs/PreSetDef.java
+
+Mediator Pattern.
+Mediator: TargetHandler
+Colleagues:  ProjectHandler Target
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Mediator Pattern.
+Mediator: ProjectHelperImpl
+Colleagues:  ProjectHelper JAXPUtils FileUtils
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Mediator Pattern.
+Mediator: TaskHandler
+Colleagues:  ProjectHelperImpl ProjectComponent MatchingTask Chmod Task TaskContainer Antlib NestedSequential MacroInstance Parallel DefBase Ant CallTarget Sync XSLTProcess XmlProperty RuntimeConfigurable NestedElementHandler Project Target
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Mediator Pattern.
+Mediator: NestedElementHandler
+Colleagues:  TaskHandler IntrospectionHelper MatchingTask Chmod DataTypeHandler ProjectComponent UnknownElement
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Mediator Pattern.
+Mediator: DataTypeHandler
+Colleagues:  ProjectHelperImpl RuntimeConfigurable
+FileLocation: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Mediator Pattern.
+Mediator: Creator
+Colleagues:  UnknownElement NestedCreator RuntimeConfigurable
+FileLocation: src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Mediator Pattern.
+Mediator: StringUtils
+Colleagues:  DefaultLogger BuildException XmlLogger
+FileLocation: src/main/org/apache/tools/ant/util/StringUtils.java
+
+Mediator Pattern.
+Mediator: ChainReaderHelper
+Colleagues:  FileUtils FilterChain AntFilterReader ProjectComponent Parameterizable BaseParamFilterReader BaseExtendSelector SizeSelector ModifiedSelector ContainsRegexpSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector ChainableReader TokenFilter TailFilter TabsToSpaces StripLineComments StripLineBreaks StripJavaComments ReplaceTokens PrefixLines LineContainsRegExp LineContains HeadFilter ExpandProperties EscapeUnicode ClassConstants Redirector LoadProperties
+FileLocation: src/main/org/apache/tools/ant/filters/util/ChainReaderHelper.java
+
+Mediator Pattern.
+Mediator: BaseFilterReader
+Colleagues:  StripLineComments MultiReader PrefixLines LineContainsRegExp LineContains ExpandProperties FileUtils ClassConstants
+FileLocation: src/main/org/apache/tools/ant/filters/BaseFilterReader.java
+
+Mediator Pattern.
+Mediator: ClassConstants
+Colleagues:  BaseFilterReader
+FileLocation: src/main/org/apache/tools/ant/filters/ClassConstants.java
+
+Mediator Pattern.
+Mediator: EscapeUnicode
+Colleagues:  BaseFilterReader MultiReader
+FileLocation: src/main/org/apache/tools/ant/filters/EscapeUnicode.java
+
+Mediator Pattern.
+Mediator: LineTokenizer
+Colleagues:  TailFilter MultiReader HeadFilter FileUtils TokenFilter
+FileLocation: src/main/org/apache/tools/ant/util/LineTokenizer.java
+
+Mediator Pattern.
+Mediator: HeadFilter
+Colleagues:  BaseFilterReader LineTokenizer
+FileLocation: src/main/org/apache/tools/ant/filters/HeadFilter.java
+
+Mediator Pattern.
+Mediator: ExpandProperties
+Colleagues:  BaseFilterReader Project
+FileLocation: src/main/org/apache/tools/ant/filters/ExpandProperties.java
+
+Mediator Pattern.
+Mediator: LineContains
+Colleagues:  BaseFilterReader
+FileLocation: src/main/org/apache/tools/ant/filters/LineContains.java
+
+Mediator Pattern.
+Mediator: PrefixLines
+Colleagues:  BaseFilterReader
+FileLocation: src/main/org/apache/tools/ant/filters/PrefixLines.java
+
+Mediator Pattern.
+Mediator: LineContainsRegExp
+Colleagues:  BaseFilterReader RegularExpression RegexpMatcher
+FileLocation: src/main/org/apache/tools/ant/filters/LineContainsRegExp.java
+
+Mediator Pattern.
+Mediator: ReplaceTokens
+Colleagues:  BaseFilterReader AntTypeTable AntRefTable
+FileLocation: src/main/org/apache/tools/ant/filters/ReplaceTokens.java
+
+Mediator Pattern.
+Mediator: StripJavaComments
+Colleagues:  BaseFilterReader MultiReader
+FileLocation: src/main/org/apache/tools/ant/filters/StripJavaComments.java
+
+Mediator Pattern.
+Mediator: TabsToSpaces
+Colleagues:  BaseFilterReader MultiReader
+FileLocation: src/main/org/apache/tools/ant/filters/TabsToSpaces.java
+
+Mediator Pattern.
+Mediator: StripLineComments
+Colleagues:  BaseFilterReader
+FileLocation: src/main/org/apache/tools/ant/filters/StripLineComments.java
+
+Mediator Pattern.
+Mediator: StripLineBreaks
+Colleagues:  BaseFilterReader MultiReader
+FileLocation: src/main/org/apache/tools/ant/filters/StripLineBreaks.java
+
+Mediator Pattern.
+Mediator: ReplaceRegex
+Colleagues:  TokenFilter Regexp Substitution ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Mediator Pattern.
+Mediator: TailFilter
+Colleagues:  BaseFilterReader LineTokenizer
+FileLocation: src/main/org/apache/tools/ant/filters/TailFilter.java
+
+Mediator Pattern.
+Mediator: ContainsRegex
+Colleagues:  TokenFilter Regexp Substitution ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Mediator Pattern.
+Mediator: StringTokenizer
+Colleagues:  TokenFilter MultiReader
+FileLocation: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Mediator Pattern.
+Mediator: ChainableReaderFilter
+Colleagues:  ChainReaderHelper TokenFilter
+FileLocation: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Mediator Pattern.
+Mediator: TokenFilter
+Colleagues:  BaseFilterReader Tokenizer StringTokenizer LineTokenizer ResourceEnumeration OneLiner Filter ReplaceRegex ContainsRegex
+FileLocation: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Mediator Pattern.
+Mediator: FileTokenizer
+Colleagues:  TokenFilter FileUtils
+FileLocation: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Mediator Pattern.
+Mediator: BaseParamFilterReader
+Colleagues:  ExtendSelector BaseFilterReader
+FileLocation: src/main/org/apache/tools/ant/filters/BaseParamFilterReader.java
+
+Mediator Pattern.
+Mediator: ClasspathUtils
+Colleagues:  Delegate Project
+FileLocation: src/main/org/apache/tools/ant/util/ClasspathUtils.java
+
+Mediator Pattern.
+Mediator: Delegate
+Colleagues:  DefBase Path Reference
+FileLocation: src/main/org/apache/tools/ant/util/ClasspathUtils.java
+
+Mediator Pattern.
+Mediator: AndSelector
+Colleagues:  SelectSelector NoneSelector Project BaseSelectorContainer PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty
+FileLocation: src/main/org/apache/tools/ant/types/selectors/AndSelector.java
+
+Mediator Pattern.
+Mediator: DateSelector
+Colleagues:  SizeSelector ModifiedSelector ContainsRegexpSelector TypeSelector FilenameSelector DepthSelector ContainsSelector Project EnumeratedAttribute ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/DateSelector.java
+
+Mediator Pattern.
+Mediator: ContainsSelector
+Colleagues:  SizeSelector ModifiedSelector ContainsRegexpSelector TypeSelector FilenameSelector DepthSelector DateSelector Project ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/ContainsSelector.java
+
+Mediator Pattern.
+Mediator: FilenameSelector
+Colleagues:  SizeSelector ModifiedSelector ContainsRegexpSelector TypeSelector DepthSelector DateSelector ContainsSelector Project ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/FilenameSelector.java
+
+Mediator Pattern.
+Mediator: DependSelector
+Colleagues:  Project EnumeratedAttribute Location SizeSelector ModifiedSelector BaseSelectorContainer ContainsRegexpSelector NoneSelector TypeSelector DepthSelector PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress Path Target AbstractFileSet FilenameSelector DateSelector ContainsSelector PatternSet NameEntry Property PropertyHelper SelectSelector Execute Ant GroupArgument Replace PlainMailer XmlProperty MappingSelector SelectorUtils
+FileLocation: src/main/org/apache/tools/ant/types/selectors/DependSelector.java
+
+Mediator Pattern.
+Mediator: MajoritySelector
+Colleagues:  SelectSelector NoneSelector Project BaseSelectorContainer PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty
+FileLocation: src/main/org/apache/tools/ant/types/selectors/MajoritySelector.java
+
+Mediator Pattern.
+Mediator: TypeSelector
+Colleagues:  SizeSelector ModifiedSelector ContainsRegexpSelector FilenameSelector DepthSelector DateSelector ContainsSelector EnumeratedAttribute ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/TypeSelector.java
+
+Mediator Pattern.
+Mediator: DepthSelector
+Colleagues:  SizeSelector ModifiedSelector ContainsRegexpSelector TypeSelector FilenameSelector DateSelector ContainsSelector ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/DepthSelector.java
+
+Mediator Pattern.
+Mediator: NoneSelector
+Colleagues:  Project BaseSelectorContainer PropertyHelper SelectSelector Property Execute Ant GroupArgument Replace PlainMailer XmlProperty
+FileLocation: src/main/org/apache/tools/ant/types/selectors/NoneSelector.java
+
+Mediator Pattern.
+Mediator: MapperType
+Colleagues:  Mapper EnumeratedAttribute
+FileLocation: src/main/org/apache/tools/ant/types/Mapper.java
+
+Mediator Pattern.
+Mediator: NotSelector
+Colleagues:  SelectSelector NoneSelector Project BaseSelectorContainer PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty
+FileLocation: src/main/org/apache/tools/ant/types/selectors/NotSelector.java
+
+Mediator Pattern.
+Mediator: OrSelector
+Colleagues:  SelectSelector NoneSelector Project BaseSelectorContainer PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty
+FileLocation: src/main/org/apache/tools/ant/types/selectors/OrSelector.java
+
+Mediator Pattern.
+Mediator: PresentSelector
+Colleagues:  Project EnumeratedAttribute Location SizeSelector ModifiedSelector BaseSelectorContainer ContainsRegexpSelector NoneSelector TypeSelector DepthSelector PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress Path Target AbstractFileSet FilenameSelector DateSelector ContainsSelector PatternSet NameEntry Property PropertyHelper SelectSelector Execute Ant GroupArgument Replace PlainMailer XmlProperty BaseSelector Mapper
+FileLocation: src/main/org/apache/tools/ant/types/selectors/PresentSelector.java
+
+Mediator Pattern.
+Mediator: CompositeMapper
+Colleagues:  MappingSelector ContainerMapper MergingMapper GlobPatternMapper StyleMapper PropertySet IdentityMapper RedirectorElement ExecuteOn ResourceUtils Copy PathConvert Rmic XSLTProcess
+FileLocation: src/main/org/apache/tools/ant/util/CompositeMapper.java
+
+Mediator Pattern.
+Mediator: ContainsRegexpSelector
+Colleagues:  SizeSelector ModifiedSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/ContainsRegexpSelector.java
+
+Mediator Pattern.
+Mediator: SelectSelector
+Colleagues:  NoneSelector Project BaseSelectorContainer PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty DataType
+FileLocation: src/main/org/apache/tools/ant/types/selectors/SelectSelector.java
+
+Mediator Pattern.
+Mediator: SizeSelector
+Colleagues:  ContainsRegexpSelector ModifiedSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector EnumeratedAttribute ChainReaderHelper BaseExtendSelector Parameter BaseSelector ExtendSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/SizeSelector.java
+
+Mediator Pattern.
+Mediator: BaseSelector
+Colleagues:  SizeSelector ModifiedSelector SelectSelector ContainsRegexpSelector TypeSelector FilenameSelector MappingSelector ExtendSelector DepthSelector DateSelector ContainsSelector BaseSelectorContainer
+FileLocation: src/main/org/apache/tools/ant/types/selectors/BaseSelector.java
+
+Mediator Pattern.
+Mediator: BaseSelectorContainer
+Colleagues:  SelectSelector ResourceEnumeration OneLiner Path EnumeratedAttribute Target Location AbstractFileSet SizeSelector ModifiedSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PatternSet NameEntry Property PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName EmailAddress Project PropertyHelper Execute Ant GroupArgument Replace PlainMailer XmlProperty MappingSelector ExtendSelector BaseSelector
+FileLocation: src/main/org/apache/tools/ant/types/selectors/BaseSelectorContainer.java
+
+Mediator Pattern.
+Mediator: MappingSelector
+Colleagues:  BaseSelector Mapper BaseSelectorContainer
+FileLocation: src/main/org/apache/tools/ant/types/selectors/MappingSelector.java
+
+Mediator Pattern.
+Mediator: IntrospectionHelper$2
+Colleagues:  Creator PreSetDefinition
+FileLocation: src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Mediator Pattern.
+Mediator: IntrospectionHelper$3
+Colleagues:  Creator PreSetDefinition
+FileLocation: src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Mediator Pattern.
+Mediator: IntrospectionHelper$11
+Colleagues:  IntrospectionHelper EnumeratedAttribute
+FileLocation: src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Mediator Pattern.
+Mediator: PropertiesfileCache
+Colleagues:  ModifiedSelector ResourceEnumeration OneLiner TarOutputStream ZipOutputStream
+FileLocation: src/main/org/apache/tools/ant/types/selectors/modifiedselector/PropertiesfileCache.java
+
+Mediator Pattern.
+Mediator: DigestAlgorithm
+Colleagues:  ModifiedSelector TarInputStream
+FileLocation: src/main/org/apache/tools/ant/types/selectors/modifiedselector/DigestAlgorithm.java
+
+Mediator Pattern.
+Mediator: EqualComparator
+Colleagues:  ModifiedSelector TarEntry ZipShort ZipLong Manifest Attribute Attribute Section Text TemplateElement
+FileLocation: src/main/org/apache/tools/ant/types/selectors/modifiedselector/EqualComparator.java
+
+Mediator Pattern.
+Mediator: CommandLauncher
+Colleagues:  CommandLauncherProxy Project Commandline Execute
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: Java11CommandLauncher
+Colleagues:  CommandLauncherProxy Commandline Project
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: OS2CommandLauncher
+Colleagues:  Execute CommandLauncherProxy
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: WinNTCommandLauncher
+Colleagues:  Execute CommandLauncherProxy
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: MacCommandLauncher
+Colleagues:  Execute CommandLauncherProxy
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: ScriptCommandLauncher
+Colleagues:  Execute CommandLauncherProxy
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: PerlScriptCommandLauncher
+Colleagues:  Execute CommandLauncherProxy
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: VmsCommandLauncher
+Colleagues:  CommandLauncherProxy Execute Java13CommandLauncher
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Mediator Pattern.
+Mediator: SysProperties
+Colleagues:  CommandlineJava ResourceEnumeration OneLiner AntTypeTable AntRefTable Variable ExecuteJava Resource FilterSet AbstractFileSet DirSet FileSet PatternSet ZipFileSet Section Path Commandline Assertions
+FileLocation: src/main/org/apache/tools/ant/types/CommandlineJava.java
+
+Mediator Pattern.
+Mediator: PropertyOutputStream
+Colleagues:  DemuxOutputStream Redirector
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Redirector.java
+
+Mediator Pattern.
+Mediator: TeeOutputStream
+Colleagues:  CBZip2OutputStream LogOutputStream LazyFileOutputStream DemuxOutputStream TarBuffer ZipOutputStream Execute PumpStreamHandler OutputStreamFunneler Redirector Concat Zip TarInputStream Pack TaskOutputStream
+FileLocation: src/main/org/apache/tools/ant/util/TeeOutputStream.java
+
+Mediator Pattern.
+Mediator: ReaderInputStream
+Colleagues:  CBZip2InputStream MultiReader TarBuffer Execute ConcatFileInputStream Redirector Main
+FileLocation: src/main/org/apache/tools/ant/util/ReaderInputStream.java
+
+Mediator Pattern.
+Mediator: Funnel
+Colleagues:  CBZip2OutputStream OutputStreamFunneler LogOutputStream TeeOutputStream DemuxOutputStream TarBuffer ZipOutputStream PumpStreamHandler Redirector Concat LazyFileOutputStream TaskOutputStream Zip TarInputStream Pack Execute
+FileLocation: src/main/org/apache/tools/ant/util/OutputStreamFunneler.java
+
+Mediator Pattern.
+Mediator: InternalResolver
+Colleagues:  XMLCatalog Task
+FileLocation: src/main/org/apache/tools/ant/types/XMLCatalog.java
+
+Mediator Pattern.
+Mediator: ExternalResolver
+Colleagues:  XMLCatalog Task
+FileLocation: src/main/org/apache/tools/ant/types/XMLCatalog.java
+
+Mediator Pattern.
+Mediator: SourceFileScanner
+Colleagues:  ExecuteOn FileUtils Copy ResourceUtils Resource Javac
+FileLocation: src/main/org/apache/tools/ant/util/SourceFileScanner.java
+
+Mediator Pattern.
+Mediator: ResourceUtils
+Colleagues:  SourceFileScanner ProjectComponent Task FileNameMapper IdentityMapper CompositeMapper MergingMapper GlobPatternMapper StyleMapper ResourceFactory DirectoryScanner ZipScanner SelectorUtils
+FileLocation: src/main/org/apache/tools/ant/util/ResourceUtils.java
+
+Mediator Pattern.
+Mediator: Attribute
+Colleagues:  IntrospectionHelper CollectionUtils EqualComparator AntStructure Manifest ResourceEnumeration OneLiner Section
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Manifest.java
+
+Mediator Pattern.
+Mediator: Section
+Colleagues:  Manifest ResourceEnumeration OneLiner Jar AntTypeTable AntRefTable Resource Path FilterSet AbstractFileSet PatternSet Commandline Assertions CommandlineJava SysProperties IntrospectionHelper CollectionUtils EqualComparator AntStructure
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Manifest.java
+
+Mediator Pattern.
+Mediator: NestedCondition
+Colleagues:  Exit ConditionBase Condition Os Available Checksum UpToDate ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Exit.java
+
+Mediator Pattern.
+Mediator: DistinguishedName
+Colleagues:  Project DnameParam BaseSelectorContainer PropertyHelper Property Execute Ant GroupArgument Replace PlainMailer XmlProperty
+FileLocation: src/main/org/apache/tools/ant/taskdefs/GenerateKey.java
+
+Mediator Pattern.
+Mediator: FacadeTaskHelper
+Colleagues:  Javac ResourceEnumeration OneLiner ImplementationSpecificArgument Rmic
+FileLocation: src/main/org/apache/tools/ant/util/facade/FacadeTaskHelper.java
+
+Mediator Pattern.
+Mediator: ImplementationSpecificArgument
+Colleagues:  FacadeTaskHelper Argument
+FileLocation: src/main/org/apache/tools/ant/util/facade/ImplementationSpecificArgument.java
+
+Mediator Pattern.
+Mediator: GroupArgument
+Colleagues:  Javadoc Target Location SizeSelector ModifiedSelector BaseSelectorContainer SelectSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector Property PropertiesfileCache DigestAlgorithm EqualComparator CommandlineJava PropertyRef Permission Manifest DistinguishedName EmailAddress
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+
+Mediator Pattern.
+Mediator: Attribute
+Colleagues:  MacroDef
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Mediator Pattern.
+Mediator: Text
+Colleagues:  MacroDef
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Mediator Pattern.
+Mediator: TemplateElement
+Colleagues:  MacroDef
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Mediator Pattern.
+Mediator: MyAntTypeDefinition
+Colleagues:  ComponentHelper PreSetDefinition MacroInstance AntTypeTable
+FileLocation: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Mediator Pattern.
+Mediator: RmicFileNameMapper
+Colleagues:  CompositeMapper DefaultRmicAdapter Rmic MappingSelector PropertySet RedirectorElement ExecuteOn ResourceUtils Copy PathConvert XSLTProcess
+FileLocation: src/main/org/apache/tools/ant/taskdefs/rmic/DefaultRmicAdapter.java
+
+Mediator Pattern.
+Mediator: EmailTask
+Colleagues:  Task Chmod EmailAddress Message ResourceEnumeration OneLiner AbstractFileSet ZipFileSet DirectoryScanner ZipScanner Mailer PlainMailer UnknownElement MatchingTask Antlib
+FileLocation: src/main/org/apache/tools/ant/taskdefs/email/EmailTask.java
+
+Mediator Pattern.
+Mediator: Message
+Colleagues:  PlainMailer Project ProjectComponent
+FileLocation: src/main/org/apache/tools/ant/taskdefs/email/Message.java
+
+Mediator Pattern.
+Mediator: Mailer
+Colleagues:  PlainMailer DateUtils
+FileLocation: src/main/org/apache/tools/ant/taskdefs/email/Mailer.java
+
+Mediator Pattern.
+Mediator: PlainMailer
+Colleagues:  EmailTask MailMessage Path Target Location SizeSelector ModifiedSelector BaseSelectorContainer SelectSelector ContainsRegexpSelector NoneSelector TypeSelector FilenameSelector DepthSelector DateSelector ContainsSelector PatternSet NameEntry Property PropertiesfileCache DigestAlgorithm EqualComparator Commandline CommandlineJava PropertyRef Permission Manifest DistinguishedName PackageName ResourceEnumeration OneLiner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/email/PlainMailer.java
+
+Mediator Pattern.
+Mediator: TarFileSet
+Colleagues:  Tar ZipFileSet DirectoryScanner ZipScanner
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Mediator Pattern.
+Mediator: Unit
+Colleagues:  CustomFormat AntTypeTable AntRefTable
+FileLocation: src/main/org/apache/tools/ant/taskdefs/Tstamp.java
+
+Proxy Pattern.
+PropertySet is a proxy.
+DataType is a proxy interface.
+The real object(s): Mapper
+File Location: src/main/org/apache/tools/ant/types/PropertySet.java
+
+Proxy Pattern.
+XMLCatalog is a proxy.
+EntityResolver is a proxy interface.
+The real object(s): CatalogResolver
+File Location: src/main/org/apache/tools/ant/types/XMLCatalog.java
+
+Proxy Pattern.
+AntFilterReader is a proxy.
+DataType is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/types/AntFilterReader.java
+
+Proxy Pattern.
+Available is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/Available.java
+
+Proxy Pattern.
+Copy is a proxy.
+Task is a proxy interface.
+The real object(s): Mapper
+File Location: src/main/org/apache/tools/ant/taskdefs/Copy.java
+
+Proxy Pattern.
+ExecuteJava is a proxy.
+Runnable is a proxy interface.
+The real object(s): Thread
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteJava.java
+
+Proxy Pattern.
+ExecuteOn is a proxy.
+ExecTask is a proxy interface.
+The real object(s): Mapper
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteOn.java
+
+Proxy Pattern.
+Exit is a proxy.
+Task is a proxy interface.
+The real object(s): NestedCondition
+File Location: src/main/org/apache/tools/ant/taskdefs/Exit.java
+
+Proxy Pattern.
+JDBCTask is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/JDBCTask.java
+
+Proxy Pattern.
+Jar is a proxy.
+Zip is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/Jar.java
+
+Proxy Pattern.
+Javadoc is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+
+Proxy Pattern.
+LoadProperties is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/LoadProperties.java
+
+Proxy Pattern.
+PathConvert is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/PathConvert.java
+
+Proxy Pattern.
+ProcessDestroyer is a proxy.
+Runnable is a proxy interface.
+The real object(s): ProcessDestroyerImpl
+File Location: src/main/org/apache/tools/ant/taskdefs/ProcessDestroyer.java
+
+Proxy Pattern.
+SubAnt is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/SubAnt.java
+
+Proxy Pattern.
+Sync is a proxy.
+Task is a proxy interface.
+The real object(s): MyCopy
+File Location: src/main/org/apache/tools/ant/taskdefs/Sync.java
+
+Proxy Pattern.
+UpToDate is a proxy.
+Task is a proxy interface.
+The real object(s): Mapper
+File Location: src/main/org/apache/tools/ant/taskdefs/UpToDate.java
+
+Proxy Pattern.
+WhichResource is a proxy.
+Task is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/WhichResource.java
+
+Proxy Pattern.
+XSLTProcess is a proxy.
+MatchingTask is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/taskdefs/XSLTProcess.java
+
+Proxy Pattern.
+PresentSelector is a proxy.
+BaseSelector is a proxy interface.
+The real object(s): Mapper
+File Location: src/main/org/apache/tools/ant/types/selectors/PresentSelector.java
+
+Proxy Pattern.
+ContainsRegexpSelector is a proxy.
+BaseExtendSelector is a proxy interface.
+The real object(s): RegularExpression
+File Location: src/main/org/apache/tools/ant/types/selectors/ContainsRegexpSelector.java
+
+Proxy Pattern.
+ExtendSelector is a proxy.
+BaseSelector is a proxy interface.
+The real object(s): Path
+File Location: src/main/org/apache/tools/ant/types/selectors/ExtendSelector.java
+
+Proxy Pattern.
+ContainsRegex is a proxy.
+ChainableReaderFilter is a proxy interface.
+The real object(s): RegularExpression
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Proxy Pattern.
+ReplaceRegex is a proxy.
+ChainableReaderFilter is a proxy interface.
+The real object(s): RegularExpression
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Proxy Pattern.
+LazyFileOutputStream is a proxy.
+OutputStream is a proxy interface.
+The real object(s): FileOutputStream
+File Location: src/main/org/apache/tools/ant/util/LazyFileOutputStream.java
+
+Proxy Pattern.
+EmailTask is a proxy.
+Task is a proxy interface.
+The real object(s): Message
+File Location: src/main/org/apache/tools/ant/taskdefs/email/EmailTask.java
+
+Proxy Pattern.
+MappingSelector is a proxy.
+BaseSelector is a proxy interface.
+The real object(s): Mapper
+File Location: src/main/org/apache/tools/ant/types/selectors/MappingSelector.java
+
+Adapter Pattern.
+Adapting classes:  FilterOutputStream OutputStream Object
+ZipOutputStream is an adapter class.
+ZipLong is the adaptee class.
+File Location: src/main/org/apache/tools/zip/ZipOutputStream.java
+File Location: src/main/org/apache/tools/zip/ZipLong.java
+
+Adapter Pattern.
+Adapting classes:  FilterOutputStream OutputStream Object
+ZipOutputStream is an adapter class.
+ZipLong is the adaptee class.
+File Location: src/main/org/apache/tools/zip/ZipOutputStream.java
+File Location: src/main/org/apache/tools/zip/ZipLong.java
+
+Adapter Pattern.
+Adapting classes:  FilterInputStream InputStream Object
+TarInputStream is an adapter class.
+TarBuffer is the adaptee class.
+File Location: src/main/org/apache/tools/tar/TarInputStream.java
+File Location: src/main/org/apache/tools/tar/TarBuffer.java
+
+Adapter Pattern.
+Adapting classes:  FilterOutputStream OutputStream Object
+TarOutputStream is an adapter class.
+TarBuffer is the adaptee class.
+File Location: src/main/org/apache/tools/tar/TarOutputStream.java
+File Location: src/main/org/apache/tools/tar/TarBuffer.java
+
+Adapter Pattern.
+Adapting classes:  Task ProjectComponent Object Condition
+Available is an adapter class.
+FileDir is the adaptee class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Available.java
+File Location: src/main/org/apache/tools/ant/taskdefs/Available.java
+
+Adapter Pattern.
+Adapting classes:  AntlibDefinition Task ProjectComponent Object
+MacroDef is an adapter class.
+NestedSequential is the adaptee class.
+File Location: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+File Location: src/main/org/apache/tools/ant/taskdefs/MacroDef.java
+
+Adapter Pattern.
+Adapting classes:  Task ProjectComponent Object
+ManifestTask is an adapter class.
+Mode is the adaptee class.
+File Location: src/main/org/apache/tools/ant/taskdefs/ManifestTask.java
+File Location: src/main/org/apache/tools/ant/taskdefs/ManifestTask.java
+
+Adapter Pattern.
+Adapting classes:  MatchingTask Task ProjectComponent Object SelectorContainer
+Replace is an adapter class.
+NestedString is the adaptee class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Replace.java
+File Location: src/main/org/apache/tools/ant/taskdefs/Replace.java
+
+Adapter Pattern.
+Adapting classes:  MatchingTask Task ProjectComponent Object SelectorContainer
+Tar is an adapter class.
+TarLongFileMode is the adaptee class.
+File Location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+File Location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Adapter Pattern.
+Adapting classes:  BaseExtendSelector BaseSelector DataType ProjectComponent Object FileSelector ExtendFileSelector Parameterizable
+ModifiedSelector is an adapter class.
+Cache is the adaptee class.
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/ModifiedSelector.java
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/Cache.java
+
+Adapter Pattern.
+Adapting classes:  BaseExtendSelector BaseSelector DataType ProjectComponent Object FileSelector ExtendFileSelector Parameterizable
+ModifiedSelector is an adapter class.
+Algorithm is the adaptee class.
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/ModifiedSelector.java
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/Algorithm.java
+
+Adapter Pattern.
+Adapting classes:  BaseFilterReader FilterReader Reader Object ChainableReader
+TokenFilter is an adapter class.
+Tokenizer is the adaptee class.
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java
+File Location: src/main/org/apache/tools/ant/util/Tokenizer.java
+
+Adapter Pattern.
+Adapting classes:  Task ProjectComponent Object
+EmailTask is an adapter class.
+EmailAddress is the adaptee class.
+File Location: src/main/org/apache/tools/ant/taskdefs/email/EmailTask.java
+File Location: src/main/org/apache/tools/ant/taskdefs/email/EmailAddress.java
+
+Facade Pattern.
+RegularExpression is a facade class.
+Hidden types: Reference RegexpFactory
+Facade access types: ContainsRegex ContainsRegexpSelector LineContainsRegExp
+File Location: src/main/org/apache/tools/ant/types/RegularExpression.java
+
+Facade Pattern.
+Checksum is a facade class.
+Hidden types: Project DirectoryScanner
+Facade access types: Checksum
+File Location: src/main/org/apache/tools/ant/taskdefs/Checksum.java
+
+Facade Pattern.
+ZipOutputStream is a facade class.
+Hidden types: ZipLong ZipShort
+Facade access types: Jar Zip
+File Location: src/main/org/apache/tools/zip/ZipOutputStream.java
+
+Facade Pattern.
+Delegate is a facade class.
+Hidden types: Path Reference ProjectComponent
+Facade access types: DefBase
+File Location: src/main/org/apache/tools/ant/util/ClasspathUtils.java
+
+Facade Pattern.
+Main is a facade class.
+Hidden types: Project ProjectHelper DefaultLogger BuildLogger Target
+Facade access types: Diagnostics
+File Location: src/main/org/apache/tools/ant/Main.java
+
+Facade Pattern.
+ZipFile is a facade class.
+Hidden types: ZipLong ZipShort
+Facade access types: Expand ZipScanner Zip Jar
+File Location: src/main/org/apache/tools/zip/ZipFile.java
+
+Facade Pattern.
+ZipEntry is a facade class.
+Hidden types: ZipExtraField ExtraFieldUtils
+Facade access types: ZipFile ZipOutputStream Expand Zip Jar
+File Location: src/main/org/apache/tools/zip/ZipEntry.java
+
+Facade Pattern.
+Assertions is a facade class.
+Hidden types: Reference Project
+Facade access types: CommandlineJava
+File Location: src/main/org/apache/tools/ant/types/Assertions.java
+
+Facade Pattern.
+Description is a facade class.
+Hidden types: ProjectHelper RuntimeConfigurable
+Facade access types: Project
+File Location: src/main/org/apache/tools/ant/types/Description.java
+
+Facade Pattern.
+PropertySet is a facade class.
+Hidden types: EnumeratedAttribute FileNameMapper RegexpMatcherFactory RegexpMatcher
+Facade access types: SysProperties Ant
+File Location: src/main/org/apache/tools/ant/types/PropertySet.java
+
+Facade Pattern.
+ZipFileSet is a facade class.
+Hidden types: Project Reference
+Facade access types: War Zip Jar Ear
+File Location: src/main/org/apache/tools/ant/types/ZipFileSet.java
+
+Facade Pattern.
+BuildNumber is a facade class.
+Hidden types: Project FileUtils
+Facade access types: BuildNumber
+File Location: src/main/org/apache/tools/ant/taskdefs/BuildNumber.java
+
+Facade Pattern.
+Project is a facade class.
+Hidden types: BuildListener SubBuildListener
+Facade access types: ProjectComponent RegexpMatcherFactory RegexpFactory ExpandProperties Main ChainReaderHelper Mapper IntrospectionHelper ProjectHelper RecorderEntry Task ComponentHelper AntTypeDefinition UnknownElement RuntimeConfigurable XmlProperty ProjectHelper2 Assertions BuildNumber ClasspathUtils Filter AntXMLContext AbstractFileSet SelectSelector Description FilenameSelector ExtendSelector DateSelector ContainsSelector Path PropertyHelper TaskAdapter DemuxOutputStream Execute Target PatternSet Redirector RedirectorElement PropertySet XMLCatalog Ant DemuxInputStream Checksum XmlLogger AbstractCvsTask AntClassLoader AntStructure Available Unpack Basename ZipFileSet CallTarget Reference ExecTask UpToDate ConditionTask IsReference IsSet Copy Copydir Copyfile Dirname Echo Exec ExecuteJava Exit Message GenerateKey ImportTask Input JDBCTask Java Javac DefaultCompilerAdapter Jikes Jikes Jvc Javadoc LoadFile LoadProperties Move Nice Patch PathConvert Recorder Property Rename Rmic WLRmic SQLExec EmailTask SignJar SubAnt TempFile Tstamp WaitFor WhichResource XSLTProcess ProjectHelperImpl
+File Location: src/main/org/apache/tools/ant/Project.java
+
+Facade Pattern.
+XmlLogger is a facade class.
+Hidden types: BuildEvent StringUtils Project DOMElementWriter Target Task Location UnknownElement
+Facade access types: XmlLogger
+File Location: src/main/org/apache/tools/ant/XmlLogger.java
+
+Facade Pattern.
+AntTypeDefinition is a facade class.
+Hidden types: TypeAdapter AntClassLoader
+Facade access types: Definer ComponentHelper PreSetDef MacroDef
+File Location: src/main/org/apache/tools/ant/AntTypeDefinition.java
+
+Facade Pattern.
+Ant is a facade class.
+Hidden types: FileUtils DefaultLogger Target ProjectHelper Reference
+Facade access types: SubAnt CallTarget
+File Location: src/main/org/apache/tools/ant/taskdefs/Ant.java
+
+Facade Pattern.
+Available is a facade class.
+Hidden types: FileUtils Project EnumeratedAttribute AntClassLoader
+Facade access types: Available
+File Location: src/main/org/apache/tools/ant/taskdefs/Available.java
+
+Facade Pattern.
+IntrospectionHelper is a facade class.
+Hidden types: DynamicAttributeNS DynamicAttribute DynamicElementNS DynamicElement
+Facade access types: AntStructure ProjectHelper UnknownElement RuntimeConfigurable ModifiedSelector
+File Location: src/main/org/apache/tools/ant/IntrospectionHelper.java
+
+Facade Pattern.
+ProjectHelper is a facade class.
+Hidden types: LoaderUtils PropertyHelper BuildException
+Facade access types: ComponentHelper IntrospectionHelper Definer Ant PreSetDef UnknownElement RuntimeConfigurable ProjectHelper2 Main Property MacroInstance Description ImportTask MacroDef
+File Location: src/main/org/apache/tools/ant/ProjectHelper.java
+
+Facade Pattern.
+Chmod is a facade class.
+Hidden types: Commandline Execute Os
+Facade access types: Chmod
+File Location: src/main/org/apache/tools/ant/taskdefs/Chmod.java
+
+Facade Pattern.
+AntStructure is a facade class.
+Hidden types: Project IntrospectionHelper EnumeratedAttribute
+Facade access types: AntStructure
+File Location: src/main/org/apache/tools/ant/taskdefs/AntStructure.java
+
+Facade Pattern.
+Concat is a facade class.
+Hidden types: EnumeratedAttribute DirectoryScanner FileUtils LogOutputStream ChainReaderHelper
+Facade access types: Concat
+File Location: src/main/org/apache/tools/ant/taskdefs/Concat.java
+
+Facade Pattern.
+Copy is a facade class.
+Hidden types: DirectoryScanner FileNameMapper SourceFileScanner
+Facade access types: MyCopy Move Sync
+File Location: src/main/org/apache/tools/ant/taskdefs/Copy.java
+
+Facade Pattern.
+Copydir is a facade class.
+Hidden types: DirectoryScanner Project
+Facade access types: Copydir
+File Location: src/main/org/apache/tools/ant/taskdefs/Copydir.java
+
+Facade Pattern.
+Delete is a facade class.
+Hidden types: DirectoryScanner Os
+Facade access types: Delete
+File Location: src/main/org/apache/tools/ant/taskdefs/Delete.java
+
+Facade Pattern.
+ExecTask is a facade class.
+Hidden types: Environment FileUtils
+Facade access types: Chmod ExecuteOn SignJar GenerateKey
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecTask.java
+
+Facade Pattern.
+ExecuteJava is a facade class.
+Hidden types: AntClassLoader Permissions
+Facade access types: Java
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteJava.java
+
+Facade Pattern.
+Execute is a facade class.
+Hidden types: ExecuteStreamHandler ProcessDestroyer ExecuteWatchdog
+Facade access types: Property ExecTask AbstractCvsTask Chmod ExecuteOn Patch Java DefaultCompilerAdapter Javadoc Jikes
+File Location: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Facade Pattern.
+ExecuteOn is a facade class.
+Hidden types: EnumeratedAttribute Redirector DirectoryScanner FileNameMapper SourceFileScanner
+Facade access types: Chmod
+File Location: src/main/org/apache/tools/ant/taskdefs/ExecuteOn.java
+
+Facade Pattern.
+FixCRLF is a facade class.
+Hidden types: EnumeratedAttribute DirectoryScanner FileUtils Os
+Facade access types: FixCRLF
+File Location: src/main/org/apache/tools/ant/taskdefs/FixCRLF.java
+
+Facade Pattern.
+Expand is a facade class.
+Hidden types: FileUtils DirectoryScanner ZipFile ZipEntry SelectorUtils
+Facade access types: Untar
+File Location: src/main/org/apache/tools/ant/taskdefs/Expand.java
+
+Facade Pattern.
+Javac is a facade class.
+Hidden types: FacadeTaskHelper DirectoryScanner GlobPatternMapper SourceFileScanner CompilerAdapterFactory CompilerAdapter
+Facade access types: Sj DefaultCompilerAdapter Jikes JavacExternal Jvc Gcj
+File Location: src/main/org/apache/tools/ant/taskdefs/Javac.java
+
+Facade Pattern.
+Java is a facade class.
+Hidden types: CommandlineJava Project Commandline Environment Redirector ExecuteJava Execute
+Facade access types: Java
+File Location: src/main/org/apache/tools/ant/taskdefs/Java.java
+
+Facade Pattern.
+Jar is a facade class.
+Hidden types: Manifest ZipFile ZipEntry EnumeratedAttribute ZipOutputStream
+Facade access types: War Ear
+File Location: src/main/org/apache/tools/ant/taskdefs/Jar.java
+
+Facade Pattern.
+Javadoc is a facade class.
+Hidden types: Commandline Project EnumeratedAttribute JavaEnvUtils FileUtils DirectoryScanner Execute
+Facade access types: Javadoc
+File Location: src/main/org/apache/tools/ant/taskdefs/Javadoc.java
+
+Facade Pattern.
+LoadProperties is a facade class.
+Hidden types: Project ChainReaderHelper
+Facade access types: LoadProperties
+File Location: src/main/org/apache/tools/ant/taskdefs/LoadProperties.java
+
+Facade Pattern.
+MacroInstance is a facade class.
+Hidden types: ProjectHelper RuntimeConfigurable
+Facade access types: MyAntTypeDefinition
+File Location: src/main/org/apache/tools/ant/taskdefs/MacroInstance.java
+
+Facade Pattern.
+Move is a facade class.
+Hidden types: FilterSetCollection Project FileUtils
+Facade access types: Move
+File Location: src/main/org/apache/tools/ant/taskdefs/Move.java
+
+Facade Pattern.
+PathConvert is a facade class.
+Hidden types: EnumeratedAttribute Reference FileNameMapper Project Os
+Facade access types: PathConvert
+File Location: src/main/org/apache/tools/ant/taskdefs/PathConvert.java
+
+Facade Pattern.
+Recorder is a facade class.
+Hidden types: EnumeratedAttribute Project RecorderEntry
+Facade access types: Recorder
+File Location: src/main/org/apache/tools/ant/taskdefs/Recorder.java
+
+Facade Pattern.
+RecorderEntry is a facade class.
+Hidden types: BuildEvent Target Task
+Facade access types: Recorder
+File Location: src/main/org/apache/tools/ant/taskdefs/RecorderEntry.java
+
+Facade Pattern.
+Redirector is a facade class.
+Hidden types: LogOutputStream TeeOutputStream OutputStreamFunneler LeadPipeInputStream ChainReaderHelper ReaderInputStream ConcatFileInputStream
+Facade access types: Java ExecuteOn RedirectorElement ExecTask
+File Location: src/main/org/apache/tools/ant/taskdefs/Redirector.java
+
+Facade Pattern.
+Replace is a facade class.
+Hidden types: DirectoryScanner FileUtils
+Facade access types: Replace
+File Location: src/main/org/apache/tools/ant/taskdefs/Replace.java
+
+Facade Pattern.
+Rmic is a facade class.
+Hidden types: FacadeTaskHelper RmicAdapterFactory RmicAdapter DirectoryScanner FileNameMapper FileUtils SourceFileScanner
+Facade access types: WLRmic DefaultRmicAdapter
+File Location: src/main/org/apache/tools/ant/taskdefs/Rmic.java
+
+Facade Pattern.
+SQLExec is a facade class.
+Hidden types: EnumeratedAttribute DirectoryScanner Project
+Facade access types: Transaction
+File Location: src/main/org/apache/tools/ant/taskdefs/SQLExec.java
+
+Facade Pattern.
+SignJar is a facade class.
+Hidden types: DirectoryScanner Project JavaEnvUtils
+Facade access types: SignJar
+File Location: src/main/org/apache/tools/ant/taskdefs/SignJar.java
+
+Facade Pattern.
+Tar is a facade class.
+Hidden types: EnumeratedAttribute TarOutputStream TarEntry MergingMapper
+Facade access types: Tar
+File Location: src/main/org/apache/tools/ant/taskdefs/Tar.java
+
+Facade Pattern.
+Touch is a facade class.
+Hidden types: DirectoryScanner FileUtils
+Facade access types: Touch
+File Location: src/main/org/apache/tools/ant/taskdefs/Touch.java
+
+Facade Pattern.
+UpToDate is a facade class.
+Hidden types: DirectoryScanner Project MergingMapper
+Facade access types: UpToDate
+File Location: src/main/org/apache/tools/ant/taskdefs/UpToDate.java
+
+Facade Pattern.
+WhichResource is a facade class.
+Hidden types: Project AntClassLoader
+Facade access types: WhichResource
+File Location: src/main/org/apache/tools/ant/taskdefs/WhichResource.java
+
+Facade Pattern.
+XmlProperty is a facade class.
+Hidden types: Project FileUtils
+Facade access types: XmlProperty
+File Location: src/main/org/apache/tools/ant/taskdefs/XmlProperty.java
+
+Facade Pattern.
+XSLTProcess is a facade class.
+Hidden types: Project XSLTLoggerAware FileUtils DirectoryScanner AntClassLoader FileNameMapper XSLTLiaison XSLTLiaison2
+Facade access types: XSLTProcess
+File Location: src/main/org/apache/tools/ant/taskdefs/XSLTProcess.java
+
+Facade Pattern.
+Zip is a facade class.
+Hidden types: FileScanner FileUtils ZipScanner DirectoryScanner Resource MergingMapper GlobPatternMapper ResourceUtils
+Facade access types: Jar War Ear
+File Location: src/main/org/apache/tools/ant/taskdefs/Zip.java
+
+Facade Pattern.
+Gcj is a facade class.
+Hidden types: Task Commandline Path Javac
+Facade access types: Gcj
+File Location: src/main/org/apache/tools/ant/taskdefs/compilers/Gcj.java
+
+Facade Pattern.
+Kjc is a facade class.
+Hidden types: Task Commandline Path
+Facade access types: Kjc
+File Location: src/main/org/apache/tools/ant/taskdefs/compilers/Kjc.java
+
+Facade Pattern.
+FilenameSelector is a facade class.
+Hidden types: Parameter Project SelectorUtils
+Facade access types: FilenameSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/FilenameSelector.java
+
+Facade Pattern.
+TypeSelector is a facade class.
+Hidden types: EnumeratedAttribute Parameter
+Facade access types: TypeSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/TypeSelector.java
+
+Facade Pattern.
+ContainsRegexpSelector is a facade class.
+Hidden types: Parameter RegexpMatcher
+Facade access types: ContainsRegexpSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/ContainsRegexpSelector.java
+
+Facade Pattern.
+SizeSelector is a facade class.
+Hidden types: EnumeratedAttribute Parameter
+Facade access types: SizeSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/SizeSelector.java
+
+Facade Pattern.
+ModifiedSelector is a facade class.
+Hidden types: PropertiesfileCache DigestAlgorithm EqualComparator Parameter EnumeratedAttribute Cache Algorithm IntrospectionHelper
+Facade access types: ModifiedSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/modifiedselector/ModifiedSelector.java
+
+Facade Pattern.
+ContainsSelector is a facade class.
+Hidden types: Parameter Project SelectorUtils
+Facade access types: ContainsSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/ContainsSelector.java
+
+Facade Pattern.
+DateSelector is a facade class.
+Hidden types: EnumeratedAttribute Parameter Project Os
+Facade access types: DateSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/DateSelector.java
+
+Facade Pattern.
+ExtendSelector is a facade class.
+Hidden types: Project Parameterizable
+Facade access types: ExtendSelector
+File Location: src/main/org/apache/tools/ant/types/selectors/ExtendSelector.java
+
+Facade Pattern.
+ProjectHelperImpl is a facade class.
+Hidden types: JAXPUtils FileUtils
+Facade access types: ProjectHandler
+File Location: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Facade Pattern.
+HeadFilter is a facade class.
+Hidden types: LineTokenizer Parameter
+Facade access types: HeadFilter
+File Location: src/main/org/apache/tools/ant/filters/HeadFilter.java
+
+Facade Pattern.
+LineContainsRegExp is a facade class.
+Hidden types: RegularExpression RegexpMatcher Parameter
+Facade access types: LineContainsRegExp
+File Location: src/main/org/apache/tools/ant/filters/LineContainsRegExp.java
+
+Facade Pattern.
+TailFilter is a facade class.
+Hidden types: LineTokenizer Parameter
+Facade access types: TailFilter
+File Location: src/main/org/apache/tools/ant/filters/TailFilter.java
+
+Facade Pattern.
+TokenFilter is a facade class.
+Hidden types: LineTokenizer Tokenizer
+Facade access types: StringTokenizer
+File Location: src/main/org/apache/tools/ant/filters/TokenFilter.java
+
+Facade Pattern.
+ExternalResolver is a facade class.
+Hidden types: ProjectComponent ResourceLocation
+Facade access types: ExternalResolver
+File Location: src/main/org/apache/tools/ant/types/XMLCatalog.java
+
+Facade Pattern.
+DefaultInputHandler is a facade class.
+Hidden types: InputRequest MultipleChoiceInputRequest
+Facade access types: DefaultInputHandler
+File Location: src/main/org/apache/tools/ant/input/DefaultInputHandler.java
+
+Facade Pattern.
+ProjectHelper2 is a facade class.
+Hidden types: Target AntXMLContext Project FileUtils JAXPUtils
+Facade access types: Antlib
+File Location: src/main/org/apache/tools/ant/helper/ProjectHelper2.java
+
+Facade Pattern.
+ChainReaderHelper is a facade class.
+Hidden types: FilterChain AntFilterReader Parameterizable ChainableReader BaseFilterReader
+Facade access types: FileUtils Redirector LoadProperties Concat LoadFile
+File Location: src/main/org/apache/tools/ant/filters/util/ChainReaderHelper.java
+
+Facade Pattern.
+SourceFileScanner is a facade class.
+Hidden types: Resource ResourceUtils
+Facade access types: Copy Rmic Javac ExecuteOn
+File Location: src/main/org/apache/tools/ant/util/SourceFileScanner.java
+
+Facade Pattern.
+Java13CommandLauncher is a facade class.
+Hidden types: Project Commandline
+Facade access types: VmsCommandLauncher
+File Location: src/main/org/apache/tools/ant/taskdefs/Execute.java
+
+Facade Pattern.
+EmailTask is a facade class.
+Hidden types: EnumeratedAttribute EmailAddress Project PlainMailer DirectoryScanner Mailer
+Facade access types: SendEmail
+File Location: src/main/org/apache/tools/ant/taskdefs/email/EmailTask.java
+
+Facade Pattern.
+ResourceUtils is a facade class.
+Hidden types: FileNameMapper ResourceFactory SelectorUtils
+Facade access types: Zip SourceFileScanner
+File Location: src/main/org/apache/tools/ant/util/ResourceUtils.java
+
+Facade Pattern.
+TaskHandler is a facade class.
+Hidden types: Task TaskContainer
+Facade access types: NestedElementHandler ProjectHelperImpl
+File Location: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Facade Pattern.
+NestedElementHandler is a facade class.
+Hidden types: IntrospectionHelper TypeAdapter
+Facade access types: TaskHandler
+File Location: src/main/org/apache/tools/ant/helper/ProjectHelperImpl.java
+
+Facade Pattern.
+MailMessage is a facade class.
+Hidden types: MailPrintStream SmtpResponseReader
+Facade access types: PlainMailer
+File Location: src/main/org/apache/tools/mail/MailMessage.java
