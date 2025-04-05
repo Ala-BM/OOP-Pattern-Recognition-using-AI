@@ -1,0 +1,3 @@
+java -jar ck.jar [Software Folder Name] true 0 False  [CSV Ouput name]
+
+https://github.com/mauricioaniche/ck
